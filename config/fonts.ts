@@ -1,11 +1,12 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google"
-
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+import { Paytone_One as FontMono, Inter as FontSans } from 'next/font/google'
 
 export const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-mono',
+})
+
+export const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
 })

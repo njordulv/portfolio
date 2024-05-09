@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --coal: #0f0d0e;
+  --charcoal: #231f20;
+  --gray: #262522;
+  --yellow: #fcba28;
+  --pink: #f38ba3;
+  --green: #0ba95b;
+  --purple: #7b5ea7;
+  --beige: #f9f4da;
+  --blue: #12b5e5;
+  --orange: #fc7428;
+  --red: #ed203d;
+  --white: #ffffff;
+  --primary: blue;
+}
+
+body {
+  /* background-color: #0a0a0a; */
+  background-image: linear-gradient(90deg, #191919 1px, transparent 1px),
+    linear-gradient(180deg, #191919 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  font-family: var(--font-mono);
+}
