@@ -1,14 +1,11 @@
 import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
-import { fontMono } from '@/config/fonts'
-import clsx from 'clsx'
+import { Hero } from '@/components/Hero'
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
-        <h1 className={clsx(fontMono.variable)}>Home</h1>
-      </div>
+      <Hero />
       <div className="mt-8">
         <Snippet
           hideSymbol

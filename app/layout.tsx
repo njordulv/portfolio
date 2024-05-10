@@ -1,4 +1,3 @@
-import '@/styles/globals.css'
 import { Metadata, Viewport } from 'next'
 import { siteConfig } from '@/config/site'
 import { fontSans } from '@/config/fonts'
@@ -6,6 +5,7 @@ import { Providers } from './providers'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import clsx from 'clsx'
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: {
@@ -40,9 +40,9 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
-          <div className="relative flex flex-col h-screen p-5">
+          <div className="relative flex flex-col p-6">
             <Navigation />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            <main className="container mx-auto max-w-[1280px] pt-16 flex-grow">
               {children}
             </main>
             <Footer />

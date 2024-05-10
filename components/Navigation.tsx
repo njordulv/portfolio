@@ -13,7 +13,7 @@ import { FaCode } from 'react-icons/fa6'
 import clsx from 'clsx'
 
 import { siteConfig } from '@/config/site'
-import { fontMono, fontSans } from '@/config/fonts'
+import { fontMono } from '@/config/fonts'
 
 import { GithubIcon } from '@/components/icons'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
@@ -25,8 +25,8 @@ export const Navigation = () => {
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-0 bg-coal bg-opacity-80 rounded-xl border-1 border-charcoal',
-        content: 'basis-1/5 sm:basis-full',
+        base: '!backdrop-blur-0 bg-coal bg-opacity-85 rounded-xl border-1 border-charcoal',
+        content: 'basis-1/5 sm:basis-full gap-6',
         brand: 'gap-3 max-w-fit',
       }}
     >

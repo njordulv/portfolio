@@ -23,19 +23,25 @@ body {
   background-image: linear-gradient(90deg, #191919 1px, transparent 1px),
     linear-gradient(180deg, #191919 1px, transparent 1px);
   background-size: 34px 34px;
+  font-family: var(--font-sans);
 }
 
+.logo,
+h1,
+h2,
+h3 {
+  font-family: var(--font-mono);
+}
 h1 {
   font-size: 36px;
   line-height: 42px;
-  font-weight: bold;
-  font-family: var(--font-mono);
+}
+h2 {
+  font-size: 30px;
+  line-height: 38px;
 }
 
-.logo {
-  font-family: var(--font-mono);
-}
-
+.hero,
 header,
 footer {
   font-family: var(--font-sans);

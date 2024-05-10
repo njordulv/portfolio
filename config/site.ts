@@ -6,7 +6,7 @@ export const siteConfig = {
   navItems: [
     {
       label: 'Home',
-      href: '#top',
+      href: '#hero',
     },
     {
       label: 'About',
@@ -28,7 +28,7 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: 'Home',
-      href: '#top',
+      href: '#hero',
     },
     {
       label: 'About',

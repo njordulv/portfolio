@@ -26,7 +26,7 @@ module.exports = {
         primary: '#12b5e5',
         secondary: '#7b5ea7',
         success: '#0ba95b',
-        warning: '#fc7428',
+        warning: '#f38ba3',
         danger: '#ed203d',
         foreground: '#262522',
       },
