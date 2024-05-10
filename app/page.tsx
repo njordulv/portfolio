@@ -10,7 +10,12 @@ export default function Home() {
         <h1 className={clsx(fontMono.variable)}>Home</h1>
       </div>
       <div className="mt-8">
-        <Snippet hideSymbol hideCopyButton variant="flat">
+        <Snippet
+          hideSymbol
+          hideCopyButton
+          variant="flat"
+          className="bg-charcoal bg-opacity-50"
+        >
           <span>
             Get started by editing <Code color="primary">app/page.tsx</Code>
           </span>

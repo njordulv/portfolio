@@ -6,17 +6,45 @@ export const siteConfig = {
   navItems: [
     {
       label: 'Home',
-      href: '/',
+      href: '#top',
     },
     {
       label: 'About',
-      href: '/about',
+      href: '#about',
+    },
+    {
+      label: 'Skills',
+      href: '#skills',
+    },
+    {
+      label: 'Experience',
+      href: '#experience',
+    },
+    {
+      label: 'Contacts',
+      href: '#contacts',
     },
   ],
   navMenuItems: [
     {
+      label: 'Home',
+      href: '#top',
+    },
+    {
       label: 'About',
-      href: '/about',
+      href: '#about',
+    },
+    {
+      label: 'Skills',
+      href: '#skills',
+    },
+    {
+      label: 'Experience',
+      href: '#experience',
+    },
+    {
+      label: 'Contacts',
+      href: '#contacts',
     },
   ],
   links: {

@@ -8,47 +8,50 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/navbar'
 import { Link } from '@nextui-org/link'
-
-import { link as linkStyles } from '@nextui-org/theme'
-
-import { siteConfig } from '@/config/site'
 import NextLink from 'next/link'
+import { FaCode } from 'react-icons/fa6'
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/components/ThemeSwitch'
+import { siteConfig } from '@/config/site'
+import { fontMono, fontSans } from '@/config/fonts'
+
 import { GithubIcon } from '@/components/icons'
-import { Logo } from '@/components/icons'
+import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
   return (
     <NextUINavbar
+      isBlurred
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: 'bg-coal backdrop-blur-0 bg-opacity-80 rounded-xl border-1 border-charcoal',
+        base: '!backdrop-blur-0 bg-coal bg-opacity-80 rounded-xl border-1 border-charcoal',
         content: 'basis-1/5 sm:basis-full',
         brand: 'gap-3 max-w-fit',
       }}
     >
       <NavbarContent justify="start">
         <NavbarBrand as="li">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+          <NextLink
+            color="default"
+            className="flex justify-start items-center gap-2"
+            href="/"
+          >
+            <FaCode size="26" />
+            <div className={clsx(fontMono.variable, 'logo text-lg')}>
+              Dmitriy Chastukhin
+            </div>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: 'foreground' }),
-                  'data-[active=true]:text-primary data-[active=true]:font-medium'
-                )}
-                color="foreground"
+              <Link
+                className="text-primary hover:text-warning transition-all"
                 href={item.href}
               >
                 {item.label}
-              </NextLink>
+              </Link>
             </NavbarItem>
           ))}
         </ul>
@@ -84,7 +87,7 @@ export const Navigation = () => {
                     ? 'primary'
                     : index === siteConfig.navMenuItems.length - 1
                     ? 'danger'
-                    : 'foreground'
+                    : 'primary'
                 }
                 href="#"
                 size="lg"

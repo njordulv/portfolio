@@ -22,7 +22,7 @@ body {
   /* background-color: #0a0a0a; */
   background-image: linear-gradient(90deg, #191919 1px, transparent 1px),
     linear-gradient(180deg, #191919 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-size: 34px 34px;
 }
 
 h1 {
@@ -30,4 +30,13 @@ h1 {
   line-height: 42px;
   font-weight: bold;
   font-family: var(--font-mono);
+}
+
+.logo {
+  font-family: var(--font-mono);
+}
+
+header,
+footer {
+  font-family: var(--font-sans);
 }

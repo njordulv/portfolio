@@ -1,4 +1,4 @@
-import { Paytone_One as FontMono, Inter as FontSans } from 'next/font/google'
+import { Paytone_One as FontMono, Outfit as FontSans } from 'next/font/google'
 
 export const fontMono = FontMono({
   subsets: ['latin'],
