@@ -1,10 +1,10 @@
 'use client'
 
+import clsx from 'clsx'
 import { MotionProps, motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import { Code } from '@nextui-org/code'
 import { SiReact, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
-import clsx from 'clsx'
 import { fontMono } from '@/config/fonts'
 
 export const Hero = () => {
@@ -52,7 +52,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        'col-span-4 rounded-lg border border-charcoal bg-coal bg-opacity-85 p-6',
+        'col-span-4 rounded-lg border border-charcoal bg-coal p-6',
         className
       )}
       {...rest}
@@ -61,12 +61,12 @@ const Block = ({ className, ...rest }: BlockProps) => {
 }
 
 const HeaderBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-6">
+  <Block className="col-span-12 row-span-2 md:col-span-6 bg-opacity-90 text-color shadow-xl">
     <h1 className={clsx(fontMono.variable)}>Hi, I{"'"}m Dmitriy.</h1>
     <h2 className={clsx(fontMono.variable, 'text-zinc-400')}>
       I{"'"}m a{' '}
-      <span className="before:block before:absolute before:-inset-1 before:h-[1.5px] before:top-[56%] before:bg-zinc-400 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-3">
-        <span className="relative text-zinc-600">alcoholic</span>
+      <span className="before:block before:absolute before:-inset-1 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
+        <span className="relative text-zinc-500">alcoholic</span>
       </span>{' '}
       frontend developer
     </h2>
@@ -74,7 +74,7 @@ const HeaderBlock = () => (
 )
 
 const AboutBlock = () => (
-  <Block className="col-span-12 text-2xl leading-snug">
+  <Block className="col-span-7 sm:col-start-6 text-2xl leading-snug text-color shadow-xl">
     <p>
       I build cool websites like this one.{' '}
       <span className="text-zinc-400">
@@ -105,20 +105,15 @@ const AboutBlock = () => (
 const SocialsBlock = () => (
   <>
     <Block
-      initial={{
-        rotate: '-1deg',
-        scale: 1.1,
-        opacity: 0,
-      }}
       whileHover={{
         rotate: '2.5deg',
         scale: 1.1,
       }}
-      className="col-span-6 bg-blue md:col-span-3"
+      className="col-span-6 bg-blue md:col-span-3 shadow-xl"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-3xl text-beige"
       >
         <SiReact />
       </a>
@@ -133,11 +128,11 @@ const SocialsBlock = () => (
         rotate: '-2.5deg',
         scale: 1.1,
       }}
-      className="col-span-6 bg-secondary md:col-span-3"
+      className="col-span-6 bg-secondary md:col-span-3 shadow-xl"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-default"
+        className="grid h-full place-content-center text-3xl text-beige"
       >
         <SiNextui />
       </a>
@@ -152,11 +147,11 @@ const SocialsBlock = () => (
         rotate: '2.5deg',
         scale: 1.1,
       }}
-      className="col-span-6 bg-success md:col-span-3"
+      className="col-span-6 bg-success md:col-span-3 shadow-xl"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-default"
+        className="grid h-full place-content-center text-3xl text-beige"
       >
         <SiTailwindcss />
       </a>
@@ -166,11 +161,11 @@ const SocialsBlock = () => (
         rotate: '2.5deg',
         scale: 1.1,
       }}
-      className="col-span-6 bg-pink md:col-span-3"
+      className="col-span-6 bg-pink md:col-span-3 shadow-xl"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-default"
+        className="grid h-full place-content-center text-3xl text-beige"
       >
         <SiFramer />
       </a>

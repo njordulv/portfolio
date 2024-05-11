@@ -9,7 +9,7 @@ export const siteConfig = {
       href: '#hero',
     },
     {
-      label: 'About',
+      label: 'About Me',
       href: '#about',
     },
     {
@@ -19,6 +19,10 @@ export const siteConfig = {
     {
       label: 'Experience',
       href: '#experience',
+    },
+    {
+      label: 'Beyond Coding',
+      href: '#beyond',
     },
     {
       label: 'Contacts',
@@ -31,7 +35,7 @@ export const siteConfig = {
       href: '#hero',
     },
     {
-      label: 'About',
+      label: 'About Me',
       href: '#about',
     },
     {
@@ -43,11 +47,16 @@ export const siteConfig = {
       href: '#experience',
     },
     {
+      label: 'Beyond Coding',
+      href: '#beyond',
+    },
+    {
       label: 'Contacts',
       href: '#contacts',
     },
   ],
   links: {
     github: 'https://github.com/njordulv',
+    linkedin: 'https://www.linkedin.com/in/dmitriy-chastukhin',
   },
 }

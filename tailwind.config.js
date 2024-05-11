@@ -10,8 +10,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        coal: '#0f0d0e',
-        charcoal: '#231f20',
         gray: '#262522',
         yellow: '#fcba28',
         pink: '#f38ba3',
@@ -21,17 +19,41 @@ module.exports = {
         blue: '#12b5e5',
         orange: '#fc7428',
         red: '#ed203d',
-        white: '#ffffff',
-        default: '#f9f4da',
         primary: '#12b5e5',
         secondary: '#7b5ea7',
         success: '#0ba95b',
-        warning: '#f38ba3',
         danger: '#ed203d',
-        foreground: '#262522',
+      },
+      boxShadow: {
+        xl: '4px 4px 0 black',
       },
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            background: 'beige',
+            coal: '#fffef2',
+            charcoal: '#555',
+            default: '#0f0d0e',
+            color: '#333',
+            warning: '#ec39b6',
+          },
+        },
+        dark: {
+          colors: {
+            background: '#0f0d0e',
+            coal: '#0f0d0e',
+            charcoal: '#231f20',
+            default: '#f9f4da',
+            color: '#f9f4da',
+            warning: '#f38ba3',
+          },
+        },
+      },
+    }),
+  ],
 }

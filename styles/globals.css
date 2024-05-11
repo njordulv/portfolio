@@ -3,25 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --coal: #0f0d0e;
-  --charcoal: #231f20;
-  --gray: #262522;
-  --yellow: #fcba28;
-  --pink: #f38ba3;
-  --green: #0ba95b;
-  --purple: #7b5ea7;
-  --beige: #f9f4da;
-  --blue: #12b5e5;
-  --orange: #fc7428;
-  --red: #ed203d;
-  --white: #ffffff;
-  --primary: blue;
+  --cell: #282828;
+}
+
+.light:root {
+  --cell: #e0e0d5;
 }
 
 body {
-  /* background-color: #0a0a0a; */
-  background-image: linear-gradient(90deg, #191919 1px, transparent 1px),
-    linear-gradient(180deg, #191919 1px, transparent 1px);
+  background-image: linear-gradient(90deg, var(--cell) 1px, transparent 1px),
+    linear-gradient(180deg, var(--cell) 1px, transparent 1px);
   background-size: 34px 34px;
   font-family: var(--font-sans);
 }

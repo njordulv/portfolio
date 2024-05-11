@@ -8,36 +8,32 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/navbar'
 import { Link } from '@nextui-org/link'
+import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import NextLink from 'next/link'
-import { FaCode } from 'react-icons/fa6'
 import clsx from 'clsx'
 
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
-
-import { GithubIcon } from '@/components/icons'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
   return (
     <NextUINavbar
-      isBlurred
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-0 bg-coal bg-opacity-85 rounded-xl border-1 border-charcoal',
-        content: 'basis-1/5 sm:basis-full gap-6',
+        base: '!backdrop-blur-0 bg-coal bg-opacity-85 rounded-xl border-1 border-charcoal shadow-xl',
+        content: 'basis-1/5 sm:basis-full gap-1 sm:gap-6',
         brand: 'gap-3 max-w-fit',
       }}
     >
       <NavbarContent justify="start">
         <NavbarBrand as="li">
           <NextLink
-            color="default"
-            className="flex justify-start items-center gap-2"
+            className="flex justify-start items-center gap-2 text-color"
             href="/"
           >
-            <FaCode size="26" />
+            <SiHtmx size="26" />
             <div className={clsx(fontMono.variable, 'logo text-lg')}>
               Dmitriy Chastukhin
             </div>
@@ -61,17 +57,27 @@ export const Navigation = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden sm:flex gap-3">
+          <Link
+            isExternal
+            href={siteConfig.links.linkedin}
+            aria-label="LinkedIn"
+          >
+            <SiLinkedin className="text-color text-lg" />
+          </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-beige" />
+            <SiGithub className="text-color text-lg" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+        <Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
+          <SiLinkedin className="text-color text-lg" />
+        </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-beige" />
+          <SiGithub className="text-color text-lg" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
