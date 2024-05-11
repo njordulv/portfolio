@@ -70,7 +70,7 @@ const HeaderBlock = () => (
       </span>{' '}
       frontend developer
     </h2>
-    <div className="mt-6">
+    <div className="mt-8">
       <a
         href="#contact"
         className="inline-flex text-yellow hover:text-danger transition-all"
@@ -82,7 +82,7 @@ const HeaderBlock = () => (
 )
 
 const AboutBlock = () => (
-  <Block className="col-span-7 sm:col-start-6 text-2xl leading-snug text-color shadow-xl">
+  <Block className="col-span-12 md:col-span-7 md:col-start-6 text-2xl leading-snug text-color shadow-xl">
     <p>
       I build cool websites like this one.{' '}
       <span className="text-zinc-400">

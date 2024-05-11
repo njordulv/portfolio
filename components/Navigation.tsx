@@ -30,11 +30,11 @@ export const Navigation = () => {
       <NavbarContent justify="start">
         <NavbarBrand as="li">
           <NextLink
-            className="flex justify-start items-center gap-2 text-color"
+            className="flex justify-start items-center gap-3 text-color"
             href="/"
           >
-            <SiHtmx size="26" />
-            <div className={clsx(fontMono.variable, 'logo text-lg')}>
+            <SiHtmx size="30" />
+            <div className={clsx(fontMono.variable, 'logo text-xl')}>
               Dmitriy Chastukhin
             </div>
           </NextLink>
@@ -42,9 +42,12 @@ export const Navigation = () => {
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link className="text-primary" href={item.href}>
+              <NextLink
+                className="text-primary hover:text-yellow transition-all"
+                href={item.href}
+              >
                 {item.label}
-              </Link>
+              </NextLink>
             </NavbarItem>
           ))}
         </ul>

@@ -10,6 +10,10 @@
   --cell: #dbdbd3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(90deg, var(--cell) 1px, transparent 1px),
     linear-gradient(180deg, var(--cell) 1px, transparent 1px);
