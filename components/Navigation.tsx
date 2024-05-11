@@ -22,7 +22,7 @@ export const Navigation = () => {
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-0 bg-coal bg-opacity-85 rounded-xl border-1 border-charcoal shadow-xl',
+        base: '!backdrop-blur-0 bg-coal bg-opacity-80 rounded-xl border-2 border-black shadow-xl',
         content: 'basis-1/5 sm:basis-full gap-1 sm:gap-6',
         brand: 'gap-3 max-w-fit',
       }}
@@ -42,10 +42,7 @@ export const Navigation = () => {
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link
-                className="text-primary hover:text-warning transition-all"
-                href={item.href}
-              >
+              <Link className="text-primary" href={item.href}>
                 {item.label}
               </Link>
             </NavbarItem>

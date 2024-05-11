@@ -45,7 +45,7 @@ module.exports = {
         },
         dark: {
           colors: {
-            background: '#0f0d0e',
+            background: '#181818',
             coal: '#0f0d0e',
             charcoal: '#231f20',
             default: '#f9f4da',

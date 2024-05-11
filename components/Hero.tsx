@@ -52,7 +52,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        'col-span-4 rounded-lg border border-charcoal bg-coal p-6',
+        'col-span-4 rounded-lg border-2 border-black bg-coal p-6',
         className
       )}
       {...rest}
@@ -70,6 +70,14 @@ const HeaderBlock = () => (
       </span>{' '}
       frontend developer
     </h2>
+    <div className="mt-6">
+      <a
+        href="#contact"
+        className="inline-flex text-yellow hover:text-danger transition-all"
+      >
+        Contact me
+      </a>
+    </div>
   </Block>
 )
 
