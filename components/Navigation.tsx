@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+import NextLink from 'next/link'
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -9,9 +11,6 @@ import {
 } from '@nextui-org/navbar'
 import { Link } from '@nextui-org/link'
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
-import NextLink from 'next/link'
-import clsx from 'clsx'
-
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
@@ -22,7 +21,7 @@ export const Navigation = () => {
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-0 bg-coal bg-opacity-80 rounded-xl border-2 border-black shadow-xl',
+        base: '!backdrop-blur-[1px] bg-coal bg-opacity-80 rounded-xl border-2 border-black shadow-xl',
         content: 'basis-1/5 sm:basis-full gap-1 sm:gap-6',
         brand: 'gap-3 max-w-fit',
       }}
@@ -35,7 +34,8 @@ export const Navigation = () => {
           >
             <SiHtmx size="30" />
             <div className={clsx(fontMono.variable, 'logo text-xl')}>
-              Dmitriy Chastukhin
+              <span className="sm:flex hidden">Dmitriy Chastukhin</span>
+              <span className="sm:hidden">DC</span>
             </div>
           </NextLink>
         </NavbarBrand>
@@ -72,7 +72,7 @@ export const Navigation = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="sm:hidden basis-1 pl-4 gap-3" justify="end">
         <Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
           <SiLinkedin className="text-color text-lg" />
         </Link>

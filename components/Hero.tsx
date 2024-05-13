@@ -63,15 +63,17 @@ const Block = ({ className, ...rest }: BlockProps) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6 bg-opacity-90 text-color shadow-xl">
-    <h1 className={clsx(fontMono.variable)}>{`Hi, I'm Dmitriy.`}</h1>
-    <h2 className={clsx(fontMono.variable, 'text-zinc-400')}>
-      {`I'm a`}&nbsp;
-      <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
-        <span className="relative text-zinc-500">alcoholic</span>&nbsp;
-      </span>
-      frontend developer
-    </h2>
-    <div className="mt-8">
+    <div className={clsx(fontMono.variable)}>
+      <h1>{`Hi, I'm Dmitriy.`}</h1>
+      <h2 className="text-zinc-400 mt-2 mb-10">
+        {`I'm a`}&nbsp;
+        <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
+          <span className="relative text-zinc-500">alcoholic</span>&nbsp;
+        </span>
+        frontend developer
+      </h2>
+    </div>
+    <div>
       <NextLink
         href="#contact"
         className="inline-flex text-yellow hover:text-danger transition-all"
