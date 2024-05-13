@@ -7,7 +7,7 @@ import { fontMono } from '@/config/fonts'
 
 export const Stack = () => {
   return (
-    <div className="min-h-screen stack w-full" id="skills">
+    <section className="stack min-h-screen w-full" id="skills">
       <motion.div
         initial="initial"
         animate="animate"
@@ -18,7 +18,7 @@ export const Stack = () => {
       >
         <StackBlock />
       </motion.div>
-    </div>
+    </section>
   )
 }
 

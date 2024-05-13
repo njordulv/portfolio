@@ -27,6 +27,9 @@ module.exports = {
       boxShadow: {
         xl: '4px 4px 0 black',
       },
+      dropShadow: {
+        sm: '1px 1px 0 black',
+      },
     },
   },
   darkMode: 'class',

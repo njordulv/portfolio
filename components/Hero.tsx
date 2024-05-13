@@ -1,6 +1,7 @@
 'use client'
 
 import clsx from 'clsx'
+import NextLink from 'next/link'
 import { MotionProps, motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import { Code } from '@nextui-org/code'
@@ -9,7 +10,7 @@ import { fontMono } from '@/config/fonts'
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen hero" id="hero">
+    <section className="hero min-h-screen" id="hero">
       <motion.div
         initial="initial"
         animate="animate"
@@ -19,10 +20,10 @@ export const Hero = () => {
         className="mx-auto grid max-w-5xl grid-flow-dense grid-cols-12 gap-6"
       >
         <HeaderBlock />
-        <SocialsBlock />
+        <TechBlock />
         <AboutBlock />
       </motion.div>
-    </div>
+    </section>
   )
 }
 
@@ -35,7 +36,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
     <motion.div
       variants={{
         initial: {
-          scale: 0.5,
+          scale: 1.5,
           y: 50,
           opacity: 0,
         },
@@ -47,8 +48,8 @@ const Block = ({ className, ...rest }: BlockProps) => {
       }}
       transition={{
         type: 'spring',
-        mass: 3,
-        stiffness: 300,
+        mass: 4,
+        stiffness: 500,
         damping: 50,
       }}
       className={twMerge(
@@ -62,21 +63,21 @@ const Block = ({ className, ...rest }: BlockProps) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6 bg-opacity-90 text-color shadow-xl">
-    <h1 className={clsx(fontMono.variable)}>Hi, I{"'"}m Dmitriy.</h1>
+    <h1 className={clsx(fontMono.variable)}>{`Hi, I'm Dmitriy.`}</h1>
     <h2 className={clsx(fontMono.variable, 'text-zinc-400')}>
-      I{"'"}m a{' '}
-      <span className="before:block before:absolute before:-inset-1 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
-        <span className="relative text-zinc-500">alcoholic</span>
-      </span>{' '}
+      {`I'm a`}&nbsp;
+      <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
+        <span className="relative text-zinc-500">alcoholic</span>&nbsp;
+      </span>
       frontend developer
     </h2>
     <div className="mt-8">
-      <a
+      <NextLink
         href="#contact"
         className="inline-flex text-yellow hover:text-danger transition-all"
       >
         Contact me
-      </a>
+      </NextLink>
     </div>
   </Block>
 )
@@ -84,21 +85,21 @@ const HeaderBlock = () => (
 const AboutBlock = () => (
   <Block className="col-span-12 md:col-span-7 md:col-start-6 text-2xl leading-snug text-color shadow-xl">
     <p>
-      I build cool websites like this one.{' '}
+      I build cool websites like this one.&nbsp;
       <span className="text-zinc-400">
-        I primarily use{' '}
+        I primarily use&nbsp;
         <Code color="primary" size="md">
           Next JS
         </Code>
-        ,{' '}
+        ,&nbsp;
         <Code color="secondary" size="md">
           Next UI
         </Code>
-        ,{' '}
+        ,&nbsp;
         <Code color="success" size="md">
           Tailwind CSS
         </Code>
-        , and{' '}
+        , and&nbsp;
         <Code color="warning" size="md">
           Framer Motion
         </Code>
@@ -110,72 +111,82 @@ const AboutBlock = () => (
   </Block>
 )
 
-const SocialsBlock = () => (
+const TechBlock = () => (
   <>
     <Block
-      whileHover={{
-        rotate: '2.5deg',
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-blue md:col-span-3 shadow-xl"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
-      >
-        <SiReact />
-      </a>
-    </Block>
-    <Block
       initial={{
-        rotate: '2deg',
-        scale: 1.1,
+        rotate: '2.5deg',
+        scale: 1.4,
         opacity: 0,
       }}
       whileHover={{
-        rotate: '-2.5deg',
+        rotate: '0',
         scale: 1.1,
       }}
-      className="col-span-6 bg-secondary md:col-span-3 shadow-xl"
+      className="col-span-6 bg-blue md:col-span-3 p-0 shadow-xl min-h-24"
     >
-      <a
+      <NextLink
         href="#"
         className="grid h-full place-content-center text-3xl text-beige"
       >
-        <SiNextui />
-      </a>
+        <SiReact className="drop-shadow-sm" />
+      </NextLink>
+    </Block>
+    <Block
+      initial={{
+        rotate: '3deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
+      whileHover={{
+        rotate: '0',
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-secondary md:col-span-3 p-0 shadow-xl min-h-24"
+    >
+      <NextLink
+        href="#"
+        className="grid h-full place-content-center text-3xl text-beige"
+      >
+        <SiNextui className="drop-shadow-sm" />
+      </NextLink>
     </Block>
     <Block
       initial={{
         rotate: '-2.5deg',
-        scale: 1.1,
+        scale: 1.4,
         opacity: 0,
       }}
       whileHover={{
-        rotate: '2.5deg',
+        rotate: '0',
         scale: 1.1,
       }}
-      className="col-span-6 bg-success md:col-span-3 shadow-xl"
+      className="col-span-6 bg-success md:col-span-3 p-0 shadow-xl min-h-24"
     >
-      <a
+      <NextLink
         href="#"
         className="grid h-full place-content-center text-3xl text-beige"
       >
-        <SiTailwindcss />
-      </a>
+        <SiTailwindcss className="drop-shadow-sm" />
+      </NextLink>
     </Block>
     <Block
+      initial={{
+        rotate: '-3deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
       whileHover={{
-        rotate: '2.5deg',
+        rotate: '0',
         scale: 1.1,
       }}
-      className="col-span-6 bg-pink md:col-span-3 shadow-xl"
+      className="col-span-6 bg-pink md:col-span-3 p-0 shadow-xl min-h-24"
     >
       <a
         href="#"
         className="grid h-full place-content-center text-3xl text-beige"
       >
-        <SiFramer />
+        <SiFramer className="drop-shadow-sm" />
       </a>
     </Block>
   </>
