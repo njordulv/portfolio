@@ -2,10 +2,11 @@
 
 import clsx from 'clsx'
 import NextLink from 'next/link'
+import { Image } from '@nextui-org/image'
 import { MotionProps, motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import { Code } from '@nextui-org/code'
-import { SiReact, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
+import { SiNextdotjs, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
 import { fontMono } from '@/config/fonts'
 
 export const Hero = () => {
@@ -19,7 +20,8 @@ export const Hero = () => {
         }}
         className="mx-auto grid max-w-5xl grid-flow-dense grid-cols-12 gap-6"
       >
-        <HeaderBlock />
+        <IntroBlock />
+        <PhotoBlock />
         <TechBlock />
         <AboutBlock />
       </motion.div>
@@ -53,7 +55,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        'col-span-4 rounded-lg border-2 border-black bg-coal p-6',
+        'rounded-lg border-2 border-black bg-coal p-6 text-color shadow-xl',
         className
       )}
       {...rest}
@@ -61,11 +63,11 @@ const Block = ({ className, ...rest }: BlockProps) => {
   )
 }
 
-const HeaderBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-6 bg-opacity-90 text-color shadow-xl">
+const IntroBlock = () => (
+  <Block className="col-span-12 row-span-2 md:col-span-7 flex flex-col justify-between bg-opacity-90">
     <div className={clsx(fontMono.variable)}>
       <h1>{`Hi, I'm Dmitriy.`}</h1>
-      <h2 className="text-zinc-400 mt-2 mb-10">
+      <h2 className="text-zinc-400 mt-2">
         {`I'm a`}&nbsp;
         <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
           <span className="relative text-zinc-500">alcoholic</span>&nbsp;
@@ -84,8 +86,96 @@ const HeaderBlock = () => (
   </Block>
 )
 
+const PhotoBlock = () => (
+  <Block className="col-span-12 row-span-2 md:col-span-5 bg-danger flex place-content-center relative overflow-hidden">
+    <Image src="/photo.png" width={'300'} alt="Dmitriy Photo" />
+    <div className="absolute w-full h-full max-w-56 max-h-56 left-auto bottom-20 bg-beige rounded-full shadow-xl"></div>
+  </Block>
+)
+
+const TechBlock = () => (
+  <div className="col-span-12 row-span-2 md:col-span-5 grid grid-cols-2 gap-4">
+    <Block
+      initial={{
+        rotate: '2.5deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
+      whileHover={{
+        rotate: '0',
+        scale: 1.1,
+      }}
+      className="bg-blue p-0 min-h-24"
+    >
+      <NextLink
+        href="#"
+        className="grid h-full place-content-center text-3xl text-beige"
+      >
+        <SiNextdotjs className="drop-shadow-md" />
+      </NextLink>
+    </Block>
+    <Block
+      initial={{
+        rotate: '3deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
+      whileHover={{
+        rotate: '0',
+        scale: 1.1,
+      }}
+      className="bg-secondary p-0 min-h-24"
+    >
+      <NextLink
+        href="#"
+        className="grid h-full place-content-center text-3xl text-beige"
+      >
+        <SiNextui className="drop-shadow-md" />
+      </NextLink>
+    </Block>
+    <Block
+      initial={{
+        rotate: '-2.5deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
+      whileHover={{
+        rotate: '0',
+        scale: 1.1,
+      }}
+      className="bg-success p-0 min-h-24"
+    >
+      <NextLink
+        href="#"
+        className="grid h-full place-content-center text-3xl text-beige"
+      >
+        <SiTailwindcss className="drop-shadow-md" />
+      </NextLink>
+    </Block>
+    <Block
+      initial={{
+        rotate: '-3deg',
+        scale: 1.4,
+        opacity: 0,
+      }}
+      whileHover={{
+        rotate: '0',
+        scale: 1.1,
+      }}
+      className="bg-pink p-0 min-h-24"
+    >
+      <a
+        href="#"
+        className="grid h-full place-content-center text-3xl text-beige"
+      >
+        <SiFramer className="drop-shadow-md" />
+      </a>
+    </Block>
+  </div>
+)
+
 const AboutBlock = () => (
-  <Block className="col-span-12 md:col-span-7 md:col-start-6 text-2xl leading-snug text-color shadow-xl">
+  <Block className="col-span-7 text-2xl row-span-2 leading-snug bg-opacity-90">
     <p>
       I build cool websites like this one.&nbsp;
       <span className="text-zinc-400">
@@ -111,85 +201,4 @@ const AboutBlock = () => (
       </span>
     </p>
   </Block>
-)
-
-const TechBlock = () => (
-  <>
-    <Block
-      initial={{
-        rotate: '2.5deg',
-        scale: 1.4,
-        opacity: 0,
-      }}
-      whileHover={{
-        rotate: '0',
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-blue md:col-span-3 p-0 shadow-xl min-h-24"
-    >
-      <NextLink
-        href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
-      >
-        <SiReact className="drop-shadow-sm" />
-      </NextLink>
-    </Block>
-    <Block
-      initial={{
-        rotate: '3deg',
-        scale: 1.4,
-        opacity: 0,
-      }}
-      whileHover={{
-        rotate: '0',
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-secondary md:col-span-3 p-0 shadow-xl min-h-24"
-    >
-      <NextLink
-        href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
-      >
-        <SiNextui className="drop-shadow-sm" />
-      </NextLink>
-    </Block>
-    <Block
-      initial={{
-        rotate: '-2.5deg',
-        scale: 1.4,
-        opacity: 0,
-      }}
-      whileHover={{
-        rotate: '0',
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-success md:col-span-3 p-0 shadow-xl min-h-24"
-    >
-      <NextLink
-        href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
-      >
-        <SiTailwindcss className="drop-shadow-sm" />
-      </NextLink>
-    </Block>
-    <Block
-      initial={{
-        rotate: '-3deg',
-        scale: 1.4,
-        opacity: 0,
-      }}
-      whileHover={{
-        rotate: '0',
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-pink md:col-span-3 p-0 shadow-xl min-h-24"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
-      >
-        <SiFramer className="drop-shadow-sm" />
-      </a>
-    </Block>
-  </>
 )
