@@ -502,7 +502,7 @@
     lodash.omit "^4.5.0"
     tailwind-variants "^0.1.20"
 
-"@nextui-org/tooltip@2.0.33":
+"@nextui-org/tooltip@2.0.33", "@nextui-org/tooltip@^2.0.33":
   version "2.0.33"
   resolved "https://registry.yarnpkg.com/@nextui-org/tooltip/-/tooltip-2.0.33.tgz#9c7cb5bf20ba2a9dcbd37af2e9a4ad9355539502"
   integrity sha512-WUpBuoZ1ya2iD9EI2d/E58BpPrRJQ2NDnpIU6RjwWe/MGqtxf3oJVQZd6kKpgaD8eB6P3OSiFTwTUK7+AoLmDQ==
