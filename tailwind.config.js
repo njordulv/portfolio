@@ -27,10 +27,12 @@ module.exports = {
       boxShadow: {
         xl: '4px 4px 0 black',
         md: '2px 2px 0 black',
+        lg: '2px 2px 0 beige',
       },
       dropShadow: {
         sm: '1px 1px 0 black',
-        md: '2px 2px black',
+        md: '2px 2px 0 black',
+        lg: '2px 2px 0 beige',
       },
     },
   },

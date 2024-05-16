@@ -61,13 +61,21 @@ const Block = ({ className, ...rest }: BlockProps) => {
 const StackBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6 bg-opacity-90 text-color shadow-xl">
     <h1 className={clsx(fontMono.variable)}>Tech Stack</h1>
-    <ul className="flex flex-col gap-2 mt-6 text-zinc-400">
+    <ul className="flex flex-col gap-2 mt-6">
       {siteConfig.techStackIcons.map((item, index) => (
-        <Tooltip key={index} color="default" content={item.label}>
-          <li key={index} className="flex gap-2">
-            <item.icon size="24" />
-          </li>
-        </Tooltip>
+        <li key={index} className="flex gap-2 border-default">
+          <Tooltip
+            placement="right"
+            content={item.label}
+            classNames={{
+              content: 'border-1 text-default',
+            }}
+          >
+            <span className="shadow-lg shadow-default rounded-full w-10 h-10 border-1 border-default flex place-content-center items-center">
+              <item.icon size="18" color="default" />
+            </span>
+          </Tooltip>
+        </li>
       ))}
     </ul>
   </Block>
