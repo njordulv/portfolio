@@ -29,12 +29,12 @@ h3 {
   font-family: var(--font-mono);
 }
 h1 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 42px;
+  line-height: 50px;
 }
 h2 {
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 44px;
 }
 
 .hero,

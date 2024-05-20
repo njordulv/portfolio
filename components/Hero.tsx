@@ -64,21 +64,21 @@ const Block = ({ className, ...rest }: BlockProps) => {
 }
 
 const IntroBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-7 flex flex-col justify-between bg-opacity-90">
+  <Block className="col-span-12 row-span-2 md:col-span-7 flex flex-col justify-between bg-opacity-90 text-3xl text-zinc-400">
     <div className={clsx(fontMono.variable)}>
-      <h1>{`Hi, I'm Dmitriy.`}</h1>
-      <h2 className="text-zinc-400 mt-2">
+      <h1 className="text-default mb-2">{`Hi, I'm Dmitriy.`}</h1>
+      <p>
         {`I'm a`}&nbsp;
         <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
           <span className="relative text-zinc-500">alcoholic</span>&nbsp;
         </span>
-        frontend developer
-      </h2>
+      </p>
+      <p>frontend developer.</p>
     </div>
     <div>
       <NextLink
         href="#contact"
-        className="inline-flex text-yellow hover:text-danger transition-all"
+        className="text-xl inline-flex dark:text-yellow text-primary dark:hover:text-red hover:text-black transition-all"
       >
         Contact me
       </NextLink>
@@ -104,12 +104,13 @@ const TechBlock = () => (
       whileHover={{
         rotate: '0',
         scale: 1.1,
+        zIndex: 1,
       }}
       className="bg-blue p-0 min-h-24"
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
+        className="grid h-full place-content-center text-4xl text-beige"
       >
         <SiNextdotjs className="drop-shadow-md" />
       </NextLink>
@@ -123,12 +124,13 @@ const TechBlock = () => (
       whileHover={{
         rotate: '0',
         scale: 1.1,
+        zIndex: 1,
       }}
       className="bg-secondary p-0 min-h-24"
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
+        className="grid h-full place-content-center text-4xl text-beige"
       >
         <SiNextui className="drop-shadow-md" />
       </NextLink>
@@ -142,12 +144,13 @@ const TechBlock = () => (
       whileHover={{
         rotate: '0',
         scale: 1.1,
+        zIndex: 1,
       }}
       className="bg-success p-0 min-h-24"
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
+        className="grid h-full place-content-center text-4xl text-beige"
       >
         <SiTailwindcss className="drop-shadow-md" />
       </NextLink>
@@ -161,12 +164,13 @@ const TechBlock = () => (
       whileHover={{
         rotate: '0',
         scale: 1.1,
+        zIndex: 1,
       }}
       className="bg-pink p-0 min-h-24"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-beige"
+        className="grid h-full place-content-center text-4xl text-beige"
       >
         <SiFramer className="drop-shadow-md" />
       </a>
@@ -175,7 +179,7 @@ const TechBlock = () => (
 )
 
 const AboutBlock = () => (
-  <Block className="col-span-7 text-2xl row-span-2 leading-snug bg-opacity-90">
+  <Block className="col-span-7 text-3xl row-span-2 leading-snug bg-opacity-90">
     <p>
       I build cool websites like this one.&nbsp;
       <span className="text-zinc-400">
