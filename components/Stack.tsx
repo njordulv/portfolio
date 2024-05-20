@@ -20,7 +20,7 @@ export const Stack = () => {
         transition={{
           staggerChildren: 0.1,
         }}
-        className="mx-auto grid max-w-5xl grid-flow-dense grid-cols-12 gap-6"
+        className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
       >
         <StackBlock />
       </motion.div>
@@ -56,14 +56,15 @@ const ListItem = ({ className, ...rest }: BlockProps) => {
 }
 
 const StackBlock = () => (
-  <div className="col-span-12 row-span-2 md:col-span-7 shadow-xl flex flex-col gap-5 rounded-lg border-2 border-black bg-beige text-black p-6">
-    <h2 className={clsx(fontMono.variable, 'text-red')}>Tech Stack</h2>
+  <div className="col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-lg border-2 border-black bg-beige text-black p-6">
+    <h2 className={clsx(fontMono.variable, 'text-red mb-4')}>Tech Stack</h2>
     {Object.entries(siteConfig.techStackCategiries).map(
       ([categoryName, categoryItems]) => (
-        <div key={categoryName}>
-          <h3 className={'text-black text-xl mb-3 font-medium'}>
-            {categoryName}
-          </h3>
+        <div
+          key={categoryName}
+          className="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center border-b-1 border-dashed border-stone-400 last:border-b-0 py-3"
+        >
+          <h3 className={'text-black text-xl font-medium'}>{categoryName}</h3>
           <ul className="flex gap-2 flex-wrap">
             {siteConfig.techStackIcons
               .filter((item) => categoryItems.includes(item.label))
@@ -77,14 +78,12 @@ const StackBlock = () => (
                   }}
                 >
                   <Tooltip
-                    placement="bottom"
-                    offset={9}
                     content={item.label}
                     classNames={{
                       content: 'border-1 text-beige bg-black',
                     }}
                   >
-                    <span className="shadow-lg shadow-black bg-black w-10 h-10 text-beige border-1 border-beige rounded-full flex justify-center items-center hover:bg-red hover:border-contrast transition-all cursor-pointer">
+                    <span className="shadow-lg shadow-black bg-black w-10 h-10 text-beige border-1 border-beige rounded-full flex justify-center items-center hover:bg-red transition-all cursor-pointer">
                       <item.icon size="20" />
                     </span>
                   </Tooltip>

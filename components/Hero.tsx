@@ -18,7 +18,7 @@ export const Hero = () => {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-5xl grid-flow-dense grid-cols-12 gap-6"
+        className="mx-auto grid grid-flow-dense grid-cols-12 gap-7 sm:px-6"
       >
         <IntroBlock />
         <PhotoBlock />
@@ -88,8 +88,13 @@ const IntroBlock = () => (
 
 const PhotoBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-5 bg-danger flex place-content-center relative overflow-hidden">
-    <Image src="/photo.png" width={'300'} alt="Dmitriy Photo" />
-    <div className="absolute w-full h-full max-w-56 max-h-56 left-auto bottom-20 bg-beige rounded-full shadow-xl"></div>
+    <Image
+      src="/photo.png"
+      width="300px"
+      alt="Dmitriy Photo"
+      className="drop-shadow-lg"
+    />
+    <div className="absolute w-full h-full max-w-56 max-h-56 -rotate-[-12deg] -skew-x-[48deg] left-auto bottom-0 bg-beige rounded-full shadow-xl"></div>
   </Block>
 )
 
@@ -117,7 +122,7 @@ const TechBlock = () => (
     </Block>
     <Block
       initial={{
-        rotate: '3deg',
+        rotate: '3.3deg',
         scale: 1.4,
         opacity: 0,
       }}
@@ -157,7 +162,7 @@ const TechBlock = () => (
     </Block>
     <Block
       initial={{
-        rotate: '-3deg',
+        rotate: '-3.5deg',
         scale: 1.4,
         opacity: 0,
       }}
@@ -179,30 +184,28 @@ const TechBlock = () => (
 )
 
 const AboutBlock = () => (
-  <Block className="col-span-7 text-3xl row-span-2 leading-snug bg-opacity-90">
-    <p>
-      I build cool websites like this one.&nbsp;
-      <span className="text-zinc-400">
-        I primarily use&nbsp;
-        <Code color="primary" size="md">
-          Next JS
-        </Code>
-        ,&nbsp;
-        <Code color="secondary" size="md">
-          Next UI
-        </Code>
-        ,&nbsp;
-        <Code color="success" size="md">
-          Tailwind CSS
-        </Code>
-        , and&nbsp;
-        <Code color="warning" size="md">
-          Framer Motion
-        </Code>
-        . I like this stack so much so I even built this portfolio based on it.
-        But this is not my limit, I go on broadening my horizons by learning new
-        technologies.
-      </span>
+  <Block className="col-span-12 md:col-span-7 text-3xl row-span-2 leading-snug bg-opacity-90">
+    <p>I build cool websites like this one.</p>
+    <p className="text-zinc-400">
+      I primarily use&nbsp;
+      <Code color="primary" size="md" className="relative bottom-[2px]">
+        Next JS
+      </Code>
+      ,&nbsp;
+      <Code color="secondary" size="md" className="relative bottom-[2px]">
+        Next UI
+      </Code>
+      ,&nbsp;
+      <Code color="success" size="md" className="relative bottom-[2px]">
+        Tailwind CSS
+      </Code>
+      , and&nbsp;
+      <Code color="warning" size="md" className="relative bottom-[2px]">
+        Framer Motion
+      </Code>
+      . I like this stack so much so I even built this portfolio based on it.
+      But this is not my limit, I go on broadening my horizons by learning new
+      technologies.
     </p>
   </Block>
 )
