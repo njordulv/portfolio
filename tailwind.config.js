@@ -43,6 +43,7 @@ module.exports = {
         light: {
           colors: {
             background: 'beige',
+            contrast: 'white',
             coal: '#fffef2',
             charcoal: '#555',
             default: '#0f0d0e',
@@ -53,6 +54,7 @@ module.exports = {
         dark: {
           colors: {
             background: '#181818',
+            contrast: 'black',
             coal: '#0f0d0e',
             charcoal: '#231f20',
             default: '#f9f4da',
