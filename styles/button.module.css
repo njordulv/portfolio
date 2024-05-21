@@ -1,0 +1,21 @@
+.button {
+  border-radius: 2rem;
+  border: 2px dashed black;
+  background-color: var(--yellow);
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  color: black;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  transform: translate(-4px, -4px);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 0px black;
+}
+
+.button:active {
+  transform: translate(0, 0);
+  border-radius: 1rem;
+  box-shadow: none;
+}

@@ -8,6 +8,7 @@ import { twMerge } from 'tailwind-merge'
 import { Code } from '@nextui-org/code'
 import { SiNextdotjs, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
 import { fontMono } from '@/config/fonts'
+import Button from '@/components/Button'
 
 export const Hero = () => {
   return (
@@ -55,7 +56,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        'rounded-lg border-2 border-black bg-coal p-6 text-color shadow-xl',
+        'rounded-xl border-2 border-black bg-coal p-6 text-color shadow-xl',
         className
       )}
       {...rest}
@@ -64,30 +65,25 @@ const Block = ({ className, ...rest }: BlockProps) => {
 }
 
 const IntroBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-7 flex flex-col justify-between bg-opacity-90 text-3xl text-zinc-400">
+  <Block className="col-span-12 row-span-2 md:col-span-8 flex flex-col justify-between bg-none bg-opacity-0 shadow-none border-0 p-0 text-3xl text-zinc-400">
     <div className={clsx(fontMono.variable)}>
-      <h1 className="text-default mb-2">{`Hi, I'm Dmitriy.`}</h1>
+      <h1 className="text-default mb-4">{`Hi, I'm Dmitriy.`}</h1>
       <p>
         {`I'm a`}&nbsp;
         <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
           <span className="relative text-zinc-500">alcoholic</span>&nbsp;
         </span>
       </p>
-      <p>frontend developer.</p>
+      <p className="text-default mb-5">frontend developer.</p>
     </div>
     <div>
-      <NextLink
-        href="#contact"
-        className="text-xl inline-flex dark:text-yellow text-primary dark:hover:text-red hover:text-black transition-all"
-      >
-        Contact me
-      </NextLink>
+      <Button text="Contact me" onClick={() => {}} />
     </div>
   </Block>
 )
 
 const PhotoBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-5 bg-danger flex place-content-center relative overflow-hidden">
+  <Block className="col-span-12 row-span-2 md:col-span-4 bg-success flex place-content-center relative overflow-hidden">
     <Image
       src="/photo.png"
       width="300px"

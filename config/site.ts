@@ -1,5 +1,5 @@
 export type SiteConfig = typeof siteConfig
-import { TbApi } from 'react-icons/tb'
+import { TbApi, TbSql } from 'react-icons/tb'
 import {
   SiHtml5,
   SiCss3,
@@ -26,7 +26,6 @@ import {
   SiFirebase,
   SiPhp,
   SiSymfony,
-  SiMysql,
   SiPostgresql,
   SiWordpress,
   SiFigma,
@@ -122,7 +121,7 @@ export const siteConfig = {
     { label: 'Firebase', icon: SiFirebase },
     { label: 'PHP', icon: SiPhp },
     { label: 'Symfony', icon: SiSymfony },
-    { label: 'MySQL', icon: SiMysql },
+    { label: 'MySQL', icon: TbSql },
     { label: 'PostgreSQL', icon: SiPostgresql },
     { label: 'WordPress', icon: SiWordpress },
     { label: 'Figma', icon: SiFigma },
