@@ -13,7 +13,7 @@ type BlockProps = {
 
 export const Stack = () => {
   return (
-    <section className="stack min-h-screen w-full" id="skills">
+    <section className="stack" id="skills">
       <motion.div
         initial="initial"
         animate="animate"

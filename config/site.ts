@@ -1,8 +1,10 @@
 export type SiteConfig = typeof siteConfig
 import { TbApi, TbSql } from 'react-icons/tb'
+import { LiaOpencart } from 'react-icons/lia'
 import {
   SiHtml5,
   SiCss3,
+  SiSass,
   SiBootstrap,
   SiTailwindcss,
   SiJavascript,
@@ -13,6 +15,7 @@ import {
   SiNextui,
   SiChakraui,
   SiMui,
+  SiFramer,
   SiGit,
   SiGithub,
   SiGitlab,
@@ -94,11 +97,12 @@ export const siteConfig = {
     github: 'https://github.com/njordulv',
     linkedin: 'https://www.linkedin.com/in/dmitriy-chastukhin',
     download:
-      'https://drive.google.com/uc?export=download&id=1aAGrwGR40Sxt5hANrVox0pRtHLTVIwyZ',
+      'https://drive.google.com/uc?export=download&id=1JhYXXGucvwM3x5EwNvGtogT3vH_QM4DC',
   },
   techStackIcons: [
     { label: 'HTML', icon: SiHtml5 },
     { label: 'CSS', icon: SiCss3 },
+    { label: 'SASS', icon: SiSass },
     { label: 'Bootstrap', icon: SiBootstrap },
     { label: 'Tailwind CSS', icon: SiTailwindcss },
     { label: 'JavaScript', icon: SiJavascript },
@@ -109,6 +113,7 @@ export const siteConfig = {
     { label: 'Next UI', icon: SiNextui },
     { label: 'Chakra UI', icon: SiChakraui },
     { label: 'Material UI', icon: SiMui },
+    { label: 'Framer Motion', icon: SiFramer },
     { label: 'Git', icon: SiGit },
     { label: 'GitHub', icon: SiGithub },
     { label: 'GitLab', icon: SiGitlab },
@@ -126,6 +131,7 @@ export const siteConfig = {
     { label: 'MySQL', icon: TbSql },
     { label: 'PostgreSQL', icon: SiPostgresql },
     { label: 'WordPress', icon: SiWordpress },
+    { label: 'Opencart', icon: LiaOpencart },
     { label: 'Figma', icon: SiFigma },
     { label: 'Sketch', icon: SiSketch },
     { label: 'Adobe Photoshop', icon: SiAdobephotoshop },
@@ -141,10 +147,11 @@ export const siteConfig = {
       'Next UI',
       'Chakra UI',
       'Material UI',
+      'Framer Motion',
     ],
-    'Markup languages:': ['HTML', 'CSS'],
-    'CSS frameworks:': ['Bootstrap', 'Tailwind CSS'],
-    'PHP Frameworks:': ['Symfony', 'WordPress'],
+    'Markup Languages:': ['HTML', 'CSS', 'SASS'],
+    'CSS Frameworks:': ['Bootstrap', 'Tailwind CSS'],
+    'PHP Frameworks:': ['Symfony'],
     'Development Tools:': [
       'Git',
       'GitHub',
@@ -157,7 +164,8 @@ export const siteConfig = {
       'Kubernetes',
     ],
     'Databases:': ['MySQL', 'PostgreSQL'],
-    'Server Technologies:': ['Node.js', 'API', 'Firebase'],
+    'Server Technologies and BaaS:': ['Node.js', 'API', 'Firebase'],
+    'CMS:': ['WordPress', 'Opencart'],
     'Design:': ['Figma', 'Sketch', 'Adobe Photoshop'],
     'Task Managers:': ['Jira', 'Trello'],
   },

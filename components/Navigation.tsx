@@ -22,7 +22,7 @@ export const Navigation = () => {
       position="sticky"
       classNames={{
         base: '!backdrop-blur-[1px] bg-coal bg-opacity-80 rounded-xl border-2 border-black shadow-xl',
-        content: 'basis-1/5 sm:basis-full gap-1 sm:gap-6',
+        content: 'basis-1/5 sm:basis-full gap-3',
         brand: 'gap-3 max-w-fit',
       }}
     >
@@ -70,6 +70,7 @@ export const Navigation = () => {
           </Link>
           <ThemeSwitch />
         </NavbarItem>
+        <NavbarMenuToggle className="text-color text-lg lg:hidden" />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4 gap-3" justify="end">
@@ -80,7 +81,7 @@ export const Navigation = () => {
           <SiGithub className="text-color text-lg" />
         </Link>
         <ThemeSwitch />
-        <NavbarMenuToggle />
+        <NavbarMenuToggle className="text-color text-lg lg:hidden" />
       </NavbarContent>
 
       <NavbarMenu>

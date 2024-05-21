@@ -13,14 +13,14 @@ import Button from '@/components/Button'
 
 export const Hero = () => {
   return (
-    <section className="hero min-h-screen" id="hero">
+    <section className="hero" id="hero">
       <motion.div
         initial="initial"
         animate="animate"
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid grid-flow-dense grid-cols-12 gap-7 sm:px-6"
+        className="mx-auto flex flex-col sm:grid sm:grid-cols-12 gap-7 sm:px-6"
       >
         <IntroBlock />
         <PhotoBlock />
@@ -92,7 +92,7 @@ const PhotoBlock = () => (
       alt="Dmitriy Photo"
       className="drop-shadow-lg"
     />
-    <div className="absolute w-full h-full max-w-56 max-h-56 -rotate-[-12deg] -skew-x-[48deg] left-auto bottom-0 bg-beige rounded-full shadow-xl"></div>
+    <div className="absolute w-full h-full max-w-52 sm:max-h-52 -rotate-[-13deg] -skew-x-[48deg] left-auto bottom-0 bg-beige rounded-full shadow-xl"></div>
   </Block>
 )
 
