@@ -2,10 +2,15 @@
   border-radius: 2rem;
   border: 2px dashed black;
   background-color: var(--yellow);
-  padding: 0.75rem 1.6rem;
+  padding: 0.65rem 1.5rem;
+  font-size: 22px;
   font-weight: 600;
   color: black;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .button:hover {

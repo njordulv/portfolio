@@ -93,6 +93,8 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/njordulv',
     linkedin: 'https://www.linkedin.com/in/dmitriy-chastukhin',
+    download:
+      'https://drive.google.com/uc?export=download&id=1aAGrwGR40Sxt5hANrVox0pRtHLTVIwyZ',
   },
   techStackIcons: [
     { label: 'HTML', icon: SiHtml5 },

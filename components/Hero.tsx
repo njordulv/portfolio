@@ -8,6 +8,7 @@ import { twMerge } from 'tailwind-merge'
 import { Code } from '@nextui-org/code'
 import { SiNextdotjs, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
 import { fontMono } from '@/config/fonts'
+import { siteConfig } from '@/config/site'
 import Button from '@/components/Button'
 
 export const Hero = () => {
@@ -76,8 +77,9 @@ const IntroBlock = () => (
       </p>
       <p className="text-default mb-5">frontend developer.</p>
     </div>
-    <div>
+    <div className="flex gap-4 sm:flex-row flex-col">
       <Button text="Contact me" onClick={() => {}} />
+      <Button text="Download CV" download={siteConfig.links.download} />
     </div>
   </Block>
 )
