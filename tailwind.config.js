@@ -47,7 +47,7 @@ module.exports = {
             charcoal: '#555',
             default: '#0f0d0e',
             color: '#333',
-            warning: '#ec39b6',
+            warning: '#fcba28',
           },
         },
         dark: {
@@ -58,7 +58,7 @@ module.exports = {
             charcoal: '#231f20',
             default: '#f9f4da',
             color: '#f9f4da',
-            warning: '#f38ba3',
+            warning: '#fcba28',
           },
         },
       },

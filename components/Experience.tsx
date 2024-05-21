@@ -1,12 +1,20 @@
 'use client'
 
+import clsx from 'clsx'
 import { motion, Variants } from 'framer-motion'
-import styles from '@/styles/experience.module.css'
+import { siteConfig } from '@/config/site'
+import { fontMono } from '@/config/fonts'
 
 interface Props {
-  text: string
-  hueA: number
-  hueB: number
+  children: React.ReactNode
+  color: string
+}
+
+interface ExperienceItem {
+  company: string
+  position: string
+  list: string[]
+  color: string
 }
 
 const cardVariants: Variants = {
@@ -25,11 +33,7 @@ const cardVariants: Variants = {
   },
 }
 
-const hue = (h: number) => `hsl(${h}, 100%, 50%)`
-
-function Card({ text, hueA, hueB }: Props) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`
-
+function Card({ children, color }: Props) {
   return (
     <motion.div
       initial="offscreen"
@@ -37,38 +41,37 @@ function Card({ text, hueA, hueB }: Props) {
       viewport={{ once: true, amount: 0.8 }}
     >
       <motion.div
-        className={styles.card}
+        className={`flex flex-col items-start justify-center gap-2 rounded-xl min-h-48 border-2 border-black bg-${color} p-6 text-color shadow-xl`}
         variants={cardVariants}
-        style={{ background }}
       >
-        {text}
+        {children}
       </motion.div>
     </motion.div>
   )
 }
 
-const food: [string, number, number][] = [
-  ['2013', 340, 10],
-  ['2014', 20, 40],
-  ['2015', 60, 90],
-  ['2016', 80, 120],
-  ['2017', 100, 140],
-  ['2019', 205, 245],
-  ['2021', 260, 290],
-  ['2023', 290, 320],
-]
-
 export const Experience = () => {
   return (
-    <section className={styles.experience} id="experience">
-      <div className={`${styles.wrapper} mx-auto max-w-5xl sm:px-6`}>
-        {food.map(([text, hueA, hueB], index) => (
+    <section className="w-full" id="experience">
+      <div className="flex flex-col items-stretch mx-auto max-w-5xl sm:px-6">
+        <h2 className={clsx(fontMono.variable, 'text-center')}>Experience</h2>
+        {siteConfig.experience.map((item: ExperienceItem, index: number) => (
           <div
-            className={`${styles.container}`}
-            key={text}
+            className="w-[49%]"
+            key={index}
             style={{ alignSelf: index % 2 === 0 ? 'flex-start' : 'flex-end' }}
           >
-            <Card text={text} hueA={hueA} hueB={hueB} />
+            <Card color={item.color}>
+              <h3 className={clsx(fontMono.variable, 'text-black')}>
+                {item.company}
+              </h3>
+              <p className="text-beige">{item.position}</p>
+              <ul className="list-disc pl-4 text-black">
+                {item.list.map((li: string, index: number) => (
+                  <li key={index}>{li}</li>
+                ))}
+              </ul>
+            </Card>
           </div>
         ))}
       </div>

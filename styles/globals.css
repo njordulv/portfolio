@@ -38,6 +38,11 @@ h2 {
   line-height: 42px;
 }
 
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
 .hero,
 header,
 footer {

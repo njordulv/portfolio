@@ -169,4 +169,54 @@ export const siteConfig = {
     'Design:': ['Figma', 'Sketch', 'Adobe Photoshop'],
     'Task Managers:': ['Jira', 'Trello'],
   },
+  experience: [
+    {
+      company: 'TemplateMonster / Site2You',
+      position: 'Webmaster',
+      list: ['Web-mastering, supporting & maintaining websites'],
+      color: 'primary',
+    },
+    {
+      company: 'TemplateMonster',
+      position: 'HTML-coder',
+      list: ['Creating bootstrap & responsive templates'],
+      color: 'secondary',
+    },
+    {
+      company: 'TemplateMonster / ZEMEZ',
+      position: 'Frontend developer',
+      list: [
+        'Template development for the following stores: Open Cart, osCommerce, Zen Cart',
+        'Theme development for Wordpress',
+      ],
+      color: 'danger',
+    },
+    {
+      company: 'Brainstack_',
+      position: 'Frontend developer',
+      list: [
+        'Worked with a multi-brand web application architecture with dedicated controllers, entities, and services, alongside shared common components.',
+        'Implemented a Gulp-based system for front-end optimization and workflow efficiency.',
+        "Designed a localization system for multi-lingual support within the application's routing.",
+        'Used Docker for uniform deployment across various development stages.',
+        'Handled front-end operations using Node.js and NPM, seamlessly integrated with back-end services.',
+        'Developed a multi-tiered architecture with Symfony and Twig, focusing on server-side rendering and template efficiency.',
+        'Collaborated with QA, design, SEO teams, and other units for optimal practice implementation.',
+        'Theme development for Wordpress',
+      ],
+      color: 'success',
+    },
+    {
+      company: '2023 - present',
+      position: 'React developer',
+      list: [
+        'Working on my personal projects on React, Redux Toolkit and JavaScript',
+        'Implement updates using Next.js & TypeScript',
+        'Utilize hooks for API integration with SWR',
+        'Integrate UI component-based architecture',
+        'Incorporate Firebase SDK for authentication, data storage, and cloud functions.',
+      ],
+      color: 'warning',
+    },
+  ],
 }
