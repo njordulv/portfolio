@@ -1,4 +1,4 @@
-import { Hero } from '@/components/Hero'
+import { Hero } from '@/components/hero/Section'
 import { Stack } from '@/components/Stack'
 import { Experience } from '@/components/experience/Section'
 
