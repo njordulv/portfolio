@@ -171,19 +171,25 @@ export const siteConfig = {
   },
   experience: [
     {
-      company: 'TemplateMonster / Site2You',
+      company: 'TemplateMonster',
+      year: 2013,
+      department: 'Site2You',
       position: 'Webmaster',
       list: ['Web-mastering, supporting & maintaining websites'],
       color: 'primary',
     },
     {
       company: 'TemplateMonster',
+      year: 2014,
+      department: 'TemplateMonster',
       position: 'HTML-coder',
       list: ['Creating bootstrap & responsive templates'],
       color: 'secondary',
     },
     {
-      company: 'TemplateMonster / ZEMEZ',
+      company: 'TemplateMonster',
+      year: 2016,
+      department: 'ZEMEZ',
       position: 'Frontend developer',
       list: [
         'Template development for the following stores: Open Cart, osCommerce, Zen Cart',
@@ -193,6 +199,20 @@ export const siteConfig = {
     },
     {
       company: 'Brainstack_',
+      year: 2019,
+      department: 'SEO',
+      position: 'Frontend developer',
+      list: [
+        'Creating & maintaining variable blogs for corporate brands using Wordpress',
+        'Theme development from scratch to deployment',
+        'Custom theme customization using WP API',
+      ],
+      color: 'success',
+    },
+    {
+      company: 'Brainstack_',
+      year: 2021,
+      department: 'Marketing',
       position: 'Frontend developer',
       list: [
         'Worked with a multi-brand web application architecture with dedicated controllers, entities, and services, alongside shared common components.',
@@ -202,9 +222,8 @@ export const siteConfig = {
         'Handled front-end operations using Node.js and NPM, seamlessly integrated with back-end services.',
         'Developed a multi-tiered architecture with Symfony and Twig, focusing on server-side rendering and template efficiency.',
         'Collaborated with QA, design, SEO teams, and other units for optimal practice implementation.',
-        'Theme development for Wordpress',
       ],
-      color: 'success',
+      color: 'warning',
     },
     {
       company: '2023 - present',
@@ -215,8 +234,9 @@ export const siteConfig = {
         'Utilize hooks for API integration with SWR',
         'Integrate UI component-based architecture',
         'Incorporate Firebase SDK for authentication, data storage, and cloud functions.',
+        'Leverage Framer Motion library for creating smooth animations and transitions.',
       ],
-      color: 'warning',
+      color: 'pink',
     },
   ],
 }
