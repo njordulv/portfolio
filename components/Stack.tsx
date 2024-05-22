@@ -1,15 +1,12 @@
 'use client'
 
 import clsx from 'clsx'
-import { MotionProps, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Tooltip } from '@nextui-org/tooltip'
 import { twMerge } from 'tailwind-merge'
+import { BlockProps } from '@/types'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-
-type BlockProps = {
-  className?: string
-} & MotionProps
 
 export const Stack = () => {
   return (

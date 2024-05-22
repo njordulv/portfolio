@@ -1,15 +1,12 @@
 'use client'
 
-import { MotionProps, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
+import { BlockProps } from '@/types'
 import { Intro } from '@/components/hero/Intro'
 import { Photo } from '@/components/hero/Photo'
 import { Tech } from '@/components/hero/Tech'
 import { About } from '@/components/hero/About'
-
-type BlockProps = {
-  className?: string
-} & MotionProps
 
 export const Block = ({ className, ...rest }: BlockProps) => {
   return (

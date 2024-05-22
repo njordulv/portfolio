@@ -40,7 +40,8 @@ import {
 
 export const siteConfig = {
   name: 'Dmitriy Chastukhin',
-  description: 'Portfolio using Next.js + Next UI',
+  description:
+    "A front-end developer's portfolio specializing in React and Next.js",
   navItems: [
     {
       label: 'Home',

@@ -50,6 +50,10 @@ footer {
   font-family: var(--font-sans);
 }
 
+.stack {
+  width: 100%;
+}
+
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 36px;
