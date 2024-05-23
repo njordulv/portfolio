@@ -48,6 +48,7 @@ module.exports = {
             default: '#0f0d0e',
             color: '#333',
             warning: '#fcba28',
+            zinc: { 400: '#71717a' },
           },
         },
         dark: {
@@ -59,6 +60,7 @@ module.exports = {
             default: '#f9f4da',
             color: '#f9f4da',
             warning: '#fcba28',
+            zinc: { 400: '#a1a1aa' },
           },
         },
       },

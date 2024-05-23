@@ -15,7 +15,7 @@ export const Experience = () => {
         </h2>
         {siteConfig.experience.map((item: ExperienceItem, index: number) => (
           <div
-            className="sm:w-[49%] sm:mb-0 w-full mb-6"
+            className="sm:w-[51%] sm:mb-[-24px] w-full mb-6"
             key={index}
             style={{ alignSelf: index % 2 === 0 ? 'flex-start' : 'flex-end' }}
           >
@@ -23,15 +23,11 @@ export const Experience = () => {
               {item.year && (
                 <span className="absolute top-3 right-4">{item.year}</span>
               )}
-              <h3 className={clsx(fontMono.variable, 'text-black')}>
-                {item.company}
-              </h3>
+              <h3 className={clsx(fontMono.variable)}>{item.company}</h3>
               {item.department && (
-                <h4 className={clsx(fontMono.variable, 'text-black')}>
-                  {item.department}
-                </h4>
+                <h4 className={clsx(fontMono.variable)}>{item.department}</h4>
               )}
-              <p className="text-gray">{item.position}</p>
+              <b>{item.position}</b>
               <ul className="list-disc pl-4 text-black">
                 {item.list.map((point: string, index: number) => (
                   <li key={index}>{point}</li>

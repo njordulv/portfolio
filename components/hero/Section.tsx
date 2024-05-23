@@ -29,10 +29,7 @@ export const Block = ({ className, ...rest }: BlockProps) => {
         stiffness: 500,
         damping: 50,
       }}
-      className={twMerge(
-        'rounded-xl border-2 border-black bg-coal p-6 text-color shadow-xl',
-        className
-      )}
+      className={twMerge('rounded-xl text-color border-black', className)}
       {...rest}
     />
   )

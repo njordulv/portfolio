@@ -62,11 +62,17 @@ export const Navigation = () => {
             isExternal
             href={siteConfig.links.linkedin}
             aria-label="LinkedIn"
+            className="text-color text-lg dark:hover:text-warning dark:hover:opacity-100 transition-all"
           >
-            <SiLinkedin className="text-color text-lg" />
+            <SiLinkedin />
           </Link>
-          <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <SiGithub className="text-color text-lg" />
+          <Link
+            isExternal
+            href={siteConfig.links.github}
+            aria-label="Github"
+            className="text-color text-lg dark:hover:text-warning dark:hover:opacity-100 transition-all"
+          >
+            <SiGithub />
           </Link>
           <ThemeSwitch />
         </NavbarItem>

@@ -12,11 +12,11 @@ export const Intro = () => (
       <h1 className="text-default mb-4">{`Hi, I'm Dmitriy.`}</h1>
       <p>
         {`I'm a`}&nbsp;
-        <span className="before:block before:absolute before:-inset-0 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10 rotate-1 rotate:1 before:-rotate-1">
+        <span className="before:block before:absolute before:-inset-1 before:h-[2px] before:top-[58%] before:bg-zinc-500 relative inline-block before:z-10">
           <span className="relative text-zinc-500">alcoholic</span>&nbsp;
         </span>
       </p>
-      <p className="text-default mb-5">frontend developer.</p>
+      <p className="text-default mb-5">front-end developer.</p>
     </div>
     <div className="flex gap-4 sm:flex-row flex-col">
       <Button text="Contact me" onClick={() => {}} />

@@ -31,7 +31,7 @@ export function Card({ children, color }: Props) {
       viewport={{ once: true, amount: 0.8 }}
     >
       <motion.div
-        className={`flex flex-col items-start justify-center gap-2 rounded-xl sm:min-h-48 border-2 border-black bg-${color} p-5 sm:p-6 text-color shadow-xl`}
+        className={`flex flex-col items-start justify-center gap-2 rounded-xl sm:min-h-48 border-2 border-black bg-${color} p-5 sm:p-6 text-black shadow-xl`}
         variants={cardVariants}
       >
         {children}
