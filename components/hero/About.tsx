@@ -1,7 +1,7 @@
 'use client'
 
 import { Code } from '@nextui-org/code'
-import { Block } from '@/components/hero/Section'
+import { Block } from '@/components/hero'
 
 export const About = () => (
   <Block className="col-span-12 md:col-span-7 text-xl sm:text-3xl row-span-2 leading-snug bg-opacity-90">

@@ -40,9 +40,9 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
-          <div className="relative flex flex-col sm:p-6 p-5">
+          <div className="flex flex-col sm:p-6 p-5">
             <Navigation />
-            <main className="container min-h-screen mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 pb-24">
+            <main className="relative overflow-hidden container min-h-screen mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 pb-24">
               {children}
             </main>
             <Footer />

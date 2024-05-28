@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import { SiNextdotjs, SiNextui, SiTailwindcss, SiFramer } from 'react-icons/si'
-import { Block } from '@/components/hero/Section'
+import { Block } from '@/components/hero'
 
 export const Tech = () => (
   <div className="col-span-12 row-span-2 md:col-span-5 grid grid-cols-2 gap-4">

@@ -1,10 +1,12 @@
-import { Hero } from '@/components/hero/Section'
-import { Stack } from '@/components/Stack'
-import { Experience } from '@/components/experience/Section'
+import { Progress } from '@/components/Progress'
+import { Hero } from '@/components/hero'
+import { Stack } from '@/components/skills'
+import { Experience } from '@/components/experience'
 
 export default function Home() {
   return (
     <>
+      <Progress />
       <Hero />
       <Stack />
       <Experience />
