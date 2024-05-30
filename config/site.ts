@@ -174,8 +174,8 @@ export const siteConfig = {
     {
       company: 'TemplateMonster',
       year: 2014,
-      department: 'HTML Coders',
-      position: 'Coder',
+      department: 'Coders',
+      position: 'HTML Coder',
       list: ['Creating bootstrap & responsive templates'],
       color: 'secondary',
     },

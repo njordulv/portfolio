@@ -54,10 +54,15 @@ footer {
 
 .hero,
 .stack,
-.experience {
+.experience,
+.contacts {
   width: 100%;
   margin-top: -100px;
   padding-top: 100px;
+}
+
+.experience {
+  padding-bottom: 120px;
 }
 
 .progress-bar {
@@ -73,6 +78,25 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-top: 0;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.progress-bar:before,
+.progress-bar:after {
+  content: '';
+  position: absolute;
+  left: -19px;
+  border-radius: 1px;
+  width: 38px;
+  height: 2px;
+  background-color: black;
+  top: 31px;
+  display: block;
+  z-index: 1;
+}
+
+.progress-bar:before {
+  top: auto;
+  bottom: 34px;
 }
 
 .progress-bar-item {

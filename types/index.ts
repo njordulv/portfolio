@@ -1,4 +1,5 @@
 import { SVGProps } from 'react'
+import { IconType } from 'react-icons'
 import { MotionProps } from 'framer-motion'
 
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
@@ -16,4 +17,11 @@ export interface ExperienceItem {
   position: string
   list: string[]
   color: string
+}
+
+export interface ContactsCard {
+  title: string
+  subtitle: string
+  Icon: IconType
+  href: string
 }
