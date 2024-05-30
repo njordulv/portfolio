@@ -44,10 +44,6 @@ export const siteConfig = {
     "A front-end developer's portfolio specializing in React and Next.js",
   navItems: [
     {
-      label: 'Home',
-      href: '#hero',
-    },
-    {
       label: 'About Me',
       href: '#about',
     },
@@ -69,10 +65,6 @@ export const siteConfig = {
     },
   ],
   navMenuItems: [
-    {
-      label: 'Home',
-      href: '#hero',
-    },
     {
       label: 'About Me',
       href: '#about',

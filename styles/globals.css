@@ -5,10 +5,12 @@
 :root {
   --cell: #333;
   --yellow: #fcba28;
+  --zink: #71717a;
 }
 
 .light:root {
   --cell: #dbdbd3;
+  --zink: #a1a1aa;
 }
 
 html {
@@ -50,8 +52,12 @@ footer {
   font-family: var(--font-sans);
 }
 
-.stack {
+.hero,
+.stack,
+.experience {
   width: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
 }
 
 .progress-bar {
@@ -79,6 +85,10 @@ footer {
   position: absolute;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.card-list:last-child .arr-icon {
+  display: none;
 }
 
 @media screen and (max-width: 640px) {

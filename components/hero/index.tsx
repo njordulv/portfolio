@@ -37,7 +37,7 @@ export const Block = ({ className, ...rest }: BlockProps) => {
 
 export const Hero = () => {
   return (
-    <section className="hero" id="hero">
+    <section className="hero" id="about">
       <motion.div
         initial="initial"
         animate="animate"
