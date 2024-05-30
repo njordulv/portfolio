@@ -15,7 +15,7 @@ export const Progress = () => {
   return (
     <div className="progress-bar rounded-b-xl border-black">
       <motion.div
-        className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-t-0"
+        className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
         style={{
           scale,
         }}

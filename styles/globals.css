@@ -58,21 +58,14 @@ footer {
   position: fixed;
   width: 150px;
   height: 150px;
+  left: 26px;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   z-index: 11;
-}
-
-.progress-bar {
   width: 20px;
   border-width: 2px;
   border-style: solid;
   background-color: rgba(255, 255, 255, 0.1);
   border-top: 0;
-  position: fixed;
-  top: 50%;
-  left: 26px;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -101,5 +94,9 @@ footer {
   h3 {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  .progress-bar {
+    left: 12px;
   }
 }
