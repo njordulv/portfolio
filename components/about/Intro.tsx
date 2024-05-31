@@ -7,7 +7,7 @@ import { Block } from '@/components/about'
 import Button from '@/components/Button'
 
 export const Intro = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-8 flex flex-col justify-between bg-none bg-opacity-0 shadow-none border-0 p-0 text-3xl text-zinc-400">
+  <Block className="col-span-12 row-span-2 md:col-span-8 flex flex-col bg-none bg-opacity-0 shadow-none border-0 p-0 text-3xl text-zinc-400">
     <div className={clsx(fontMono.variable)}>
       <h1 className="text-default mb-4">{`Hi, I'm Dmitriy.`}</h1>
       <p>

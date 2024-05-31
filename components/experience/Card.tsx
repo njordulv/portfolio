@@ -5,7 +5,7 @@ import { ExperienceCard } from '@/types'
 
 const cardVariants: Variants = {
   offscreen: {
-    y: 300,
+    y: 200,
     rotate: -10,
   },
   onscreen: {
@@ -14,7 +14,7 @@ const cardVariants: Variants = {
     transition: {
       type: 'spring',
       bounce: 0.4,
-      duration: 0.8,
+      duration: 0.9,
     },
   },
 }
