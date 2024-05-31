@@ -36,6 +36,9 @@ import {
   SiAdobephotoshop,
   SiJira,
   SiTrello,
+  SiGmail,
+  SiLinkedin,
+  SiTelegram,
 } from 'react-icons/si'
 
 export const siteConfig = {
@@ -92,6 +95,32 @@ export const siteConfig = {
     download:
       'https://drive.google.com/uc?export=download&id=1JhYXXGucvwM3x5EwNvGtogT3vH_QM4DC',
   },
+  contacts: [
+    {
+      title: 'Linkedin',
+      subtitle: 'Dmitriy Chastukhin',
+      link: 'https://www.linkedin.com/in/dmitriy-chastukhin',
+      icon: SiLinkedin,
+    },
+    {
+      title: 'Email',
+      subtitle: 'njordulv@gmail.com',
+      link: 'mailto:njordulv@gmail.com',
+      icon: SiGmail,
+    },
+    {
+      title: 'Github',
+      subtitle: 'njordulv',
+      link: 'https://github.com/njordulv',
+      icon: SiGithub,
+    },
+    {
+      title: 'Telegram',
+      subtitle: '@hdimon',
+      link: 'https://t.me/hdimon',
+      icon: SiTelegram,
+    },
+  ],
   techStackIcons: [
     { label: 'HTML', icon: SiHtml5 },
     { label: 'CSS', icon: SiCss3 },
