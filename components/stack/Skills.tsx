@@ -3,29 +3,11 @@
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { Tooltip } from '@nextui-org/tooltip'
-import { twMerge } from 'tailwind-merge'
 import { BlockProps } from '@/types'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 
-export const Stack = () => {
-  return (
-    <section className="stack" id="skills">
-      <motion.div
-        initial="initial"
-        animate="animate"
-        transition={{
-          staggerChildren: 0.1,
-        }}
-        className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
-      >
-        <StackBlock />
-      </motion.div>
-    </section>
-  )
-}
-
-const ListItem = ({ className, ...rest }: BlockProps) => {
+const List = ({ className, ...rest }: BlockProps) => {
   return (
     <motion.li
       variants={{
@@ -46,13 +28,12 @@ const ListItem = ({ className, ...rest }: BlockProps) => {
         stiffness: 300,
         damping: 50,
       }}
-      className={twMerge('', className)}
       {...rest}
     />
   )
 }
 
-const StackBlock = () => (
+export const Skills = () => (
   <div className="col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-xl border-2 border-black bg-beige text-black p-7">
     <h2 className={clsx(fontMono.variable, 'text-red mb-4')}>Tech Stack</h2>
     {Object.entries(siteConfig.techStackCategiries).map(
@@ -66,7 +47,7 @@ const StackBlock = () => (
             {siteConfig.techStackIcons
               .filter((item) => categoryItems.includes(item.label))
               .map((item, index) => (
-                <ListItem
+                <List
                   key={index}
                   className="flex gap-2 border-default"
                   whileHover={{
@@ -84,7 +65,7 @@ const StackBlock = () => (
                       <item.icon size="20" />
                     </span>
                   </Tooltip>
-                </ListItem>
+                </List>
               ))}
           </ul>
         </div>

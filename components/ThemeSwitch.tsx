@@ -5,9 +5,8 @@ import { VisuallyHidden } from '@react-aria/visually-hidden'
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
 import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
+import { GiCeilingLight, GiMoon } from 'react-icons/gi'
 import clsx from 'clsx'
-
-import { SunFilledIcon, MoonFilledIcon } from '@/components/icons'
 
 export interface ThemeSwitchProps {
   className?: string
@@ -68,13 +67,13 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {!isSelected || isSSR ? (
-          <SunFilledIcon
-            size={22}
+          <GiCeilingLight
+            size={20}
             className="text-color dark:hover:text-warning dark:hover:opacity-100 transition-all"
           />
         ) : (
-          <MoonFilledIcon
-            size={22}
+          <GiMoon
+            size={20}
             className="text-color hover:opacity-80 transition-all"
           />
         )}

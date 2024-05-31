@@ -16,7 +16,8 @@ export const Intro = () => (
           <span className="relative text-zinc-500">alcoholic</span>&nbsp;
         </span>
       </p>
-      <p className="text-default mb-5">front-end developer.</p>
+      <p className="text-default">front-end developer.</p>
+      <p className="text-default mb-5">{`Let's connect.`}</p>
     </div>
     <div className="flex gap-4 sm:flex-row flex-col">
       <Button text="Contact me" onClick={() => {}} />
