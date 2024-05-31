@@ -28,7 +28,7 @@ export const Arrow = ({ children }: { children: React.ReactNode }) => {
         stiffness: 500,
         damping: 50,
       }}
-      className="text-[75px] absolute text-zinc-600 hidden sm:flex arr-icon"
+      className="text-[75px] absolute dark:text-zinc-700 text-charcoal hidden sm:flex arr-icon"
     >
       {children}
     </motion.div>

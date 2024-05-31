@@ -1,7 +1,7 @@
 'use client'
 
 import { Image } from '@nextui-org/image'
-import { Block } from '@/components/hero'
+import { Block } from '@/components/about'
 
 export const Photo = () => (
   <Block className="col-span-12 row-span-2 md:col-span-4 bg-success border-2 shadow-xl p-6 flex place-content-center relative overflow-hidden">

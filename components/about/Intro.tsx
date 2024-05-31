@@ -3,7 +3,7 @@
 import clsx from 'clsx'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-import { Block } from '@/components/hero'
+import { Block } from '@/components/about'
 import Button from '@/components/Button'
 
 export const Intro = () => (

@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import { BlockProps } from '@/types'
-import { Intro } from '@/components/hero/Intro'
-import { Photo } from '@/components/hero/Photo'
-import { Tech } from '@/components/hero/Tech'
-import { About } from '@/components/hero/About'
+import { Intro } from '@/components/about/Intro'
+import { Photo } from '@/components/about/Photo'
+import { Tech } from '@/components/about/Tech'
+import { Text } from '@/components/about/Text'
 
 export const Block = ({ className, ...rest }: BlockProps) => {
   return (
@@ -35,7 +35,7 @@ export const Block = ({ className, ...rest }: BlockProps) => {
   )
 }
 
-export const Hero = () => {
+export const About = () => {
   return (
     <section className="hero" id="about">
       <motion.div
@@ -49,7 +49,7 @@ export const Hero = () => {
         <Intro />
         <Photo />
         <Tech />
-        <About />
+        <Text />
       </motion.div>
     </section>
   )
