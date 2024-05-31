@@ -1,11 +1,7 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
-
-interface Props {
-  children: React.ReactNode
-  color: string
-}
+import { ExperienceCard } from '@/types'
 
 const cardVariants: Variants = {
   offscreen: {
@@ -23,7 +19,7 @@ const cardVariants: Variants = {
   },
 }
 
-export function Card({ children, color }: Props) {
+export function Card({ children, color }: ExperienceCard) {
   return (
     <motion.div
       initial="offscreen"

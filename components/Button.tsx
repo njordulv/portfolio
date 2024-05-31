@@ -1,12 +1,7 @@
 import Link from 'next/link'
 import { FaDownload } from 'react-icons/fa6'
+import { ButtonProps } from '@/types'
 import styles from '@/styles/button.module.css'
-
-interface ButtonProps {
-  text: string
-  onClick?: () => void
-  download?: string
-}
 
 const Button: React.FC<ButtonProps> = ({ text, onClick, download }) => {
   if (download) {

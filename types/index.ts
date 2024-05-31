@@ -10,12 +10,23 @@ export type BlockProps = {
   className?: string
 } & MotionProps
 
+export interface ButtonProps {
+  text: string
+  onClick?: () => void
+  download?: string
+}
+
 export interface ExperienceItem {
   company: string
   year?: number
   department?: string
   position: string
   list: string[]
+  color: string
+}
+
+export interface ExperienceCard {
+  children: React.ReactNode
   color: string
 }
 
