@@ -1,6 +1,9 @@
 export type SiteConfig = typeof siteConfig
-import { TbApi, TbSql } from 'react-icons/tb'
+import { TbApi, TbSql, TbHandLoveYou } from 'react-icons/tb'
 import { LiaOpencart } from 'react-icons/lia'
+import { BsMusicNoteBeamed, BsPlaystation } from 'react-icons/bs'
+import { AiFillVideoCamera, AiFillYoutube } from 'react-icons/ai'
+import { MdOutlineDirectionsBike } from 'react-icons/md'
 import {
   SiHtml5,
   SiCss3,
@@ -95,6 +98,43 @@ export const siteConfig = {
     download:
       'https://drive.google.com/uc?export=download&id=1JhYXXGucvwM3x5EwNvGtogT3vH_QM4DC',
   },
+  hobbies: [
+    {
+      name: 'Music',
+      description: 'Listening & creating',
+      icon: BsMusicNoteBeamed,
+    },
+    {
+      name: 'Playing',
+      description: 'Listening & creating',
+      icon: TbHandLoveYou,
+    },
+    {
+      name: 'Photo & Video',
+      description: 'Listening & creating',
+      icon: AiFillVideoCamera,
+    },
+    {
+      name: 'Cycling',
+      description: 'Listening & creating',
+      icon: MdOutlineDirectionsBike,
+    },
+    {
+      name: 'Movies & YouTube',
+      description: 'Listening & creating',
+      icon: AiFillYoutube,
+    },
+    {
+      name: 'Autotuning',
+      description: 'Listening & creating',
+      icon: BsPlaystation,
+    },
+    {
+      name: 'Games',
+      description: 'Listening & creating',
+      icon: BsPlaystation,
+    },
+  ],
   contacts: [
     {
       title: 'Linkedin',

@@ -2,7 +2,9 @@
 
 import clsx from 'clsx'
 import { motion, Variants } from 'framer-motion'
+import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
+import { Item } from '@/components/beyond/Item'
 
 const variants: Variants = {
   offscreen: {
@@ -25,6 +27,7 @@ export const Beyond = () => {
         initial="offscreen"
         whileInView="onscreen"
         variants={variants}
+        viewport={{ once: true }}
         className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
       >
         <div className="col-span-12 row-span-2 sm:col-start-3 sm:col-end-13 shadow-xl flex flex-col rounded-xl border-2 border-black bg-success text-black p-7">
@@ -37,15 +40,14 @@ export const Beyond = () => {
             Beyond Coding
           </h2>
           <div>
-            {/* 
-            1. music
-            2. guitar, bass, etc
-            3. photo & video
-            4. cycling
-            5. traveling
-            6. autotuning
-            7. movie & tv
-            */}
+            {siteConfig.hobbies.map((item) => (
+              <Item
+                key={item.name}
+                name={item.name}
+                description={item.description}
+                Icon={item.icon}
+              />
+            ))}
           </div>
         </div>
       </motion.div>

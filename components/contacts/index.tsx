@@ -25,6 +25,10 @@ export const Contacts = () => {
         initial="offscreen"
         whileInView="onscreen"
         variants={variants}
+        viewport={{ once: true }}
+        transition={{
+          staggerChildren: 0.09,
+        }}
       >
         <h2
           className={clsx(

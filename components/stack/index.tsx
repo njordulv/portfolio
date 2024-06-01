@@ -3,7 +3,7 @@
 import { motion, Variants } from 'framer-motion'
 import { Skills } from '@/components/stack/Skills'
 
-const cardVariants: Variants = {
+const variants: Variants = {
   offscreen: {
     y: 200,
   },
@@ -23,7 +23,8 @@ export const Stack = () => {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        variants={cardVariants}
+        variants={variants}
+        viewport={{ once: true }}
         transition={{
           staggerChildren: 0.09,
         }}

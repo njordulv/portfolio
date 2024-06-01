@@ -43,7 +43,7 @@ export const Navigation = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className="dark:text-primary dark:hover:text-yellow text-red hover:text-black transition-all"
+                className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
                 href={item.href}
               >
                 {item.label}

@@ -3,7 +3,7 @@
 import { motion, Variants } from 'framer-motion'
 import { ExperienceCard } from '@/types'
 
-const cardVariants: Variants = {
+const variants: Variants = {
   offscreen: {
     y: 200,
     rotate: -10,
@@ -28,7 +28,7 @@ export function Card({ children, color }: ExperienceCard) {
     >
       <motion.div
         className={`flex flex-col items-start justify-center gap-2 rounded-xl sm:min-h-48 border-2 border-black bg-${color} p-5 sm:p-6 text-black shadow-xl`}
-        variants={cardVariants}
+        variants={variants}
       >
         {children}
       </motion.div>
