@@ -101,31 +101,37 @@ export const siteConfig = {
   },
   hobbies: [
     {
+      id: 1,
       name: 'Music',
       description: 'Listening & creating',
       icon: BsMusicNoteBeamed,
     },
     {
+      id: 2,
       name: 'Playing',
       description: 'Listening & creating',
       icon: FaGuitar,
     },
     {
+      id: 3,
       name: 'Photo & Video',
       description: 'Listening & creating',
       icon: AiFillVideoCamera,
     },
     {
+      id: 4,
       name: 'Cycling',
       description: 'Listening & creating',
       icon: MdOutlineDirectionsBike,
     },
     {
+      id: 5,
       name: 'Movies & YouTube',
       description: 'Listening & creating',
       icon: AiFillYoutube,
     },
     {
+      id: 6,
       name: 'Games',
       description: 'Listening & creating',
       icon: BsPlaystation,

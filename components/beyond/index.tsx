@@ -2,9 +2,8 @@
 
 import clsx from 'clsx'
 import { motion, Variants } from 'framer-motion'
-import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
-import { Item } from '@/components/beyond/Item'
+import { Hobbies } from '@/components/beyond/Hobbies'
 
 const variants: Variants = {
   offscreen: {
@@ -42,17 +41,7 @@ export const Beyond = () => {
           <div className="text-right text-lg mb-8">
             <p>{`Outside of work I'm probably in the middle of this activities`}</p>
           </div>
-          <p></p>
-          <div>
-            {siteConfig.hobbies.map((item) => (
-              <Item
-                key={item.name}
-                name={item.name}
-                description={item.description}
-                Icon={item.icon}
-              />
-            ))}
-          </div>
+          <Hobbies />
         </div>
       </motion.div>
     </section>
