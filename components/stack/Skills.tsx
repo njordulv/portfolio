@@ -1,37 +1,10 @@
 'use client'
 
 import clsx from 'clsx'
-import { motion } from 'framer-motion'
 import { Tooltip } from '@nextui-org/tooltip'
-import { BlockProps } from '@/types'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-
-const List = ({ className, ...rest }: BlockProps) => {
-  return (
-    <motion.li
-      variants={{
-        initial: {
-          scale: 0.5,
-          y: 50,
-          opacity: 0,
-        },
-        animate: {
-          scale: 1,
-          y: 0,
-          opacity: 1,
-        },
-      }}
-      transition={{
-        type: 'spring',
-        mass: 3,
-        stiffness: 300,
-        damping: 50,
-      }}
-      {...rest}
-    />
-  )
-}
+import { List } from '@/components/stack/List'
 
 export const Skills = () => (
   <div className="relative col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-xl border-2 border-black bg-beige text-black p-7">
