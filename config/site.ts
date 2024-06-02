@@ -2,6 +2,7 @@ export type SiteConfig = typeof siteConfig
 import { TbApi, TbSql } from 'react-icons/tb'
 import { LiaOpencart } from 'react-icons/lia'
 import { FaGuitar } from 'react-icons/fa6'
+import { RiNetflixFill } from 'react-icons/ri'
 import { BsMusicNoteBeamed, BsPlaystation } from 'react-icons/bs'
 import { AiFillVideoCamera, AiFillYoutube } from 'react-icons/ai'
 import { MdOutlineDirectionsBike } from 'react-icons/md'
@@ -43,6 +44,7 @@ import {
   SiGmail,
   SiLinkedin,
   SiTelegram,
+  SiHtmx,
 } from 'react-icons/si'
 
 export const siteConfig = {
@@ -103,38 +105,57 @@ export const siteConfig = {
     {
       id: 1,
       name: 'Music',
-      description: 'Listening & creating',
+      description:
+        'Getting lost in melodies and beats, creating tunes that speak to the soul',
       icon: BsMusicNoteBeamed,
     },
     {
       id: 2,
-      name: 'Playing',
-      description: 'Listening & creating',
+      name: 'Playing Guitar',
+      description:
+        'Strumming my guitar, letting the strings come alive with every chord',
       icon: FaGuitar,
     },
     {
       id: 3,
-      name: 'Photo & Video',
-      description: 'Listening & creating',
+      name: 'Visuals',
+      description: `Capturing life's fleeting moments through the lens, both still and moving, allowing me to immortalize memories and share stories visually`,
       icon: AiFillVideoCamera,
     },
     {
       id: 4,
       name: 'Cycling',
-      description: 'Listening & creating',
+      description:
+        'Feeling the wind in my face as I pedal down open roads, exploring new horizons', // Изменено описание для большей красочности
       icon: MdOutlineDirectionsBike,
     },
     {
       id: 5,
-      name: 'Movies & YouTube',
-      description: 'Listening & creating',
+      name: 'YouTube',
+      description:
+        'Immersing myself in countless stories and topics through YouTube, fueling my curiosity and quenching my thirst for knowledge and entertainment',
       icon: AiFillYoutube,
     },
     {
       id: 6,
-      name: 'Games',
-      description: 'Listening & creating',
+      name: 'Gaming',
+      description:
+        'Diving into the immersive worlds of my favorite games, escaping reality and becoming the hero of extraordinary adventures',
       icon: BsPlaystation,
+    },
+    {
+      id: 7,
+      name: 'Coding',
+      description:
+        'Bringing ideas to life through lines of code, building digital creations',
+      icon: SiHtmx,
+    },
+    {
+      id: 8,
+      name: 'Films & Series',
+      description:
+        'Indulging in captivating narratives on the silver screen and binge-watching gripping series, escaping into other worlds through cinema',
+      icon: RiNetflixFill,
     },
   ],
   contacts: [
