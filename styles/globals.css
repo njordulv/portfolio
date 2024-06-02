@@ -70,7 +70,7 @@ footer {
   position: fixed;
   width: 150px;
   height: 150px;
-  left: 26px;
+  /* left: 26px; */
   top: 50%;
   z-index: 11;
   width: 20px;

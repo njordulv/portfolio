@@ -34,11 +34,15 @@ export const Beyond = () => {
           <h2
             className={clsx(
               fontMono.variable,
-              'text-right text-yellow drop-shadow-md mb-8'
+              'text-right text-yellow drop-shadow-md mb-4'
             )}
           >
             Beyond Coding
           </h2>
+          <div className="text-right text-lg mb-8">
+            <p>{`Outside of work I'm probably in the middle of this activities`}</p>
+          </div>
+          <p></p>
           <div>
             {siteConfig.hobbies.map((item) => (
               <Item

@@ -1,14 +1,25 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { Skills } from '@/components/stack/Skills'
+
+const variants: Variants = {
+  offscreen: {
+    y: 200,
+  },
+  onscreen: {
+    y: 0,
+  },
+}
 
 export const Stack = () => {
   return (
     <section className="stack" id="skills">
       <motion.div
-        initial="initial"
-        animate="animate"
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={variants}
+        viewport={{ once: true }}
         transition={{
           staggerChildren: 0.09,
         }}

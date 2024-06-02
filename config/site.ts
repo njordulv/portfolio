@@ -1,6 +1,7 @@
 export type SiteConfig = typeof siteConfig
-import { TbApi, TbSql, TbHandLoveYou } from 'react-icons/tb'
+import { TbApi, TbSql } from 'react-icons/tb'
 import { LiaOpencart } from 'react-icons/lia'
+import { FaGuitar } from 'react-icons/fa6'
 import { BsMusicNoteBeamed, BsPlaystation } from 'react-icons/bs'
 import { AiFillVideoCamera, AiFillYoutube } from 'react-icons/ai'
 import { MdOutlineDirectionsBike } from 'react-icons/md'
@@ -107,7 +108,7 @@ export const siteConfig = {
     {
       name: 'Playing',
       description: 'Listening & creating',
-      icon: TbHandLoveYou,
+      icon: FaGuitar,
     },
     {
       name: 'Photo & Video',
@@ -123,11 +124,6 @@ export const siteConfig = {
       name: 'Movies & YouTube',
       description: 'Listening & creating',
       icon: AiFillYoutube,
-    },
-    {
-      name: 'Autotuning',
-      description: 'Listening & creating',
-      icon: BsPlaystation,
     },
     {
       name: 'Games',

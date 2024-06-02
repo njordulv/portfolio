@@ -44,7 +44,7 @@ export const Contacts = () => {
       >
         Contacts
       </h2>
-      <div className="text-center mb-8">
+      <div className="text-center text-lg text-default mb-8">
         <p>Shoot me an email if you want to connect.</p>
         <p>{`You can also reach my Telegram if that's more your speed!`}</p>
       </div>

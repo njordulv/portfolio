@@ -2,6 +2,18 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 
+const container = {
+  hidden: { opacity: 0, left: 11 },
+  show: {
+    opacity: 1,
+    left: 26,
+    transition: {
+      type: 'ease',
+      delayChildren: 0.5,
+    },
+  },
+}
+
 export const Progress = () => {
   const { scrollYProgress } = useScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1])
@@ -13,12 +25,17 @@ export const Progress = () => {
   const bubbleY = [0, -150]
 
   return (
-    <div className="progress-bar rounded-b-xl border-black">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="progress-bar rounded-b-xl border-black"
+    >
       <motion.div
-        className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
         style={{
           scale,
         }}
+        className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
       >
         <motion.div
           className="progress-bar-item bg-success"
@@ -57,6 +74,6 @@ export const Progress = () => {
           className="bubble w-[3px] h-[3px]"
         />
       </motion.div>
-    </div>
+    </motion.div>
   )
 }
