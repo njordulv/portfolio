@@ -30,10 +30,11 @@ export interface ExperienceCard {
   color: string
 }
 
-export interface HobbiesCard {
+export interface Hobby {
+  id: string
   name: string
   description: string
-  Icon: IconType
+  icon: IconType
 }
 
 export interface ContactsCard {

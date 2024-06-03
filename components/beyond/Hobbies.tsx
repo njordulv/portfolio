@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-import { ShuffleGrid } from './ShuffleGrid'
+import { ShuffleGrid } from '@/components/beyond/ShuffleGrid'
 
 const variants = {
   initial: {
@@ -29,7 +29,11 @@ export const Hobbies = () => {
 
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-2 items-end gap-6 mx-auto">
-      <motion.div initial="initial" animate="animate">
+      <motion.div
+        initial="initial"
+        animate="animate"
+        className="order-last md:order-first min-h-24"
+      >
         <motion.h3
           key={name}
           variants={variants}

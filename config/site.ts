@@ -102,54 +102,54 @@ export const siteConfig = {
   },
   hobbies: [
     {
-      id: 1,
+      id: '1',
       name: 'Music',
       description:
         'Getting lost in melodies and beats, creating tunes that speak to the soul',
       icon: BsMusicNoteBeamed,
     },
     {
-      id: 2,
+      id: '2',
       name: 'Playing Guitar',
       description:
         'Strumming my guitar, letting the strings come alive with every chord',
       icon: FaGuitar,
     },
     {
-      id: 3,
+      id: '3',
       name: 'Visuals',
       description: `Capturing life's fleeting moments through the lens, both still and moving, allowing me to immortalize memories and share stories visually`,
       icon: AiFillVideoCamera,
     },
     {
-      id: 4,
+      id: '4',
       name: 'Cycling',
       description:
         'Feeling the wind in my face as I pedal down open roads, exploring new horizons', // Изменено описание для большей красочности
       icon: MdOutlineDirectionsBike,
     },
     {
-      id: 5,
+      id: '5',
       name: 'YouTube',
       description:
         'Immersing myself in countless stories and topics through YouTube, fueling my curiosity and quenching my thirst for knowledge and entertainment',
       icon: AiFillYoutube,
     },
     {
-      id: 6,
+      id: '6',
       name: 'Gaming',
       description:
         'Diving into the immersive worlds of my favorite games, escaping reality and becoming the hero of extraordinary adventures',
       icon: BsPlaystation,
     },
     {
-      id: 7,
+      id: '7',
       name: 'Hiking',
       description: 'Exploring new trails bonding with nature',
       icon: MdHiking,
     },
     {
-      id: 8,
+      id: '8',
       name: 'Films & Series',
       description:
         'Indulging in captivating narratives on the silver screen and binge-watching gripping series, escaping into other worlds through cinema',
