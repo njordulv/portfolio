@@ -9,7 +9,7 @@ export const Photo = () => (
     <Image
       src={`${basePath}/photo.png`}
       width={300}
-      height={300}
+      height={318}
       alt="Dmitriy Photo"
       className="drop-shadow-lg"
     />
