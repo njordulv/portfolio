@@ -5,7 +5,7 @@ import { VisuallyHidden } from '@react-aria/visually-hidden'
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
 import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
-import { GiCeilingLight, GiMoon } from 'react-icons/gi'
+import { IoInvertMode, IoInvertModeOutline } from 'react-icons/io5'
 import clsx from 'clsx'
 
 export interface ThemeSwitchProps {
@@ -67,12 +67,12 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {!isSelected || isSSR ? (
-          <GiCeilingLight
+          <IoInvertMode
             size={20}
             className="text-color dark:hover:text-warning dark:hover:opacity-100 transition-all"
           />
         ) : (
-          <GiMoon
+          <IoInvertModeOutline
             size={20}
             className="text-color hover:opacity-80 transition-all"
           />

@@ -5,10 +5,17 @@ import { Skills } from '@/components/stack/Skills'
 
 const variants: Variants = {
   offscreen: {
+    opacity: 0,
     y: 200,
   },
   onscreen: {
+    opacity: 1,
     y: 0,
+    transition: {
+      type: 'spring',
+      bounce: 0.5,
+      duration: 1,
+    },
   },
 }
 

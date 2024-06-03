@@ -4,7 +4,7 @@ import { motion, Variants } from 'framer-motion'
 
 const arrowVariants: Variants = {
   offscreen: {
-    scale: 0.5,
+    scale: 0.2,
     opacity: 0,
     x: 180,
     y: 80,
@@ -20,7 +20,7 @@ export const Arrow = ({ children }: { children: React.ReactNode }) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 1 }}
       variants={arrowVariants}
       transition={{
         type: 'spring',

@@ -5,10 +5,12 @@ import { ExperienceCard } from '@/types'
 
 const variants: Variants = {
   offscreen: {
+    opacity: 0,
     y: 200,
     rotate: -10,
   },
   onscreen: {
+    opacity: 1,
     y: 50,
     rotate: 0,
     transition: {
@@ -24,7 +26,7 @@ export function Card({ children, color }: ExperienceCard) {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.7 }}
     >
       <motion.div
         className={`flex flex-col items-start justify-center gap-2 rounded-xl sm:min-h-48 border-2 border-black bg-${color} p-5 sm:p-6 text-black shadow-xl`}
