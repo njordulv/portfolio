@@ -72,28 +72,6 @@ export const siteConfig = {
       href: '#contacts',
     },
   ],
-  navMenuItems: [
-    {
-      label: 'About Me',
-      href: '#about',
-    },
-    {
-      label: 'Skills',
-      href: '#skills',
-    },
-    {
-      label: 'Experience',
-      href: '#experience',
-    },
-    {
-      label: 'Beyond Coding',
-      href: '#beyond',
-    },
-    {
-      label: 'Contacts',
-      href: '#contacts',
-    },
-  ],
   links: {
     github: 'https://github.com/njordulv',
     linkedin: 'https://www.linkedin.com/in/dmitriy-chastukhin',
