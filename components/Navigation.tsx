@@ -50,11 +50,8 @@ export const Navigation = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-3">
+      <NavbarContent className="flex basis-full" justify="end">
+        <NavbarItem className="flex">
           <Link
             isExternal
             href={siteConfig.links.linkedin}
@@ -63,6 +60,8 @@ export const Navigation = () => {
           >
             <SiLinkedin />
           </Link>
+        </NavbarItem>
+        <NavbarItem className="flex">
           <Link
             isExternal
             href={siteConfig.links.github}
@@ -71,18 +70,10 @@ export const Navigation = () => {
           >
             <SiGithub />
           </Link>
+        </NavbarItem>
+        <NavbarItem className="flex">
           <ThemeSwitch />
         </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4 gap-3" justify="end">
-        <Link isExternal href={siteConfig.links.linkedin} aria-label="LinkedIn">
-          <SiLinkedin className="text-color text-lg" />
-        </Link>
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <SiGithub className="text-color text-lg" />
-        </Link>
-        <ThemeSwitch />
       </NavbarContent>
     </NextUINavbar>
   )

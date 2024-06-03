@@ -20,7 +20,7 @@ export const Text = () => (
         Tailwind CSS
       </Code>
       , and&nbsp;
-      <Code color="warning" size="md" className="relative bottom-[2px]">
+      <Code color="danger" size="md" className="relative bottom-[2px]">
         Framer Motion
       </Code>
       . I like this stack so much so I even built this portfolio based on it.

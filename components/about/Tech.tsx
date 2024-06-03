@@ -19,7 +19,7 @@ export const Tech = () => (
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-4xl text-beige"
+        className="grid h-full place-content-center text-4xl text-white"
       >
         <SiNextdotjs className="drop-shadow-md" />
       </NextLink>
@@ -39,7 +39,7 @@ export const Tech = () => (
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-4xl text-beige"
+        className="grid h-full place-content-center text-4xl text-white"
       >
         <SiNextui className="drop-shadow-md" />
       </NextLink>
@@ -59,7 +59,7 @@ export const Tech = () => (
     >
       <NextLink
         href="#"
-        className="grid h-full place-content-center text-4xl text-beige"
+        className="grid h-full place-content-center text-4xl text-white"
       >
         <SiTailwindcss className="drop-shadow-md" />
       </NextLink>
@@ -77,12 +77,12 @@ export const Tech = () => (
       }}
       className="bg-pink min-h-24 border-2 shadow-xl"
     >
-      <a
+      <NextLink
         href="#"
-        className="grid h-full place-content-center text-4xl text-beige"
+        className="grid h-full place-content-center text-4xl text-white"
       >
         <SiFramer className="drop-shadow-md" />
-      </a>
+      </NextLink>
     </Block>
   </div>
 )
