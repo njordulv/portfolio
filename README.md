@@ -1,6 +1,15 @@
-# Next.js & NextUI Template
+# Next.js & NextUI Resume
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+This app serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
+Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
+
+## Interactive Resume Features
+
+- About: A personal introduction and background information.
+- Skills: A detailed overview of my technical skills.
+- Experience: A timeline of my professional journey, highlighting key roles and achievements.
+- Beyond Coding: Shortly about my hobbies outside of work
+- Contact: Easy ways to get in touch with me, including email and social media links.
 
 ## Technologies Used
 
@@ -10,12 +19,12 @@ This is a template for creating applications using Next.js 14 (app directory) an
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## How to Use
 
 ### Use the template with create-next-app
 
+Use the Template with create-next-app.
 To create a new project based on this template using `create-next-app`, run the following command:
 
 ```bash
@@ -24,28 +33,20 @@ npx create-next-app -e https://github.com/nextui-org/next-app-template
 
 ### Install dependencies
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `yarn`:
 
 ```bash
-npm install
+yarn install
 ```
 
 ### Run the development server
 
 ```bash
-npm run dev
+yarn dev
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to access the app.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+Licensed under the [MIT License](LICENSE).
