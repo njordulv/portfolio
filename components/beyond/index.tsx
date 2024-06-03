@@ -29,16 +29,16 @@ export const Beyond = () => {
         viewport={{ once: true }}
         className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
       >
-        <div className="col-span-12 row-span-2 sm:col-start-3 sm:col-end-13 shadow-xl flex flex-col rounded-xl border-2 border-black bg-success text-black p-7">
+        <div className="col-span-12 row-span-2 sm:col-start-3 sm:col-end-13  shadow-xl flex flex-col rounded-xl border-2 border-black bg-success text-black p-7">
           <h2
             className={clsx(
               fontMono.variable,
-              'text-right text-yellow drop-shadow-md mb-4'
+              ' text-yellow drop-shadow-md mb-4'
             )}
           >
             Beyond Coding
           </h2>
-          <div className="text-right text-lg mb-8">
+          <div className="text-lg mb-8">
             <p>{`Outside of work I'm probably in the middle of this activities`}</p>
           </div>
           <Hobbies />

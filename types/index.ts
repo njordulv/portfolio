@@ -35,3 +35,10 @@ export interface HobbiesCard {
   description: string
   Icon: IconType
 }
+
+export interface ContactsCard {
+  title: string
+  subtitle: string
+  Icon: IconType
+  href: string
+}

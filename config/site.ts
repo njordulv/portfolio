@@ -5,7 +5,7 @@ import { FaGuitar } from 'react-icons/fa6'
 import { RiNetflixFill } from 'react-icons/ri'
 import { BsMusicNoteBeamed, BsPlaystation } from 'react-icons/bs'
 import { AiFillVideoCamera, AiFillYoutube } from 'react-icons/ai'
-import { MdOutlineDirectionsBike } from 'react-icons/md'
+import { MdOutlineDirectionsBike, MdHiking } from 'react-icons/md'
 import {
   SiHtml5,
   SiCss3,
@@ -44,7 +44,6 @@ import {
   SiGmail,
   SiLinkedin,
   SiTelegram,
-  SiHtmx,
 } from 'react-icons/si'
 
 export const siteConfig = {
@@ -145,10 +144,9 @@ export const siteConfig = {
     },
     {
       id: 7,
-      name: 'Coding',
-      description:
-        'Bringing ideas to life through lines of code, building digital creations',
-      icon: SiHtmx,
+      name: 'Hiking',
+      description: 'Exploring new trails bonding with nature',
+      icon: MdHiking,
     },
     {
       id: 8,
