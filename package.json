@@ -1,6 +1,6 @@
 {
-  "name": "next-app-template",
-  "version": "0.0.3",
+  "name": "next-app-portfolio",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,15 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/button": "^2.0.31",
-    "@nextui-org/chip": "^2.0.28",
     "@nextui-org/code": "^2.0.27",
     "@nextui-org/image": "^2.0.27",
-    "@nextui-org/input": "^2.1.21",
-    "@nextui-org/kbd": "^2.0.28",
     "@nextui-org/link": "^2.0.29",
     "@nextui-org/navbar": "^2.0.30",
-    "@nextui-org/snippet": "^2.0.35",
     "@nextui-org/switch": "^2.0.28",
     "@nextui-org/system": "2.1.0",
     "@nextui-org/theme": "2.2.0",
@@ -32,7 +27,6 @@
     "eslint": "8.48.0",
     "eslint-config-next": "14.2.1",
     "framer-motion": "^11.1.9",
-    "intl-messageformat": "^10.5.0",
     "next": "14.2.1",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
