@@ -1,18 +1,6 @@
-'use client'
-
 import clsx from 'clsx'
-import { motion } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
-import { List } from './List'
-
-const containerVariants = {
-  offscreen: {},
-  onscreen: {
-    transition: {
-      staggerChildren: 0.5,
-    },
-  },
-}
+import { List } from '@/components/projects/List'
 
 export const Projects = () => {
   return (
@@ -25,15 +13,9 @@ export const Projects = () => {
       >
         Projects
       </h2>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={containerVariants}
-        className="grid gap-5 grid-cols-1 sm:grid-cols-3 sm:px-6"
-      >
+      <div className="flex items-center justify-center min-h-56">
         <List />
-      </motion.div>
+      </div>
     </section>
   )
 }

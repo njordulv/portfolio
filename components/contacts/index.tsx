@@ -6,6 +6,15 @@ import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { Card } from '@/components/contacts/Card'
 
+const containerVariants = {
+  offscreen: {},
+  onscreen: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+}
+
 const cardVariants = {
   offscreen: {
     scale: 0.5,
@@ -20,15 +29,6 @@ const cardVariants = {
       type: 'spring',
       bounce: 0.4,
       duration: 0.8,
-    },
-  },
-}
-
-const containerVariants = {
-  offscreen: {},
-  onscreen: {
-    transition: {
-      staggerChildren: 0.2,
     },
   },
 }

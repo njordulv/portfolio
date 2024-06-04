@@ -64,6 +64,10 @@ export const siteConfig = {
       href: '#experience',
     },
     {
+      label: 'Projects',
+      href: '#projects',
+    },
+    {
       label: 'Beyond Coding',
       href: '#beyond',
     },
