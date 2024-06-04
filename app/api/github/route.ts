@@ -2,7 +2,7 @@
 
 import type { NextRequest } from 'next/server'
 
-const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN
+const GITHUB_API_TOKEN = process.env.NEXT_PUBLIC_GITHUB_API_TOKEN
 
 export async function GET(req: NextRequest) {
   try {
