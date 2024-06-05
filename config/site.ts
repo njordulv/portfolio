@@ -87,54 +87,52 @@ export const siteConfig = {
       id: '1',
       name: 'Music',
       description:
-        'Getting lost in melodies and beats, creating tunes that speak to the soul',
+        'Creating tunes that speak to the soul and getting lost in melodies.',
       icon: BsMusicNoteBeamed,
     },
     {
       id: '2',
       name: 'Playing Guitar',
-      description:
-        'Strumming my guitar, letting the strings come alive with every chord',
+      description: 'Strumming chords and bringing the guitar strings to life.',
       icon: FaGuitar,
     },
     {
       id: '3',
       name: 'Visuals',
-      description: `Capturing life's fleeting moments through the lens, both still and moving, allowing me to immortalize memories and share stories visually`,
+      description: 'Capturing moments through photography and videography.',
       icon: AiFillVideoCamera,
     },
     {
       id: '4',
       name: 'Cycling',
-      description:
-        'Feeling the wind in my face as I pedal down open roads, exploring new horizons', // Изменено описание для большей красочности
+      description: 'Feeling the wind as I explore new horizons on my bike.',
       icon: MdOutlineDirectionsBike,
     },
     {
       id: '5',
       name: 'YouTube',
       description:
-        'Immersing myself in countless stories and topics through YouTube, fueling my curiosity and quenching my thirst for knowledge and entertainment',
+        'Exploring stories and topics, satisfying my curiosity online.',
       icon: AiFillYoutube,
     },
     {
       id: '6',
       name: 'Gaming',
       description:
-        'Diving into the immersive worlds of my favorite games, escaping reality and becoming the hero of extraordinary adventures',
+        'Diving into immersive game worlds and extraordinary adventures.',
       icon: BsPlaystation,
     },
     {
       id: '7',
       name: 'Hiking',
-      description: 'Exploring new trails bonding with nature',
+      description: 'Exploring new trails and bonding with nature on hikes.',
       icon: MdHiking,
     },
     {
       id: '8',
       name: 'Films & Series',
       description:
-        'Indulging in captivating narratives on the silver screen and binge-watching gripping series, escaping into other worlds through cinema',
+        'Enjoying captivating films and binge-watching gripping series.',
       icon: RiNetflixFill,
     },
   ],

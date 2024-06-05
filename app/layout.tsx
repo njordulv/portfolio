@@ -33,16 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body
-        className={clsx(
-          'min-h-screen antialiased text-beige',
-          fontSans.variable
-        )}
-      >
+      <body className={clsx('antialiased text-beige', fontSans.variable)}>
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <div className="flex flex-col p-6">
             <Navigation />
-            <main className="relative container min-h-screen mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
+            <main className="container mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
               {children}
             </main>
             <Footer />

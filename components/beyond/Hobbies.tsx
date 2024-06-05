@@ -32,7 +32,7 @@ export const Hobbies = () => {
       <motion.div
         initial="initial"
         animate="animate"
-        className="order-last md:order-first min-h-24"
+        className="flex flex-col justify-end order-last md:order-first min-h-24"
       >
         <motion.h3
           key={name}

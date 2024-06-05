@@ -23,6 +23,12 @@ body {
   background-size: 34px 34px;
   background-repeat: repeat;
   font-family: var(--font-sans);
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: calc(100vh - 184px);
 }
 
 .logo,
@@ -71,14 +77,14 @@ footer {
   position: fixed;
   width: 150px;
   height: 150px;
-  top: 50%;
   z-index: 11;
   width: 20px;
   border-width: 2px;
   border-style: solid;
   background-color: rgba(255, 255, 255, 0.1);
   border-top: 0;
-  transform: translateX(-50%) translateY(-50%);
+  bottom: 60px;
+  top: auto;
 }
 
 .progress-bar:before,
@@ -129,6 +135,10 @@ footer {
   h3 {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  main {
+    min-height: calc(100vh - 210px);
   }
 
   .hero,
