@@ -31,6 +31,7 @@ main {
   min-height: calc(100vh - 184px);
 }
 
+.title,
 .logo,
 h1,
 h2,
@@ -135,6 +136,11 @@ footer {
   h3 {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 26px;
   }
 
   main {

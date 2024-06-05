@@ -30,6 +30,14 @@ export interface ExperienceCard {
   color: string
 }
 
+export interface Project {
+  name: string
+  description: string
+  topics: string[]
+  html_url: string
+  homepage?: string
+}
+
 export interface Hobby {
   id: string
   name: string
