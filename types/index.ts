@@ -30,12 +30,17 @@ export interface ExperienceCard {
   color: string
 }
 
-export interface Project {
+export interface ProjectProps {
   name: string
   description: string
   topics: string[]
   html_url: string
   homepage?: string
+  created_at: string
+}
+
+export interface ProjectItems {
+  project: ProjectProps
 }
 
 export interface Hobby {
