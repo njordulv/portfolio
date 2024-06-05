@@ -3,10 +3,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const container = {
-  hidden: { opacity: 0, left: 11 },
+  hidden: { opacity: 0, left: 0 },
   show: {
     opacity: 1,
-    left: 26,
+    left: 12,
     transition: {
       type: 'ease',
       delayChildren: 0.5,

@@ -71,7 +71,6 @@ footer {
   position: fixed;
   width: 150px;
   height: 150px;
-  /* left: 26px; */
   top: 50%;
   z-index: 11;
   width: 20px;
@@ -132,7 +131,17 @@ footer {
     line-height: 28px;
   }
 
-  .progress-bar {
-    left: 12px;
+  .hero,
+  .stack,
+  .experience,
+  .projects,
+  .beyond,
+  .contacts {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
+
+  .experience {
+    padding-bottom: 20px;
   }
 }

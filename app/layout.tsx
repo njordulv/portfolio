@@ -33,7 +33,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </head>
       <body
         className={clsx(
           'min-h-screen antialiased text-beige',
@@ -43,7 +48,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <div className="flex flex-col p-6">
             <Navigation />
-            <main className="relative container min-h-screen mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 pb-24">
+            <main className="relative container min-h-screen mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
               {children}
             </main>
             <Footer />

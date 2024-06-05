@@ -68,12 +68,12 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
       >
         {!isSelected || isSSR ? (
           <IoInvertMode
-            size={20}
+            size={21}
             className="text-color dark:hover:text-warning dark:hover:opacity-100 transition-all"
           />
         ) : (
           <IoInvertModeOutline
-            size={20}
+            size={21}
             className="text-color hover:opacity-80 transition-all"
           />
         )}
