@@ -1,15 +1,16 @@
 # Next.js & NextUI Resume
 
-This app serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
+This template serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
 Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
 
 ## Interactive Resume Features
 
-- About: A personal introduction and background information.
-- Skills: A detailed overview of my technical skills.
-- Experience: A timeline of my professional journey, highlighting key roles and achievements.
-- Beyond Coding: Shortly about my hobbies outside of work
-- Contact: Easy ways to get in touch with me, including email and social media links.
+- **About**: A personal introduction and background information.
+- **Skills**: A detailed overview of my technical and soft skills.
+- **Experience**: A timeline of my professional journey, highlighting key roles and achievements.
+- **Projects**: Showcasing my work by leveraging the GitHub API to display a curated list of my repositories and contributions.
+- **Beyond Coding**: Shortly about my hobbies outside of work.
+- **Contact**: Easy ways to get in touch with me, including email and social media links.
 
 ## Technologies Used
 
@@ -19,6 +20,7 @@ Built with modern web technologies, it provides a comprehensive and engaging way
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
+- [GitHub API](https://docs.github.com/en/rest)
 
 ## How to Use
 

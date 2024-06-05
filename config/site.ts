@@ -47,7 +47,7 @@ import {
 } from 'react-icons/si'
 
 export const siteConfig = {
-  name: 'Dmitriy Chastukhin',
+  name: 'Dmitriy Chastukhin | Portfolio',
   description:
     "A front-end developer's portfolio specializing in React and Next.js",
   navItems: [

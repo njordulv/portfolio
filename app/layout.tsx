@@ -6,7 +6,6 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import clsx from 'clsx'
 import '@/styles/globals.css'
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: `${basePath}/favicon.ico`,
+    icon: `/favicon.ico`,
   },
 }
 
