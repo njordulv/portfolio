@@ -27,6 +27,7 @@ concurrency:
 env:
   NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
   NEXT_PUBLIC_GITHUB_API_TOKEN: ${{ secrets.NEXT_PUBLIC_GITHUB_API_TOKEN }}
+
 jobs:
   # Build job
   build:
@@ -76,6 +77,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Check env variables
+        run: echo $NEXT_PUBLIC_BASE_PATH && echo $NEXT_PUBLIC_GITHUB_API_TOKEN
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
