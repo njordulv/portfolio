@@ -7,7 +7,7 @@ import { siteConfig } from '@/config/site'
 import { List } from '@/components/stack/List'
 
 export const Skills = () => (
-  <div className="relative col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-xl border-2 border-black bg-beige text-black p-7">
+  <div className="relative col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-xl border-2 border-black bg-beige text-black p-5 sm:p-7">
     <h2 className={clsx(fontMono.variable, 'text-red mb-4')}>Tech Stack</h2>
     {Object.entries(siteConfig.techStackCategiries).map(
       ([categoryName, categoryItems]) => (

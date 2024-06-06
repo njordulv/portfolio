@@ -70,10 +70,6 @@ footer {
   padding-top: 130px;
 }
 
-.experience {
-  padding-bottom: 120px;
-}
-
 .progress-bar {
   position: fixed;
   width: 150px;
@@ -119,13 +115,21 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-.card-list:last-child .arr-icon {
+.exp-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+.exp-item:last-child .arr-icon {
   display: none;
 }
 
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 42px;
   }
   h2 {
@@ -149,11 +153,7 @@ footer {
   .projects,
   .beyond,
   .contacts {
-    margin-top: -80px;
-    padding-top: 80px;
-  }
-
-  .experience {
-    padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
   }
 }

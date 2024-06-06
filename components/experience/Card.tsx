@@ -6,12 +6,12 @@ import { ExperienceCard } from '@/types'
 const variants: Variants = {
   offscreen: {
     opacity: 0,
-    y: 200,
-    rotate: -10,
+    y: 150,
+    rotate: -6,
   },
   onscreen: {
     opacity: 1,
-    y: 50,
+    y: 0,
     rotate: 0,
     transition: {
       type: 'spring',

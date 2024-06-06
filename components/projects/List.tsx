@@ -18,10 +18,12 @@ const listVariants = {
 const itemVariants = {
   offscreen: {
     opacity: 0,
+    rotate: -6,
     y: 30,
   },
   onscreen: {
     opacity: 1,
+    rotate: 0,
     y: 0,
     transition: {
       type: 'spring',
@@ -47,7 +49,7 @@ export const List = () => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={listVariants}
       className="grid gap-6 grid-cols-1 sm:grid-cols-3 sm:px-6"
     >

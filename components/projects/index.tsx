@@ -13,7 +13,7 @@ export const Projects = () => {
       >
         Projects
       </h2>
-      <div className="flex items-center justify-center min-h-56">
+      <div className="flex items-center justify-center min-h-60">
         <List />
       </div>
     </section>

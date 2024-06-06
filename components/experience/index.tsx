@@ -12,12 +12,14 @@ export const Experience = () => {
   return (
     <section className="experience" id="experience">
       <div className="flex flex-col items-stretch mx-auto max-w-5xl sm:px-6">
-        <h2 className={clsx(fontMono.variable, 'text-center text-default')}>
+        <h2
+          className={clsx(fontMono.variable, 'text-center text-default mb-8')}
+        >
           Experience
         </h2>
         {siteConfig.experience.map((item: ExperienceItem, index: number) => (
           <div
-            className="sm:w-[51%] sm:mb-[-24px] w-full mb-6 relative card-list"
+            className="exp-item sm:w-[51%] sm:mb-[-24px] w-full"
             key={index}
             style={{ alignSelf: index % 2 === 0 ? 'flex-start' : 'flex-end' }}
           >
