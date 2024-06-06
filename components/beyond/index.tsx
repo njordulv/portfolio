@@ -8,7 +8,7 @@ import { Hobbies } from '@/components/beyond/Hobbies'
 const variants: Variants = {
   offscreen: {
     opacity: 0,
-    y: 200,
+    y: 100,
   },
   onscreen: {
     opacity: 1,

@@ -143,10 +143,6 @@ footer {
     line-height: 26px;
   }
 
-  main {
-    min-height: calc(100vh - 210px);
-  }
-
   .hero,
   .stack,
   .experience,

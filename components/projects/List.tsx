@@ -10,7 +10,7 @@ const listVariants = {
   offscreen: {},
   onscreen: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   },
 }
@@ -47,7 +47,7 @@ export const List = () => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.15 }}
       variants={listVariants}
       className="grid gap-6 grid-cols-1 sm:grid-cols-3 sm:px-6"
     >
