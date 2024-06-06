@@ -1,11 +1,11 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { BlockProps } from '@/types'
 
 export const List = ({ className, ...rest }: BlockProps) => {
   return (
-    <motion.li
+    <m.li
       variants={{
         initial: {
           scale: 0.5,

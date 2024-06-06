@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, Variants } from 'framer-motion'
+import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 import { Skills } from '@/components/stack/Skills'
 
 const variants: Variants = {
@@ -22,18 +22,20 @@ const variants: Variants = {
 export const Stack = () => {
   return (
     <section className="stack" id="skills">
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        variants={variants}
-        viewport={{ once: true }}
-        transition={{
-          staggerChildren: 0.09,
-        }}
-        className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
-      >
-        <Skills />
-      </motion.div>
+      <LazyMotion features={domAnimation}>
+        <m.div
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={variants}
+          viewport={{ once: true }}
+          transition={{
+            staggerChildren: 0.09,
+          }}
+          className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
+        >
+          <Skills />
+        </m.div>
+      </LazyMotion>
     </section>
   )
 }

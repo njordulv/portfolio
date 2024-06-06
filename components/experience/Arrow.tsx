@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, Variants } from 'framer-motion'
+import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 
 const arrowVariants: Variants = {
   offscreen: {
@@ -17,20 +17,22 @@ const arrowVariants: Variants = {
 
 export const Arrow = ({ children }: { children: React.ReactNode }) => {
   return (
-    <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 1 }}
-      variants={arrowVariants}
-      transition={{
-        type: 'spring',
-        mass: 4,
-        stiffness: 500,
-        damping: 50,
-      }}
-      className="text-[75px] absolute dark:text-zinc-700 text-charcoal hidden sm:flex arr-icon"
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1 }}
+        variants={arrowVariants}
+        transition={{
+          type: 'spring',
+          mass: 4,
+          stiffness: 500,
+          damping: 50,
+        }}
+        className="text-[75px] absolute dark:text-zinc-700 text-charcoal hidden sm:flex arr-icon"
+      >
+        {children}
+      </m.div>
+    </LazyMotion>
   )
 }

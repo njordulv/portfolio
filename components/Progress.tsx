@@ -1,6 +1,12 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import {
+  m,
+  LazyMotion,
+  domAnimation,
+  useScroll,
+  useTransform,
+} from 'framer-motion'
 
 const container = {
   hidden: { opacity: 0, left: -13 },
@@ -25,55 +31,57 @@ export const Progress = () => {
   const bubbleY = [0, -150]
 
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="show"
-      className="progress-bar rounded-b-xl border-black"
-    >
-      <motion.div
-        style={{
-          scale,
-        }}
-        className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
+    <LazyMotion features={domAnimation}>
+      <m.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="progress-bar rounded-b-xl border-black"
       >
-        <motion.div
-          className="progress-bar-item bg-success"
+        <m.div
           style={{
-            scaleY: scrollYProgress,
+            scale,
           }}
-        />
-        <motion.span
-          style={{ x: bubble1X }}
-          animate={{ y: bubbleY }}
-          transition={{ repeat: Infinity, repeatType: 'loop', duration: 10 }}
-          className="bubble w-[8px] h-[8px]"
-        />
-        <motion.span
-          style={{ x: bubble2X }}
-          animate={{ y: bubbleY }}
-          transition={{ repeat: Infinity, repeatType: 'loop', duration: 8 }}
-          className="bubble w-[6px] h-[6px]"
-        />
-        <motion.span
-          style={{ x: bubble3X }}
-          animate={{ y: bubbleY }}
-          transition={{ repeat: Infinity, repeatType: 'loop', duration: 6 }}
-          className="bubble w-[5px] h-[5px]"
-        />
-        <motion.span
-          style={{ x: bubble4X }}
-          animate={{ y: bubbleY }}
-          transition={{ repeat: Infinity, repeatType: 'loop', duration: 4 }}
-          className="bubble w-[4px] h-[4px]"
-        />
-        <motion.span
-          style={{ x: bubble5X }}
-          animate={{ y: bubbleY }}
-          transition={{ repeat: Infinity, repeatType: 'loop', duration: 3 }}
-          className="bubble w-[3px] h-[3px]"
-        />
-      </motion.div>
-    </motion.div>
+          className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
+        >
+          <m.div
+            className="progress-bar-item bg-success"
+            style={{
+              scaleY: scrollYProgress,
+            }}
+          />
+          <m.span
+            style={{ x: bubble1X }}
+            animate={{ y: bubbleY }}
+            transition={{ repeat: Infinity, repeatType: 'loop', duration: 10 }}
+            className="bubble w-[8px] h-[8px]"
+          />
+          <m.span
+            style={{ x: bubble2X }}
+            animate={{ y: bubbleY }}
+            transition={{ repeat: Infinity, repeatType: 'loop', duration: 8 }}
+            className="bubble w-[6px] h-[6px]"
+          />
+          <m.span
+            style={{ x: bubble3X }}
+            animate={{ y: bubbleY }}
+            transition={{ repeat: Infinity, repeatType: 'loop', duration: 6 }}
+            className="bubble w-[5px] h-[5px]"
+          />
+          <m.span
+            style={{ x: bubble4X }}
+            animate={{ y: bubbleY }}
+            transition={{ repeat: Infinity, repeatType: 'loop', duration: 4 }}
+            className="bubble w-[4px] h-[4px]"
+          />
+          <m.span
+            style={{ x: bubble5X }}
+            animate={{ y: bubbleY }}
+            transition={{ repeat: Infinity, repeatType: 'loop', duration: 3 }}
+            className="bubble w-[3px] h-[3px]"
+          />
+        </m.div>
+      </m.div>
+    </LazyMotion>
   )
 }

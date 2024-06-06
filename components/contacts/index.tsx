@@ -1,7 +1,7 @@
 'use client'
 
 import clsx from 'clsx'
-import { motion } from 'framer-motion'
+import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { Card } from '@/components/contacts/Card'
@@ -48,24 +48,26 @@ export const Contacts = () => {
         <p>Shoot me an email if you want to connect.</p>
         <p>{`You can also reach my Telegram if that's more your speed!`}</p>
       </div>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.4 }}
-        variants={containerVariants}
-        className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:px-6"
-      >
-        {siteConfig.contacts.map((card) => (
-          <motion.div key={card.title} variants={cardVariants}>
-            <Card
-              title={card.title}
-              subtitle={card.subtitle}
-              href={card.link}
-              Icon={card.icon}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
+      <LazyMotion features={domAnimation}>
+        <m.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.4 }}
+          variants={containerVariants}
+          className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:px-6"
+        >
+          {siteConfig.contacts.map((card) => (
+            <m.div key={card.title} variants={cardVariants}>
+              <Card
+                title={card.title}
+                subtitle={card.subtitle}
+                href={card.link}
+                Icon={card.icon}
+              />
+            </m.div>
+          ))}
+        </m.div>
+      </LazyMotion>
     </section>
   )
 }

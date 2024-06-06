@@ -1,6 +1,6 @@
 'use client'
 
-import { Variants, motion } from 'framer-motion'
+import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 
 const variants = {
   initial: {
@@ -21,34 +21,36 @@ const variants = {
 
 export const Preloader = () => {
   return (
-    <motion.div
-      transition={{
-        staggerChildren: 0.15,
-      }}
-      initial="initial"
-      animate="animate"
-      className="flex gap-1"
-    >
-      <motion.span
-        variants={variants}
-        className="h-11 w-2 rounded-sm bg-default"
-      />
-      <motion.span
-        variants={variants}
-        className="h-11 w-2 rounded-sm bg-default"
-      />
-      <motion.span
-        variants={variants}
-        className="h-11 w-2 rounded-sm bg-default"
-      />
-      <motion.span
-        variants={variants}
-        className="h-11 w-2 rounded-sm bg-default"
-      />
-      <motion.span
-        variants={variants}
-        className="h-11 w-2 rounded-sm bg-default"
-      />
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        transition={{
+          staggerChildren: 0.15,
+        }}
+        initial="initial"
+        animate="animate"
+        className="flex gap-1"
+      >
+        <m.span
+          variants={variants}
+          className="h-11 w-2 rounded-sm bg-default"
+        />
+        <m.span
+          variants={variants}
+          className="h-11 w-2 rounded-sm bg-default"
+        />
+        <m.span
+          variants={variants}
+          className="h-11 w-2 rounded-sm bg-default"
+        />
+        <m.span
+          variants={variants}
+          className="h-11 w-2 rounded-sm bg-default"
+        />
+        <m.span
+          variants={variants}
+          className="h-11 w-2 rounded-sm bg-default"
+        />
+      </m.div>
+    </LazyMotion>
   )
 }

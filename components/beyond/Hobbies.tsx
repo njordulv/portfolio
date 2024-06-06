@@ -1,8 +1,8 @@
 'use client'
 
 import clsx from 'clsx'
+import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { ShuffleGrid } from '@/components/beyond/ShuffleGrid'
@@ -29,26 +29,27 @@ export const Hobbies = () => {
 
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-2 items-end gap-6 mx-auto">
-      <motion.div
-        initial="initial"
-        animate="animate"
-        className="flex flex-col justify-end order-last md:order-first min-h-24"
-      >
-        <motion.h3
-          key={name}
-          variants={variants}
-          className={clsx(fontMono.variable, 'text-yellow drop-shadow-md mb-4')}
+      <LazyMotion features={domAnimation}>
+        <m.div
+          initial="initial"
+          animate="animate"
+          className="flex flex-col justify-end order-last md:order-first min-h-24"
         >
-          {name}
-        </motion.h3>
-        <motion.p
-          key={text}
-          variants={variants}
-          className="text-base md:text-lg"
-        >
-          {text}
-        </motion.p>
-      </motion.div>
+          <m.h3
+            key={name}
+            variants={variants}
+            className={clsx(
+              fontMono.variable,
+              'text-yellow drop-shadow-md mb-4'
+            )}
+          >
+            {name}
+          </m.h3>
+          <m.p key={text} variants={variants} className="text-base md:text-lg">
+            {text}
+          </m.p>
+        </m.div>
+      </LazyMotion>
       <ShuffleGrid setText={setText} setName={setName} />
     </div>
   )

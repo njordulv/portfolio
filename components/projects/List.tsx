@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { Spinner } from '@nextui-org/spinner'
 import useFetcher from '@/hooks/useFetcher'
 import { Item } from '@/components/projects/Item'
@@ -46,22 +46,24 @@ export const List = () => {
   })
 
   return (
-    <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.1 }}
-      variants={listVariants}
-      className="grid gap-6 grid-cols-1 sm:grid-cols-3 sm:px-6"
-    >
-      {sortedByDate.map((project: ProjectProps) => (
-        <motion.div
-          key={project.name}
-          variants={itemVariants}
-          className="flex flex-col gap-4 justify-between p-5 bg-coal rounded-lg border-2 border-black shadow-xl"
-        >
-          <Item project={project} />
-        </motion.div>
-      ))}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={listVariants}
+        className="grid gap-6 grid-cols-1 sm:grid-cols-3 sm:px-6"
+      >
+        {sortedByDate.map((project: ProjectProps) => (
+          <m.div
+            key={project.name}
+            variants={itemVariants}
+            className="flex flex-col gap-4 justify-between p-5 bg-coal rounded-lg border-2 border-black shadow-xl"
+          >
+            <Item project={project} />
+          </m.div>
+        ))}
+      </m.div>
+    </LazyMotion>
   )
 }
