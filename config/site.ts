@@ -279,7 +279,7 @@ export const siteConfig = {
       department: 'Marketing Team',
       position: 'Front-end developer',
       list: [
-        'Orchestrated multi-brand web app architecture, integrating dedicated controllers, entities, services and components',
+        'Worked with multi-brand web app architecture, integrating controllers, entities, services and components',
         'Implemented a Gulp-based system for front-end optimization and workflow efficiency',
         'Engineered localization system for multilingual support',
         'Crafted diverse assets like landings, functional units, promos, emails, checkout pages, i18n, etc.',

@@ -127,6 +127,12 @@ footer {
   display: none;
 }
 
+::selection,
+::-moz-selection {
+  background-color: #ffcc00;
+  color: #231f20;
+}
+
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 35px;
