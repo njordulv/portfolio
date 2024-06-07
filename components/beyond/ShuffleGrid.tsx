@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useCallback } from 'react'
-import { m, LazyMotion, domAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { siteConfig } from '@/config/site'
 import { Hobby } from '@/types'
 
@@ -26,15 +26,14 @@ const generateHobbies = (hobbies: Hobby[]): JSX.Element[] => {
     const Icon = hobby.icon
 
     return (
-      <LazyMotion key={hobby.id} features={domAnimation}>
-        <m.div
-          layout
-          transition={{ duration: 2, type: 'spring' }}
-          className="flex justify-center items-center sm:min-h-28 min-h-20 first:text-yellow text-beige transition-colors"
-        >
-          <Icon className="sm:text-6xl text-4xl drop-shadow-md" />
-        </m.div>
-      </LazyMotion>
+      <motion.div
+        key={hobby.id}
+        layout
+        transition={{ duration: 2, type: 'spring' }}
+        className="flex justify-center items-center sm:min-h-28 min-h-20 first:text-yellow text-beige transition-colors"
+      >
+        <Icon className="sm:text-6xl text-4xl drop-shadow-md" />
+      </motion.div>
     )
   })
 }
