@@ -45,6 +45,10 @@ export const List = () => {
     return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
   })
 
+  const showOnly = sortedByDate.slice(0, 9)
+
+  console.log(data)
+
   return (
     <LazyMotion features={domAnimation}>
       <m.div
@@ -54,7 +58,7 @@ export const List = () => {
         variants={listVariants}
         className="grid gap-6 grid-cols-1 sm:grid-cols-3 sm:px-6"
       >
-        {sortedByDate.map((project: ProjectProps) => (
+        {showOnly.map((project: ProjectProps) => (
           <m.div
             key={project.name}
             variants={itemVariants}
