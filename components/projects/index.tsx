@@ -8,11 +8,14 @@ export const Projects = () => {
       <h2
         className={clsx(
           fontMono.variable,
-          'text-center text-primary drop-shadow-md mb-8'
+          'text-center text-primary drop-shadow-md mb-4'
         )}
       >
         Projects
       </h2>
+      <div className="text-center text-lg text-default mb-8">
+        <p>Below are listed my latest works.</p>
+      </div>
       <div className="flex items-center justify-center min-h-60">
         <List />
       </div>

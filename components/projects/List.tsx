@@ -47,8 +47,6 @@ export const List = () => {
 
   const showOnly = sortedByDate.slice(0, 9)
 
-  console.log(data)
-
   return (
     <LazyMotion features={domAnimation}>
       <m.div
