@@ -1,3 +1,5 @@
+@import '@/styles/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +24,8 @@ body {
     linear-gradient(180deg, var(--cell) 1px, transparent 1px);
   background-size: 34px 34px;
   background-repeat: repeat;
-  font-family: var(--font-sans);
+  background-attachment: fixed;
+  font-family: 'Outfit', sans-serif;
   position: relative;
   overflow-x: hidden;
 }
@@ -37,7 +40,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-mono);
+  font-family: 'Paytone One', monospace;
 }
 h1 {
   font-size: 46px;
@@ -53,10 +56,8 @@ h3 {
   line-height: 32px;
 }
 
-.hero,
-header,
-footer {
-  font-family: var(--font-sans);
+.fontMono {
+  font-family: 'Outfit', monospace;
 }
 
 .hero,
