@@ -1,4 +1,5 @@
-import dynamic from 'next/dynamic'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Metadata, Viewport } from 'next'
 import { siteConfig } from '@/config/site'
 import { fontSans } from '@/config/fonts'
@@ -7,16 +8,6 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import clsx from 'clsx'
 import '@/styles/globals.css'
-
-const Analytics = dynamic(
-  () => import('@vercel/analytics/react').then((mod) => mod.Analytics),
-  { ssr: false }
-)
-
-const SpeedInsights = dynamic(
-  () => import('@vercel/speed-insights/next').then((mod) => mod.SpeedInsights),
-  { ssr: false }
-)
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://njordulv-portfolio.vercel.app'),
