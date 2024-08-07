@@ -1,6 +1,5 @@
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Metadata, Viewport } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { siteConfig } from '@/config/site'
 import { fontSans } from '@/config/fonts'
 import { Providers } from './providers'
@@ -59,7 +58,6 @@ export default function RootLayout({
             <Footer />
           </div>
           <Analytics />
-          <SpeedInsights />
         </Providers>
       </body>
     </html>
