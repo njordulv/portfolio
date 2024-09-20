@@ -83,7 +83,7 @@ export const siteConfig = {
     github: 'https://github.com/njordulv',
     linkedin: 'https://www.linkedin.com/in/dmitriy-chastukhin',
     download:
-      'https://drive.google.com/uc?export=download&id=1wXErvdX2djzzRe15OZoNlkWuOUrTzzgR',
+      'https://drive.google.com/uc?export=download&id=1hKDe_d2pRd9rWVpS_4mR4BY9q6QKQzCJ',
   },
   hobbies: [
     {
