@@ -56,3 +56,9 @@ export interface ContactsCard {
   Icon: IconType
   href: string
 }
+
+export interface NavProps {
+  href: string
+  label: string
+  children: React.ReactNode
+}

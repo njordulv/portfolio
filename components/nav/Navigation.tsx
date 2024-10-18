@@ -10,6 +10,7 @@ import { Link } from '@nextui-org/link'
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
+import { NavItem } from './NavItem'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
@@ -53,26 +54,12 @@ export const Navigation = () => {
       </NavbarContent>
 
       <NavbarContent className="flex basis-full" justify="end">
-        <NavbarItem className="flex">
-          <Link
-            isExternal
-            href={siteConfig.links.linkedin}
-            aria-label="LinkedIn"
-            className="text-color text-lg dark:hover:text-warning dark:hover:opacity-100 transition-all"
-          >
-            <SiLinkedin />
-          </Link>
-        </NavbarItem>
-        <NavbarItem className="flex">
-          <Link
-            isExternal
-            href={siteConfig.links.github}
-            aria-label="Github"
-            className="text-color text-lg dark:hover:text-warning dark:hover:opacity-100 transition-all"
-          >
-            <SiGithub />
-          </Link>
-        </NavbarItem>
+        <NavItem href={siteConfig.links.linkedin} label="LinkedIn">
+          <SiLinkedin />
+        </NavItem>
+        <NavItem href={siteConfig.links.github} label="Github">
+          <SiGithub />
+        </NavItem>
         <NavbarItem className="flex">
           <ThemeSwitch />
         </NavbarItem>
