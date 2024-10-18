@@ -23,8 +23,8 @@ export const Navigation = () => {
         brand: 'gap-3 max-w-fit',
       }}
     >
-      <NavbarContent justify="start">
-        <NavbarBrand as="li">
+      <NavbarContent justify="start" as="div">
+        <NavbarBrand>
           <NextLink
             className="flex justify-start items-center gap-3 text-color"
             href="/"
@@ -36,18 +36,20 @@ export const Navigation = () => {
             </div>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
-        </ul>
+        <NavbarBrand>
+          <ul className="hidden lg:flex gap-4 justify-start ml-2">
+            {siteConfig.navItems.map((item) => (
+              <NavbarItem key={item.href}>
+                <NextLink
+                  className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              </NavbarItem>
+            ))}
+          </ul>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="flex basis-full" justify="end">
