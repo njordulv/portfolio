@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FaDownload } from 'react-icons/fa6'
-import { ButtonProps } from '@/types'
+import { ButtonProps } from '@/types/interfaces'
 import styles from '@/styles/button.module.css'
 
 const Button: React.FC<ButtonProps> = ({ text, onClick, download }) => {

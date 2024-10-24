@@ -1,7 +1,7 @@
 'use client'
 
 import { m } from 'framer-motion'
-import { BlockProps } from '@/types'
+import { BlockProps } from '@/types/types'
 
 export const List = ({ className, ...rest }: BlockProps) => {
   return (

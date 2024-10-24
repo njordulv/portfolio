@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { siteConfig } from '@/config/site'
-import { Hobby } from '@/types'
+import { Hobby } from '@/types/interfaces'
 
 const shuffle = (array: Hobby[]): Hobby[] => {
   let currentIndex = array.length,

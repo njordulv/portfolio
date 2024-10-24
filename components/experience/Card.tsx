@@ -1,7 +1,7 @@
 'use client'
 
 import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
-import { ExperienceCard } from '@/types'
+import { ExperienceCard } from '@/types/interfaces'
 
 const variants: Variants = {
   offscreen: {

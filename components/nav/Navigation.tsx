@@ -6,7 +6,6 @@ import {
   NavbarBrand,
   NavbarItem,
 } from '@nextui-org/navbar'
-import { Link } from '@nextui-org/link'
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'

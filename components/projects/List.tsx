@@ -4,7 +4,7 @@ import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { Spinner } from '@nextui-org/spinner'
 import useFetcher from '@/hooks/useFetcher'
 import { Item } from '@/components/projects/Item'
-import { ProjectProps } from '@/types'
+import { ProjectProps } from '@/types/interfaces'
 
 const listVariants = {
   offscreen: {},

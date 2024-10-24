@@ -1,5 +1,3 @@
-'use client'
-
 import { Code } from '@nextui-org/code'
 import { Block } from '@/components/about'
 

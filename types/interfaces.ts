@@ -1,14 +1,4 @@
-import { SVGProps } from 'react'
 import { IconType } from 'react-icons'
-import { MotionProps } from 'framer-motion'
-
-export type IconSvgProps = SVGProps<SVGSVGElement> & {
-  size?: number
-}
-
-export type BlockProps = {
-  className?: string
-} & MotionProps
 
 export interface ButtonProps {
   text: string

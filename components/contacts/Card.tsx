@@ -1,4 +1,4 @@
-import { ContactsCard } from '@/types'
+import { ContactsCard } from '@/types/interfaces'
 import { Link } from '@nextui-org/link'
 
 export const Card = ({ title, subtitle, Icon, href }: ContactsCard) => {

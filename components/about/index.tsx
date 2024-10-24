@@ -2,7 +2,7 @@
 
 import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
-import { BlockProps } from '@/types'
+import { BlockProps } from '@/types/types'
 import { Intro } from '@/components/about/Intro'
 import { Photo } from '@/components/about/Photo'
 import { Tech } from '@/components/about/Tech'

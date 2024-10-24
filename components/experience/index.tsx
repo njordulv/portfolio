@@ -3,7 +3,7 @@
 import clsx from 'clsx'
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
-import { ExperienceItem } from '@/types'
+import { ExperienceItem } from '@/types/interfaces'
 import { Card } from '@/components/experience/Card'
 import { Arrow } from '@/components/experience/Arrow'
 import { PiArrowBendDownLeft, PiArrowBendDownRight } from 'react-icons/pi'

@@ -1,5 +1,3 @@
-'use client'
-
 import clsx from 'clsx'
 import { Tooltip } from '@nextui-org/tooltip'
 import { fontMono } from '@/config/fonts'

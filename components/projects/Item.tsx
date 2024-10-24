@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { Link } from '@nextui-org/link'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { fontMono } from '@/config/fonts'
-import { ProjectItems } from '@/types'
+import { ProjectItems } from '@/types/interfaces'
 
 export const Item: React.FC<ProjectItems> = ({ project }) => {
   return (
