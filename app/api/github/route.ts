@@ -7,7 +7,7 @@ const GITHUB_API_TOKEN = process.env.NEXT_PUBLIC_GITHUB_API_TOKEN
 export async function GET(req: NextRequest) {
   try {
     const response = await fetch(
-      'https://api.github.com/users/njordulv/repos?per_page=12',
+      'https://api.github.com/users/njordulv/repos?per_page=9',
       {
         headers: {
           Authorization: `Bearer ${GITHUB_API_TOKEN}`,
