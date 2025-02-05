@@ -5,7 +5,7 @@ import {
   NavbarContent,
   NavbarBrand,
   NavbarItem,
-} from '@nextui-org/navbar'
+} from "@heroui/navbar"
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'

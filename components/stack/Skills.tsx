@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Tooltip } from '@nextui-org/tooltip'
+import { Tooltip } from "@heroui/tooltip"
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { List } from '@/components/stack/List'

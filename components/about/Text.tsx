@@ -1,4 +1,4 @@
-import { Code } from '@nextui-org/code'
+import { Code } from "@heroui/code"
 import { Block } from '@/components/about'
 
 export const Text = () => (

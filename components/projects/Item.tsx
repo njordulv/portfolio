@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Link } from '@nextui-org/link'
+import { Link } from "@heroui/link"
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { fontMono } from '@/config/fonts'
 import { ProjectItems } from '@/types/interfaces'

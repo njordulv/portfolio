@@ -1,7 +1,7 @@
 'use client'
 
 import { m, LazyMotion, domAnimation } from 'framer-motion'
-import { Spinner } from '@nextui-org/spinner'
+import { Spinner } from "@heroui/spinner"
 import useFetcher from '@/hooks/useFetcher'
 import { Item } from '@/components/projects/Item'
 import { ProjectProps } from '@/types/interfaces'

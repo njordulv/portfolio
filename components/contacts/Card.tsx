@@ -1,5 +1,5 @@
 import { ContactsCard } from '@/types/interfaces'
-import { Link } from '@nextui-org/link'
+import { Link } from "@heroui/link"
 
 export const Card = ({ title, subtitle, Icon, href }: ContactsCard) => {
   return (

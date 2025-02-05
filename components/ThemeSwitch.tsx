@@ -1,7 +1,7 @@
 'use client'
 
 import { VisuallyHidden } from '@react-aria/visually-hidden'
-import { SwitchProps, useSwitch } from '@nextui-org/switch'
+import { SwitchProps, useSwitch } from "@heroui/switch"
 import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
 import { IoInvertMode, IoInvertModeOutline } from 'react-icons/io5'

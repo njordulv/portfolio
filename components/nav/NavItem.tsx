@@ -1,5 +1,5 @@
-import { Link } from '@nextui-org/link'
-import { NavbarItem } from '@nextui-org/navbar'
+import { Link } from "@heroui/link"
+import { NavbarItem } from "@heroui/navbar"
 import { NavProps } from '@/types/interfaces'
 
 export const NavItem = ({ href, label, children }: NavProps) => {
