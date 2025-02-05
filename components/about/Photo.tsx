@@ -1,8 +1,8 @@
-import { Image } from "@heroui/image"
+import { Image } from '@heroui/image'
 import { Block } from '@/components/about'
 
 export const Photo = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-4 bg-success border-2 shadow-xl p-6 overflow-hidden">
+  <Block className="col-span-12 row-span-2 md:col-span-4 bg-[var(--success)] border-2 shadow-xl p-6 overflow-hidden">
     <figure className="relative flex justify-center items-end w-full h-full">
       <Image
         src="/photo.png"

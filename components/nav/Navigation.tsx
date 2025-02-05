@@ -5,7 +5,7 @@ import {
   NavbarContent,
   NavbarBrand,
   NavbarItem,
-} from "@heroui/navbar"
+} from '@heroui/navbar'
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
 import { fontMono } from '@/config/fonts'
@@ -18,7 +18,7 @@ export const Navigation = () => {
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-[1px] bg-coal bg-opacity-80 rounded-xl border-2 border-black shadow-xl',
+        base: '!backdrop-blur-[1px] bg-coal/80 rounded-xl border-2 border-black shadow-xl',
         content: 'basis-1/5 sm:basis-full gap-3',
         brand: 'gap-3 max-w-fit',
       }}

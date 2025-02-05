@@ -3,13 +3,50 @@
 
 :root {
   --cell: #333;
-  --yellow: #fcba28;
   --zink: #71717a;
+  --gray: #0f0d0e;
+  --yellow: #fcba28;
+  --pink: #f38ba3;
+  --green: #0ba95b;
+  --purple: #7b5ea7;
+  --beige: #f9f4da;
+  --blue: #12b5e5;
+  --orange: #fc7428;
+  --red: #ed203d;
+  --primary: #12b5e5;
+  --secondary: #7b5ea7;
+  --success: #0ba95b;
+  --danger: #ed203d;
+
+  --background: #181818;
+  --contrast: black;
+  --coal: #0f0d0e;
+  --charcoal: #231f20;
+  --default: #f9f4da;
+  --color: #f9f4da;
+  --warning: #fcba28;
+  --zinc-400: #a1a1aa;
+
+  --boxShadow-xl: 4px 4px 0 black;
+  --boxShadow-lg: 2px 2px 0 beige;
+
+  --dropShadow-sm: 1px 1px 0 black;
+  --dropShadow-md: 2px 2px 0 black;
+  --dropShadow-lg: 4px 0px 0 black;
+  --dropShadow-xl: 6px -5px 0 black;
 }
 
 .light:root {
   --cell: #dbdbd3;
   --zink: #a1a1aa;
+  --background: beige;
+  --contrast: white;
+  --coal: #fffef2;
+  --charcoal: #555;
+  --default: #0f0d0e;
+  --color: #333;
+  --warning: #fcba28;
+  --zinc-400: #71717a;
 }
 
 html {

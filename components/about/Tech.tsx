@@ -15,7 +15,7 @@ export const Tech = () => (
         scale: 1.1,
         zIndex: 1,
       }}
-      className="bg-blue min-h-24 border-2 shadow-xl"
+      className="bg-[var(--blue)] min-h-24 border-2 shadow-xl"
     >
       <NextLink
         href="#"
@@ -35,7 +35,7 @@ export const Tech = () => (
         scale: 1.1,
         zIndex: 1,
       }}
-      className="bg-secondary min-h-24 border-2 shadow-xl"
+      className="bg-[var(--secondary)] min-h-24 border-2 shadow-xl"
     >
       <NextLink
         href="#"
@@ -55,7 +55,7 @@ export const Tech = () => (
         scale: 1.1,
         zIndex: 1,
       }}
-      className="bg-success min-h-24 border-2 shadow-xl"
+      className="bg-[var(--success)] min-h-24 border-2 shadow-xl"
     >
       <NextLink
         href="#"
@@ -75,7 +75,7 @@ export const Tech = () => (
         scale: 1.1,
         zIndex: 1,
       }}
-      className="bg-pink min-h-24 border-2 shadow-xl"
+      className="bg-[var(--pink)] min-h-24 border-2 shadow-xl"
     >
       <NextLink
         href="#"

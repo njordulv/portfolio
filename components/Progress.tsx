@@ -42,10 +42,10 @@ export const Progress = () => {
           style={{
             scale,
           }}
-          className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white border-opacity-50 border-t-0"
+          className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white/50 border-t-0"
         >
           <m.div
-            className="progress-bar-item bg-success"
+            className="progress-bar-item bg-[var(--success)]"
             style={{
               scaleY: scrollYProgress,
             }}

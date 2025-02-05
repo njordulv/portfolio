@@ -32,23 +32,23 @@ export const Preloader = () => {
       >
         <m.span
           variants={variants}
-          className="h-11 w-2 rounded-sm bg-default"
+          className="h-11 w-2 rounded-xs bg-default"
         />
         <m.span
           variants={variants}
-          className="h-11 w-2 rounded-sm bg-default"
+          className="h-11 w-2 rounded-xs bg-default"
         />
         <m.span
           variants={variants}
-          className="h-11 w-2 rounded-sm bg-default"
+          className="h-11 w-2 rounded-xs bg-default"
         />
         <m.span
           variants={variants}
-          className="h-11 w-2 rounded-sm bg-default"
+          className="h-11 w-2 rounded-xs bg-default"
         />
         <m.span
           variants={variants}
-          className="h-11 w-2 rounded-sm bg-default"
+          className="h-11 w-2 rounded-xs bg-default"
         />
       </m.div>
     </LazyMotion>

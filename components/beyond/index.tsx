@@ -32,7 +32,7 @@ export const Beyond = () => {
           viewport={{ once: true }}
           className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
         >
-          <div className="col-span-12 row-span-2 lg:col-start-3 lg:col-end-13 shadow-xl flex flex-col rounded-xl border-2 border-black bg-success text-black p-5 sm:p-7">
+          <div className="col-span-12 row-span-2 lg:col-start-3 lg:col-end-13 shadow-xl flex flex-col rounded-xl border-2 border-black bg-[var(--success)] text-black p-5 sm:p-7">
             <h2
               className={clsx(
                 fontMono.variable,
