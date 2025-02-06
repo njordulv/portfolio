@@ -1,54 +1,50 @@
-# Next.js & NextUI Resume
+# React + TypeScript + Vite
 
-This template serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
-Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Interactive Resume Features
+Currently, two official plugins are available:
 
-- **About**: A personal introduction and background information.
-- **Skills**: A detailed overview of my technical and soft skills.
-- **Experience**: A timeline of my professional journey, highlighting key roles and achievements.
-- **Projects**: Showcasing my work by leveraging the GitHub API to display a curated list of my repositories and contributions.
-- **Beyond Coding**: Shortly about my hobbies outside of work.
-- **Contact**: Easy ways to get in touch with me, including email and social media links.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Technologies Used
+## Expanding the ESLint configuration
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [GitHub API](https://docs.github.com/en/rest)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## How to Use
+- Configure the top-level `parserOptions` property like this:
 
-### Use the template with create-next-app
-
-Use the Template with create-next-app.
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-### Install dependencies
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `yarn`:
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-```bash
-yarn install
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
 ```
-
-### Run the development server
-
-```bash
-yarn dev
-```
-
-Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to access the app.
-
-## License
-
-Licensed under the [MIT License](LICENSE).
