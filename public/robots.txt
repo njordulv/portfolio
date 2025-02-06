@@ -1,0 +1,11 @@
+User-agent: *
+Disallow:
+
+User-agent: Googlebot
+Disallow: /private/
+Noimageindex: /
+Max-video-preview: -1
+Max-image-preview: large
+Max-snippet: -1
+
+Sitemap: https://njordulv-portfolio.vercel.app

@@ -1,33 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { lazy, Suspense } from 'react'
+import { MetaData } from '@/metadata'
+import { Preloader } from '@/components/Preloader'
+import { Progress } from '@/components/Progress'
+import { About } from '@/components/about'
+import { Navigation } from '@/components/nav/Navigation'
+import { Footer } from '@/components/Footer'
+
+const Stack = lazy(() =>
+  import('@/components/stack').then((mod) => ({ default: mod.Stack }))
+)
+const Experience = lazy(() =>
+  import('@/components/experience').then((mod) => ({ default: mod.Experience }))
+)
+const Beyond = lazy(() =>
+  import('@/components/beyond').then((mod) => ({ default: mod.Beyond }))
+)
+const Contacts = lazy(() =>
+  import('@/components/contacts').then((mod) => ({ default: mod.Contacts }))
+)
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <MetaData />
+      <div className="flex flex-col p-6">
+        <Navigation />
+        <main className="container mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
+          <Progress />
+          <Suspense fallback={<Preloader />}>
+            <About />
+            <Stack />
+            <Experience />
+            <Beyond />
+            <Contacts />
+          </Suspense>
+        </main>
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
