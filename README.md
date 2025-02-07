@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# React & HeroUI Resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
+Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
 
-Currently, two official plugins are available:
+## Interactive Resume Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **About**: A personal introduction and background information.
+- **Skills**: A detailed overview of my technical and soft skills.
+- **Experience**: A timeline of my professional journey, highlighting key roles and achievements.
+- **Projects**: Showcasing my work by leveraging the GitHub API to display a curated list of my repositories and contributions.
+- **Beyond Coding**: Shortly about my hobbies outside of work.
+- **Contact**: Easy ways to get in touch with me, including email and social media links.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React.js 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [React Query](https://tanstack.com/query/latest)
+- [HeroUI v2.6](https://www.heroui.com/)
+- [TailwindCSS v4](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [GitHub API](https://docs.github.com/en/rest)
 
-- Configure the top-level `parserOptions` property like this:
+## How to Use
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Install dependencies
+
+Use the Template with create-next-app.
+To create a new project based on this template using Vite, run the following command:
+
+```bash
+npm create vite@latest my-vue-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+You can use one of the package managers `npm`, `yarn`, `pnpm`, or `bun`.  
+Since you're using `npm`, run the following command:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Open your web browser and navigate to [http://localhost:5173](http://localhost:5173) to access the app.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
