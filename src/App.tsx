@@ -12,6 +12,9 @@ const Stack = lazy(() =>
 const Experience = lazy(() =>
   import('@/components/experience').then((mod) => ({ default: mod.Experience }))
 )
+const Projects = lazy(() =>
+  import('@/components/projects').then((mod) => ({ default: mod.Projects }))
+)
 const Beyond = lazy(() =>
   import('@/components/beyond').then((mod) => ({ default: mod.Beyond }))
 )
@@ -30,6 +33,7 @@ export const App = () => {
         <Suspense fallback={<Preloader />}>
           <Stack />
           <Experience />
+          <Projects />
           <Beyond />
           <Contacts />
         </Suspense>

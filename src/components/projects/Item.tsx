@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Link } from "@heroui/link"
+import { Link } from '@heroui/react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { fontMono } from '@/config/fonts'
 import { ProjectItems } from '@/types/interfaces'
@@ -11,7 +11,7 @@ export const Item: React.FC<ProjectItems> = ({ project }) => {
         <div
           className={clsx(
             fontMono.variable,
-            'title text-secondary-600 capitalize text-xl leading-6'
+            'title text-secondary capitalize text-xl leading-6'
           )}
         >
           {project.name}

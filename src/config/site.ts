@@ -337,4 +337,29 @@ export const siteConfig = {
       color: 'pink',
     },
   ],
+  projectsListVariants: {
+    offscreen: {},
+    onscreen: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  },
+  projectsItemVariants: {
+    offscreen: {
+      opacity: 0,
+      rotate: -6,
+      y: 30,
+    },
+    onscreen: {
+      opacity: 1,
+      rotate: 0,
+      y: 0,
+      transition: {
+        type: 'spring',
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  },
 }
