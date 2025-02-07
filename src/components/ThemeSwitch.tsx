@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 import { IoInvertMode, IoInvertModeOutline } from 'react-icons/io5'
-import clsx from 'clsx'
 
-export interface ThemeSwitchProps {
-  className?: string
-}
-
-export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ className }) => {
+export const ThemeSwitch = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return localStorage.getItem('theme') || 'dark'
   })
@@ -24,19 +19,13 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ className }) => {
   return (
     <button
       onClick={toggleTheme}
-      className={clsx(
-        'cursor-pointer p-1 rounded-lg bg-transparent transition-all',
-        className
-      )}
+      className="cursor-pointer p-1 rounded-lg bg-transparent transition-all text-color  hover:text-red dark:hover:text-yellow"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       {theme === 'light' ? (
-        <IoInvertMode size={21} className="text-color hover:opacity-80" />
+        <IoInvertMode size={21} />
       ) : (
-        <IoInvertModeOutline
-          size={21}
-          className="text-color hover:opacity-80"
-        />
+        <IoInvertModeOutline size={21} />
       )}
     </button>
   )

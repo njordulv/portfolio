@@ -1,9 +1,9 @@
 export const fontSans = {
   fontFamily: 'Outfit, sans-serif',
-  variable: '--font-sans',
+  className: '--font-sans',
 }
 
 export const fontMono = {
   fontFamily: 'Paytone One, monospace',
-  variable: '--font-mono',
+  className: '--font-mono',
 }

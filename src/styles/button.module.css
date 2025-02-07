@@ -2,9 +2,9 @@
   border-radius: 2rem;
   border: 2px dashed black;
   background-color: var(--color-yellow);
-  padding: 0.65rem 1.5rem;
+  padding: 0.97rem 1.55rem;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
   transition: all 0.3s;
   display: flex;

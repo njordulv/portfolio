@@ -341,7 +341,7 @@ export const siteConfig = {
     offscreen: {},
     onscreen: {
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.25,
       },
     },
   },

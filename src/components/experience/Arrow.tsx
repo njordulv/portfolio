@@ -1,5 +1,3 @@
-'use client'
-
 import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 
 const arrowVariants: Variants = {

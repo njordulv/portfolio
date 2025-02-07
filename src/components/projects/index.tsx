@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import { fontMono } from '@/config/fonts'
 import { List } from '@/components/projects/List'
 
@@ -6,10 +5,7 @@ export const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2
-        className={clsx(
-          fontMono.variable,
-          'text-center text-primary drop-shadow-md mb-4'
-        )}
+        className={`${fontMono.className} text-center text-primary drop-shadow-md mb-4`}
       >
         Projects
       </h2>

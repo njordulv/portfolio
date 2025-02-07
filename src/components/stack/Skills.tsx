@@ -1,21 +1,19 @@
-import clsx from 'clsx'
 import { Tooltip } from '@heroui/react'
-import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { List } from '@/components/stack/List'
 
 export const Skills = () => (
   <div className="relative col-span-12 row-span-2 md:col-span-9 shadow-xl flex flex-col rounded-xl border-2 border-black bg-beige text-black p-5 sm:p-7">
-    <h2 className={clsx(fontMono.variable, 'text-red mb-4')}>Tech Stack</h2>
+    <h2 className="text-red mb-4">Tech Stack</h2>
     {Object.entries(siteConfig.techStackCategiries).map(
       ([categoryName, categoryItems]) => (
         <div
           key={categoryName}
           className="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center border-b-1 border-dashed border-stone-400 last:border-b-0 py-2"
         >
-          <h3 className={'text-black text-xl font-medium fontMono'}>
+          <div className={'text-black text-xl font-medium fontMono'}>
             {categoryName}
-          </h3>
+          </div>
           <ul className="flex gap-2 flex-wrap">
             {siteConfig.techStackIcons
               .filter((item) => categoryItems.includes(item.label))

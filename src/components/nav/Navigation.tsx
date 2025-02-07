@@ -1,19 +1,17 @@
-import clsx from 'clsx'
 import {
-  Navbar as NextUINavbar,
+  Navbar as HeroUINavbar,
   NavbarContent,
   NavbarBrand,
   NavbarItem,
 } from '@heroui/react'
 import { SiLinkedin, SiHtmx, SiGithub } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
-import { fontMono } from '@/config/fonts'
 import { NavItem } from './NavItem'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
   return (
-    <NextUINavbar
+    <HeroUINavbar
       maxWidth="xl"
       position="sticky"
       classNames={{
@@ -29,14 +27,14 @@ export const Navigation = () => {
             href="/"
           >
             <SiHtmx size="30" />
-            <div className={clsx(fontMono.variable, 'logo text-xl')}>
+            <div className="logo text-xl">
               <span className="sm:flex hidden">Dmitriy Chastukhin</span>
               <span className="sm:hidden">DC</span>
             </div>
           </a>
         </NavbarBrand>
         <NavbarBrand>
-          <ul className="hidden lg:flex gap-4 justify-start ml-2">
+          <ul className="hidden lg:flex gap-4 justify-start ml-3">
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href}>
                 <a
@@ -51,7 +49,7 @@ export const Navigation = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="flex basis-full" justify="end">
+      <NavbarContent className="flex basis-full gap-2" justify="end">
         <NavItem href={siteConfig.links.linkedin} label="LinkedIn">
           <SiLinkedin />
         </NavItem>
@@ -62,6 +60,6 @@ export const Navigation = () => {
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
-    </NextUINavbar>
+    </HeroUINavbar>
   )
 }

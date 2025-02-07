@@ -1,6 +1,3 @@
-'use client'
-
-import clsx from 'clsx'
 import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { useState } from 'react'
 import { fontMono } from '@/config/fonts'
@@ -38,10 +35,7 @@ export const Hobbies = () => {
           <m.h3
             key={name}
             variants={variants}
-            className={clsx(
-              fontMono.variable,
-              'text-yellow drop-shadow-md mb-4'
-            )}
+            className={`${fontMono.className} text-yellow drop-shadow-md mb-4`}
           >
             {name}
           </m.h3>

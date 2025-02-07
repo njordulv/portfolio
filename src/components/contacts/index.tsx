@@ -1,6 +1,3 @@
-'use client'
-
-import clsx from 'clsx'
 import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
@@ -37,10 +34,7 @@ export const Contacts = () => {
   return (
     <section className="contacts" id="contacts">
       <h2
-        className={clsx(
-          fontMono.variable,
-          'text-center text-pink drop-shadow-md mb-4'
-        )}
+        className={`${fontMono.className} text-center text-pink drop-shadow-md mb-4`}
       >
         Contacts
       </h2>

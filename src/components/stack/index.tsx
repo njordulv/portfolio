@@ -1,5 +1,3 @@
-'use client'
-
 import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 import { Skills } from '@/components/stack/Skills'
 

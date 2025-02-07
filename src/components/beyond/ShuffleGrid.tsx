@@ -1,5 +1,3 @@
-'use client'
-
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { siteConfig } from '@/config/site'
