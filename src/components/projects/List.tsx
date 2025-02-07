@@ -22,8 +22,6 @@ export const List = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ['repos'],
     queryFn: fetchRepos,
-    staleTime: 1000 * 60 * 5,
-    cacheTime: 1000 * 60 * 10,
   })
 
   const sortedByDate = useMemo(() => {

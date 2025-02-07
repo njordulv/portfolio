@@ -19,7 +19,7 @@ const shuffle = (array: Hobby[]): Hobby[] => {
   return array
 }
 
-const generateHobbies = (hobbies: Hobby[]): JSX.Element[] => {
+const generateHobbies = (hobbies: Hobby[]): React.ReactNode => {
   return shuffle(hobbies).map((hobby) => {
     const Icon = hobby.icon
 
@@ -44,7 +44,7 @@ export const ShuffleGrid = ({
   setText: (text: string) => void
 }) => {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
-  const [icons, setIcons] = useState<JSX.Element[]>([])
+  const [icons, setIcons] = useState<React.ReactNode>([])
 
   const shuffleIcons = useCallback(() => {
     setIcons(generateHobbies(siteConfig.hobbies))

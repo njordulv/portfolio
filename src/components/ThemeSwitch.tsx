@@ -3,7 +3,8 @@ import { IoInvertMode, IoInvertModeOutline } from 'react-icons/io5'
 
 export const ThemeSwitch = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    return localStorage.getItem('theme') || 'dark'
+    const storedTheme = localStorage.getItem('theme');
+    return (storedTheme === 'light' || storedTheme === 'dark') ? storedTheme : 'light';
   })
 
   useEffect(() => {
