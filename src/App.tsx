@@ -19,26 +19,22 @@ const Contacts = lazy(() =>
   import('@/components/contacts').then((mod) => ({ default: mod.Contacts }))
 )
 
-function App() {
+export const App = () => {
   return (
     <>
       <MetaData />
-      <div className="flex flex-col p-6">
-        <Navigation />
-        <main className="container mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
-          <Progress />
-          <Suspense fallback={<Preloader />}>
-            <About />
-            <Stack />
-            <Experience />
-            <Beyond />
-            <Contacts />
-          </Suspense>
-        </main>
-        <Footer />
-      </div>
+      <Navigation />
+      <main className="container mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
+        <Progress />
+        <About />
+        <Suspense fallback={<Preloader />}>
+          <Stack />
+          <Experience />
+          <Beyond />
+          <Contacts />
+        </Suspense>
+      </main>
+      <Footer />
     </>
   )
 }
-
-export default App
