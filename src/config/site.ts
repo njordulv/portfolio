@@ -108,84 +108,38 @@ export const siteConfig = {
     download:
       'https://drive.google.com/uc?export=download&id=1hKDe_d2pRd9rWVpS_4mR4BY9q6QKQzCJ',
   },
-  hobbies: [
+  techStack: [
     {
       id: '1',
-      name: 'Music',
-      description:
-        'Creating tunes that speak to the soul and getting lost in melodies.',
-      icon: BsMusicNoteBeamed,
+      name: 'Next.js',
+      rotate: '2.5deg',
+      link: 'https://njordulv-habitifier.vercel.app/',
+      color: 'bg-blue',
+      icon: SiNextdotjs,
     },
     {
       id: '2',
-      name: 'Playing Guitar',
-      description: 'Strumming chords and bringing the guitar strings to life.',
-      icon: FaGuitar,
+      name: 'React',
+      rotate: '3.3deg',
+      link: 'https://njordulv-stopwatch.netlify.app/',
+      color: 'bg-secondary',
+      icon: SiReact,
     },
     {
       id: '3',
-      name: 'Visuals',
-      description: 'Capturing moments through photography and videography.',
-      icon: AiFillVideoCamera,
+      name: 'Tailwind CSS',
+      rotate: '-3.5deg',
+      link: 'https://cinemapp-movie.vercel.app/',
+      color: 'bg-success',
+      icon: SiTailwindcss,
     },
     {
       id: '4',
-      name: 'Cycling',
-      description: 'Feeling the wind as I explore new horizons on my bike.',
-      icon: MdOutlineDirectionsBike,
-    },
-    {
-      id: '5',
-      name: 'YouTube',
-      description:
-        'Exploring stories and topics, satisfying my curiosity online.',
-      icon: AiFillYoutube,
-    },
-    {
-      id: '6',
-      name: 'Gaming',
-      description:
-        'Diving into immersive game worlds and extraordinary adventures.',
-      icon: BsPlaystation,
-    },
-    {
-      id: '7',
-      name: 'Hiking',
-      description: 'Exploring new trails and bonding with nature on hikes.',
-      icon: MdHiking,
-    },
-    {
-      id: '8',
-      name: 'Films & Series',
-      description:
-        'Enjoying captivating films and binge-watching gripping series.',
-      icon: RiNetflixFill,
-    },
-  ],
-  contacts: [
-    {
-      title: 'Linkedin',
-      subtitle: 'Dmitriy Chastukhin',
-      link: 'https://www.linkedin.com/in/dmitriy-chastukhin',
-      icon: SiLinkedin,
-    },
-    {
-      title: 'Email',
-      subtitle: 'njordulv@gmail.com',
-      link: 'mailto:njordulv@gmail.com',
-      icon: SiGmail,
-    },
-    {
-      title: 'Github',
-      subtitle: 'njordulv',
-      link: 'https://github.com/njordulv',
-      icon: SiGithub,
-    },
-    {
-      title: 'Telegram',
-      subtitle: '@hdimon',
-      link: 'https://t.me/hdimon',
-      icon: SiTelegram,
+      name: 'Framer Motion',
+      rotate: '-2.5deg',
+      link: 'https://njordulv-gallows.netlify.app/',
+      color: 'bg-pink',
+      icon: SiFramer,
     },
   ],
   techStackIcons: [
@@ -365,4 +319,84 @@ export const siteConfig = {
       },
     },
   },
+  hobbies: [
+    {
+      id: '1',
+      name: 'Music',
+      description:
+        'Creating tunes that speak to the soul and getting lost in melodies.',
+      icon: BsMusicNoteBeamed,
+    },
+    {
+      id: '2',
+      name: 'Playing Guitar',
+      description: 'Strumming chords and bringing the guitar strings to life.',
+      icon: FaGuitar,
+    },
+    {
+      id: '3',
+      name: 'Visuals',
+      description: 'Capturing moments through photography and videography.',
+      icon: AiFillVideoCamera,
+    },
+    {
+      id: '4',
+      name: 'Cycling',
+      description: 'Feeling the wind as I explore new horizons on my bike.',
+      icon: MdOutlineDirectionsBike,
+    },
+    {
+      id: '5',
+      name: 'YouTube',
+      description:
+        'Exploring stories and topics, satisfying my curiosity online.',
+      icon: AiFillYoutube,
+    },
+    {
+      id: '6',
+      name: 'Gaming',
+      description:
+        'Diving into immersive game worlds and extraordinary adventures.',
+      icon: BsPlaystation,
+    },
+    {
+      id: '7',
+      name: 'Hiking',
+      description: 'Exploring new trails and bonding with nature on hikes.',
+      icon: MdHiking,
+    },
+    {
+      id: '8',
+      name: 'Films & Series',
+      description:
+        'Enjoying captivating films and binge-watching gripping series.',
+      icon: RiNetflixFill,
+    },
+  ],
+  contacts: [
+    {
+      title: 'Linkedin',
+      subtitle: 'Dmitriy Chastukhin',
+      link: 'https://www.linkedin.com/in/dmitriy-chastukhin',
+      icon: SiLinkedin,
+    },
+    {
+      title: 'Email',
+      subtitle: 'njordulv@gmail.com',
+      link: 'mailto:njordulv@gmail.com',
+      icon: SiGmail,
+    },
+    {
+      title: 'Github',
+      subtitle: 'njordulv',
+      link: 'https://github.com/njordulv',
+      icon: SiGithub,
+    },
+    {
+      title: 'Telegram',
+      subtitle: '@hdimon',
+      link: 'https://t.me/hdimon',
+      icon: SiTelegram,
+    },
+  ],
 }

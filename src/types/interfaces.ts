@@ -52,3 +52,11 @@ export interface NavProps {
   label: string
   children: React.ReactNode
 }
+
+export interface TechStackProps {
+  name: string
+  rotate: string
+  color: string
+  link: string
+  Icon: IconType
+}

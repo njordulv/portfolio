@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 import { BlockProps } from '@/types/types'
 import { Intro } from '@/components/about/Intro'
 import { Photo } from '@/components/about/Photo'
-import { Tech } from '@/components/about/Tech'
+import { TechList } from '@/components/about/TechList'
 import { Text } from '@/components/about/Text'
 
 export const Block = ({ className, ...rest }: BlockProps) => {
@@ -47,7 +47,7 @@ export const About = () => {
         >
           <Intro />
           <Photo />
-          <Tech />
+          <TechList />
           <Text />
         </m.div>
       </LazyMotion>
