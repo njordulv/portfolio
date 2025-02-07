@@ -43,7 +43,7 @@ export const About = () => {
           transition={{
             staggerChildren: 0.05,
           }}
-          className="mx-auto flex flex-col sm:grid sm:grid-cols-12 gap-7 sm:px-6"
+          className="mx-auto flex flex-col md:grid md:grid-cols-12 gap-6 md:gap-8 lg:px-6"
         >
           <Intro />
           <Photo />

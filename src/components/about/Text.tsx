@@ -1,41 +1,12 @@
-import { Code } from '@heroui/react'
 import { Block } from '@/components/about'
+import { siteConfig } from '@/config/site'
 
 export const Text = () => (
-  <Block className="col-span-12 md:col-span-7 text-2xl sm:text-3xl row-span-2 leading-snug">
-    <p>I build cool websites like this one.</p>
-    <p className="text-zinc-400">
-      I primarily use&nbsp;
-      <Code
-        color="primary"
-        className="text-primary rounded-md text-sm relative bottom-[2px]"
-      >
-        Next JS
-      </Code>
-      ,&nbsp;
-      <Code
-        color="secondary"
-        className="text-secondary rounded-md text-sm relative bottom-[2px]"
-      >
-        Next UI
-      </Code>
-      ,&nbsp;
-      <Code
-        color="success"
-        className="text-success rounded-md text-sm relative bottom-[2px]"
-      >
-        Tailwind CSS
-      </Code>
-      , and&nbsp;
-      <Code
-        color="danger"
-        className="text-pink rounded-md text-sm relative bottom-[2px]"
-      >
-        Framer Motion
-      </Code>
-      . I like this stack so much so I even built this portfolio based on it.
-      But this is not my limit, I go on broadening my horizons by learning new
-      technologies.
-    </p>
+  <Block className="col-span-12 md:col-span-7 text-xl sm:text-2xl row-span-2 leading-snug">
+    <div className="flex flex-col gap-4">
+      <p>{siteConfig.about.text1}</p>
+      <p className="text-zinc-400">{siteConfig.about.text2}</p>
+      <p>{siteConfig.about.text3}</p>
+    </div>
   </Block>
 )

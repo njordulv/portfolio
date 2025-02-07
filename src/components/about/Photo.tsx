@@ -7,11 +7,11 @@ export const Photo = () => (
       <Image
         src="/photo.png"
         width={300}
-        height={318}
-        alt="Dmitriy Photo"
+        height="auto"
+        alt="Dmitriy, Frontend Developer"
         className="drop-shadow-lg"
       />
-      <figcaption className="sr-only">Dmitriy Photo</figcaption>
+      <figcaption className="sr-only">Dmitriy, Frontend Developer</figcaption>
       <div className="absolute w-full h-full max-w-52 sm:max-h-52 -rotate-[-13deg] -skew-x-[48deg] left-auto bottom-[-25px] bg-beige rounded-full shadow-xl"></div>
     </figure>
   </Block>

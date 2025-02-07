@@ -4,6 +4,7 @@ export interface ButtonProps {
   text: string
   onClick?: () => void
   download?: string
+  ariaLabel?: string
 }
 
 export interface ExperienceItem {

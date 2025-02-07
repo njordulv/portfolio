@@ -99,6 +99,10 @@ a {
   cursor: pointer;
 }
 
+a > button {
+  width: 100%;
+}
+
 .fontMono {
   font-family: 'Outfit', monospace;
 }
@@ -177,9 +181,9 @@ a {
   color: #231f20;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
   h1 {
-    font-size: 35px;
+    font-size: 34px;
     line-height: 42px;
   }
   h2 {

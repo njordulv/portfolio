@@ -108,6 +108,20 @@ export const siteConfig = {
     download:
       'https://drive.google.com/uc?export=download&id=1hKDe_d2pRd9rWVpS_4mR4BY9q6QKQzCJ',
   },
+  about: {
+    title: "Hi, I'm Dmitriy,",
+    role: 'A passionate front-end developer.',
+    subtitle:
+      'I create engaging, high-performance web applications with modern technologies.',
+    contactText: 'Contact me',
+    contactAria: 'Navigate to Contacts section',
+    downloadText: 'Download CV',
+    text1:
+      'This portfolio is a testament to my skills—designed from the ground up using my favorite stack.',
+    text2:
+      'But I don’t stop there. I’m always exploring new tools and frameworks to stay ahead of industry trends and bring even more value to the projects I work on.',
+    text3: 'Let’s connect and build something great together!',
+  },
   techStack: [
     {
       id: '1',
