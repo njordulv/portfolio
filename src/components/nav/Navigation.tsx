@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -37,12 +38,15 @@ export const Navigation = () => {
           <ul className="hidden lg:flex gap-4 justify-start ml-3">
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href}>
-                <a
+                <Link
+                  to={item.href}
+                  smooth={true}
                   className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
-                  href={item.href}
+                  duration={500}
+                  href={`#${item.href}`}
                 >
                   {item.label}
-                </a>
+                </Link>
               </NavbarItem>
             ))}
           </ul>

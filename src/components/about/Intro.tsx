@@ -12,7 +12,7 @@ export const Intro = () => {
         <p className="text-zinc-400 mb-5">{`Let's connect!`}</p>
       </div>
       <div className="flex gap-4 sm:flex-row flex-col">
-        <Link to="contacts" smooth={true} duration={500}>
+        <Link to="contacts" smooth={true} duration={700} href="#/contacts">
           <Button text="Contact me" />
         </Link>
         <Button text="Download CV" download={siteConfig.links.download} />

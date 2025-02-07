@@ -95,6 +95,10 @@ h3 {
   line-height: 32px;
 }
 
+a {
+  cursor: pointer;
+}
+
 .fontMono {
   font-family: 'Outfit', monospace;
 }

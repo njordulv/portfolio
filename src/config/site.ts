@@ -79,27 +79,27 @@ export const siteConfig = {
   navItems: [
     {
       label: 'About Me',
-      href: '#about',
+      href: 'about',
     },
     {
       label: 'Skills',
-      href: '#skills',
+      href: 'skills',
     },
     {
       label: 'Experience',
-      href: '#experience',
+      href: 'experience',
     },
     {
       label: 'Projects',
-      href: '#projects',
+      href: 'projects',
     },
     {
       label: 'Beyond Coding',
-      href: '#beyond',
+      href: 'beyond',
     },
     {
       label: 'Contacts',
-      href: '#contacts',
+      href: 'contacts',
     },
   ],
   links: {
