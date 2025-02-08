@@ -21,9 +21,9 @@ export const Experience = () => {
               )}
               <h3 className="text-xl">{item.company}</h3>
               {item.department && <h4>{item.department}</h4>}
-              <h5>
+              <p>
                 <b>{item.position}</b>
-              </h5>
+              </p>
               <ul className="list-disc pl-4 text-black">
                 {item.list.map((point: string, index: number) => (
                   <li key={index}>{point}</li>
