@@ -81,18 +81,15 @@ h3,
 h4 {
   font-family: 'Paytone One', monospace;
 }
+
 h1 {
   font-size: 46px;
   line-height: 54px;
 }
+
 h2 {
   font-size: 38px;
   line-height: 42px;
-}
-
-h3 {
-  font-size: 26px;
-  line-height: 32px;
 }
 
 a {
@@ -189,11 +186,6 @@ a > button {
   h2 {
     font-size: 28px;
     line-height: 36px;
-  }
-
-  h3 {
-    font-size: 22px;
-    line-height: 28px;
   }
 
   h4 {

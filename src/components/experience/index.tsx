@@ -19,9 +19,11 @@ export const Experience = () => {
               {item.year && (
                 <span className="absolute top-3 right-4">{item.year}</span>
               )}
-              <h3>{item.company}</h3>
+              <h3 className="text-xl">{item.company}</h3>
               {item.department && <h4>{item.department}</h4>}
-              <b>{item.position}</b>
+              <h5>
+                <b>{item.position}</b>
+              </h5>
               <ul className="list-disc pl-4 text-black">
                 {item.list.map((point: string, index: number) => (
                   <li key={index}>{point}</li>

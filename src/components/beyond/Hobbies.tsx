@@ -35,7 +35,7 @@ export const Hobbies = () => {
           <m.h3
             key={name}
             variants={variants}
-            className={`${fontMono.className} text-yellow drop-shadow-md mb-4`}
+            className={`${fontMono.className} text-xl text-yellow drop-shadow-md mb-4`}
           >
             {name}
           </m.h3>

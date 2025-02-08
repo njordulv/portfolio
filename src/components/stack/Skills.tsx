@@ -11,9 +11,9 @@ export const Skills = () => (
           key={categoryName}
           className="grid sm:grid-cols-2 grid-cols-1 gap-2 items-center border-b-1 border-dashed border-stone-400 last:border-b-0 py-2"
         >
-          <div className={'text-black text-xl font-medium fontMono'}>
+          <p className={'text-black text-xl font-medium fontMono'}>
             {categoryName}
-          </div>
+          </p>
           <ul className="flex gap-2 flex-wrap">
             {siteConfig.techStackIcons
               .filter((item) => categoryItems.includes(item.label))

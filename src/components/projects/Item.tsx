@@ -7,11 +7,11 @@ export const Item: React.FC<ProjectItems> = ({ project }) => {
   return (
     <>
       <div className="flex flex-col gap-3">
-        <div
+        <h3
           className={`${fontMono.className} title text-secondary capitalize text-xl leading-6`}
         >
           {project.name}
-        </div>
+        </h3>
         <p className="text-zinc-400">{project.description}</p>
         {project.topics.length !== 0 && (
           <ul className="flex flex-wrap gap-1">
@@ -30,6 +30,7 @@ export const Item: React.FC<ProjectItems> = ({ project }) => {
         <Link
           isExternal
           href={project.html_url}
+          aria-label="GitHub Repository"
           className="text-default hover:text-primary transition-all text-xl cursor-pointer"
         >
           <FaGithub />
@@ -38,6 +39,7 @@ export const Item: React.FC<ProjectItems> = ({ project }) => {
           <Link
             isExternal
             href={project.homepage}
+            aria-label="GitHub Homepage"
             className="text-default hover:text-primary transition-all text-xl cursor-pointer"
           >
             <FaExternalLinkAlt />
