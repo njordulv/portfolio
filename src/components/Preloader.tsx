@@ -22,32 +22,19 @@ export const Preloader = () => {
     <LazyMotion features={domAnimation}>
       <m.div
         transition={{
-          staggerChildren: 0.15,
+          staggerChildren: 0.06,
         }}
         initial="initial"
         animate="animate"
-        className="flex gap-1"
+        className="flex gap-1 mx-auto items-center justify-center h-dvh"
       >
-        <m.span
-          variants={variants}
-          className="h-11 w-2 rounded-xs bg-default"
-        />
-        <m.span
-          variants={variants}
-          className="h-11 w-2 rounded-xs bg-default"
-        />
-        <m.span
-          variants={variants}
-          className="h-11 w-2 rounded-xs bg-default"
-        />
-        <m.span
-          variants={variants}
-          className="h-11 w-2 rounded-xs bg-default"
-        />
-        <m.span
-          variants={variants}
-          className="h-11 w-2 rounded-xs bg-default"
-        />
+        {[...Array(5)].map((_, index) => (
+          <m.span
+            key={index}
+            variants={variants}
+            className="h-10 w-2 rounded-xs bg-default"
+          />
+        ))}
       </m.div>
     </LazyMotion>
   )
