@@ -9,7 +9,7 @@ export interface ButtonProps {
 
 export interface ExperienceItem {
   company: string
-  year?: number
+  year?: string
   department?: string
   position: string
   list: string[]
