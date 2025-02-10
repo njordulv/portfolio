@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Link as LinkTo } from 'react-scroll'
+import { m, LazyMotion, domAnimation } from 'framer-motion'
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -13,10 +13,6 @@ import { NavItem } from './NavItem'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
-  useEffect(() => {
-    document.getElementById('menu')?.classList.remove('opacity-0')
-  }, [])
-
   return (
     <HeroUINavbar
       maxWidth="xl"
@@ -44,24 +40,28 @@ export const Navigation = () => {
 
       <NavbarContent justify="center" as="div">
         <NavbarBrand>
-          <ul
-            className="hidden lg:flex gap-4 justify-start opacity-0 transition-opacity duration-300"
-            id="menu"
-          >
-            {siteConfig.navItems.map((item) => (
-              <NavbarItem key={item.href}>
-                <LinkTo
-                  to={item.href}
-                  smooth={true}
-                  className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
-                  duration={500}
-                  href={`#${item.href}`}
-                >
-                  {item.label}
-                </LinkTo>
-              </NavbarItem>
-            ))}
-          </ul>
+          <LazyMotion features={domAnimation}>
+            <m.ul
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="hidden lg:flex gap-4 justify-start"
+            >
+              {siteConfig.navItems.map((item) => (
+                <NavbarItem key={item.href}>
+                  <LinkTo
+                    to={item.href}
+                    smooth={true}
+                    className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
+                    duration={500}
+                    href={`#${item.href}`}
+                  >
+                    {item.label}
+                  </LinkTo>
+                </NavbarItem>
+              ))}
+            </m.ul>
+          </LazyMotion>
         </NavbarBrand>
       </NavbarContent>
 
