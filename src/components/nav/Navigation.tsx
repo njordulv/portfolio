@@ -1,4 +1,6 @@
-import { Link } from 'react-scroll'
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { Link as LinkTo } from 'react-scroll'
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -11,6 +13,10 @@ import { NavItem } from './NavItem'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const Navigation = () => {
+  useEffect(() => {
+    document.getElementById('menu')?.classList.remove('opacity-0')
+  }, [])
+
   return (
     <HeroUINavbar
       maxWidth="xl"
@@ -23,25 +29,28 @@ export const Navigation = () => {
     >
       <NavbarContent justify="start" as="div">
         <NavbarBrand>
-          <a
+          <Link
             className="flex justify-start items-center gap-3 text-color"
-            href="/"
+            to="/"
           >
             <SiHtmx size="30" />
             <div className="logo text-xl">
               <span className="sm:flex hidden">Dmitriy Chastukhin</span>
               <span className="sm:hidden">DC</span>
             </div>
-          </a>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent justify="center" as="div">
         <NavbarBrand>
-          <ul className="hidden lg:flex gap-4 justify-start">
+          <ul
+            className="hidden lg:flex gap-4 justify-start opacity-0 transition-opacity duration-300"
+            id="menu"
+          >
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href}>
-                <Link
+                <LinkTo
                   to={item.href}
                   smooth={true}
                   className="dark:text-primary dark:hover:text-white text-red hover:text-black transition-all"
@@ -49,7 +58,7 @@ export const Navigation = () => {
                   href={`#${item.href}`}
                 >
                   {item.label}
-                </Link>
+                </LinkTo>
               </NavbarItem>
             ))}
           </ul>
