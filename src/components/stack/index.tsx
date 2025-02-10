@@ -17,7 +17,7 @@ const variants: Variants = {
   },
 }
 
-export const Stack = () => {
+const Stack = () => {
   return (
     <section className="stack" id="skills">
       <LazyMotion features={domAnimation}>
@@ -37,3 +37,5 @@ export const Stack = () => {
     </section>
   )
 }
+
+export default Stack

@@ -30,7 +30,7 @@ const cardVariants = {
   },
 }
 
-export const Contacts = () => {
+const Contacts = () => {
   return (
     <section className="contacts" id="contacts">
       <h2
@@ -65,3 +65,5 @@ export const Contacts = () => {
     </section>
   )
 }
+
+export default Contacts

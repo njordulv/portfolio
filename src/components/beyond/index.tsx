@@ -18,7 +18,7 @@ const variants: Variants = {
   },
 }
 
-export const Beyond = () => {
+const Beyond = () => {
   return (
     <section className="beyond" id="beyond">
       <LazyMotion features={domAnimation}>
@@ -46,3 +46,5 @@ export const Beyond = () => {
     </section>
   )
 }
+
+export default Beyond

@@ -3,25 +3,13 @@ import { MetaData } from '@/metadata'
 import { Preloader } from '@/components/Preloader'
 import { About } from '@/components/about'
 import { Navigation } from '@/components/nav/Navigation'
+import { Footer } from '@/components/Footer'
 
-const Stack = lazy(() =>
-  import('@/components/stack').then((mod) => ({ default: mod.Stack }))
-)
-const Experience = lazy(() =>
-  import('@/components/experience').then((mod) => ({ default: mod.Experience }))
-)
-const Projects = lazy(() =>
-  import('@/components/projects').then((mod) => ({ default: mod.Projects }))
-)
-const Beyond = lazy(() =>
-  import('@/components/beyond').then((mod) => ({ default: mod.Beyond }))
-)
-const Contacts = lazy(() =>
-  import('@/components/contacts').then((mod) => ({ default: mod.Contacts }))
-)
-const Footer = lazy(() =>
-  import('@/components/Footer').then((mod) => ({ default: mod.Footer }))
-)
+const Stack = lazy(() => import('@/components/stack'))
+const Experience = lazy(() => import('@/components/experience'))
+const Projects = lazy(() => import('@/components/projects'))
+const Beyond = lazy(() => import('@/components/beyond'))
+const Contacts = lazy(() => import('@/components/contacts'))
 
 export const App = () => {
   return (

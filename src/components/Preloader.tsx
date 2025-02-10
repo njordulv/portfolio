@@ -22,7 +22,7 @@ export const Preloader = () => {
     <LazyMotion features={domAnimation}>
       <m.div
         transition={{
-          staggerChildren: 0.06,
+          staggerChildren: 0.07,
         }}
         initial="initial"
         animate="animate"

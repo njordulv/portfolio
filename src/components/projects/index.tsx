@@ -1,7 +1,7 @@
 import { fontMono } from '@/config/fonts'
 import { List } from '@/components/projects/List'
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2
@@ -18,3 +18,5 @@ export const Projects = () => {
     </section>
   )
 }
+
+export default Projects

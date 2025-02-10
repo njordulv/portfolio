@@ -4,7 +4,7 @@ import { Card } from '@/components/experience/Card'
 import { Arrow } from '@/components/experience/Arrow'
 import { PiArrowBendDownLeft, PiArrowBendDownRight } from 'react-icons/pi'
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <section className="experience" id="experience">
       <div className="flex flex-col items-stretch mx-auto max-w-5xl sm:px-6">
@@ -43,3 +43,5 @@ export const Experience = () => {
     </section>
   )
 }
+
+export default Experience
