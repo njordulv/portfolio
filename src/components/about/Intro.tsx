@@ -5,6 +5,8 @@ import { Block } from '@/components/about'
 import Button from '@/components/Button'
 
 export const Intro = () => {
+  const lastIndex = siteConfig.techCode.length - 1
+
   return (
     <Block className="col-span-12 row-span-2 md:col-span-8 flex flex-col justify-between bg-none shadow-none text-default border-0 p-0 w-7/7 lg:w-6/7 text-xl md:text-2xl">
       <div className="flex flex-col gap-4">
@@ -12,34 +14,22 @@ export const Intro = () => {
         <p className="text-zinc-400">{siteConfig.about.role}</p>
         <p>{siteConfig.about.subtitle}</p>
         <p className="text-zinc-400">
-          I specialize in&nbsp;
-          <Code
-            color="primary"
-            className="text-primary rounded-md text-[1.1rem]"
-          >
-            React
-          </Code>
-          ,&nbsp;
-          <Code
-            color="secondary"
-            className="text-secondary rounded-md text-[1.1rem]"
-          >
-            Next JS
-          </Code>
-          ,&nbsp;
-          <Code
-            color="success"
-            className="text-success rounded-md text-[1.1rem]"
-          >
-            Tailwind CSS
-          </Code>
-          , and&nbsp;
-          <Code
-            color="danger"
-            className="text-rose-400 rounded-md text-[1.1rem]"
-          >
-            Framer Motion
-          </Code>
+          I specialize in{' '}
+          {siteConfig.techCode.map(({ name, color }, index) => (
+            <span key={name}>
+              <Code
+                color={color}
+                className={`rounded-md text-[1.1rem] bottom-1 mb-0.5 text-${color}`}
+              >
+                {name}
+              </Code>
+              {index < lastIndex - 1
+                ? ', '
+                : index === lastIndex
+                ? ''
+                : ' and '}
+            </span>
+          ))}
           , building seamless and dynamic user experiences.
         </p>
       </div>

@@ -122,6 +122,24 @@ export const siteConfig = {
       'But I don’t stop there. I’m always exploring new tools and frameworks to stay ahead of industry trends and bring even more value to the projects I work on.',
     text3: 'Let’s connect and build something great together!',
   },
+  techCode: [
+    {
+      name: 'React',
+      color: 'primary',
+    },
+    {
+      name: 'Next.js',
+      color: 'secondary',
+    },
+    {
+      name: 'Tailwind CSS',
+      color: 'success',
+    },
+    {
+      name: 'Framer Motion',
+      color: 'danger',
+    },
+  ] as const,
   techStack: [
     {
       id: '1',
