@@ -9,9 +9,8 @@ export const Photo = () => (
         <img
           src="/photo.png"
           width="300"
-          height="auto"
+          height="318"
           alt="Dmitriy, Frontend Developer"
-          loading="lazy"
           decoding="async"
           className="drop-shadow-lg rounded-3xl"
         />
