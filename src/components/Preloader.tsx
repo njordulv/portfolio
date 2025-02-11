@@ -26,7 +26,7 @@ export const Preloader = () => {
         }}
         initial="initial"
         animate="animate"
-        className="flex gap-1 mx-auto items-center justify-center h-dvh"
+        className="flex gap-1 mx-auto items-center justify-center h-screen"
       >
         {[...Array(5)].map((_, index) => (
           <m.span

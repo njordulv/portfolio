@@ -5,11 +5,7 @@ export const MetaData: React.FC = () => {
     <>
       <meta
         name="viewport"
-        content={`width=${config.viewport.width}, initial-scale=${
-          config.viewport.initialScale
-        }, minimum-scale=${config.viewport.minimumScale}, viewport-fit=${
-          config.viewport.viewportFit
-        }, user-scalable=${config.viewport.userScalable ? 'no' : 'yes'}`}
+        content={`width=${config.viewport.width}, initial-scale=${config.viewport.initialScale}`}
       />
       <title>{config.title}</title>
       <meta name="description" content={config.description} />

@@ -1,4 +1,4 @@
-import { Block } from '@/components/about'
+import { Block } from '@/components/about/Block'
 
 export const Photo = () => (
   <Block className="col-span-12 row-span-2 md:col-span-4 bg-success border-2 shadow-xl p-6 overflow-hidden">

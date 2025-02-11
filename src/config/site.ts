@@ -71,9 +71,6 @@ export const siteConfig = {
   viewport: {
     width: 'device-width',
     initialScale: 1,
-    minimumScale: 1,
-    viewportFit: 'cover' as const,
-    userScalable: false,
   },
   siteUrl: 'https://njordulv-portfolio.vercel.app',
   repos: 'https://api.github.com/users/njordulv/repos?per_page=24',
@@ -119,7 +116,7 @@ export const siteConfig = {
     contactAria: 'Navigate to Contacts section',
     downloadText: 'Download CV',
     text1:
-      'This portfolio is a testament to my skills—designed from the ground up using my favorite stack.',
+      'This portfolio is a testament to my skills — designed from the ground up using my favorite stack.',
     text2:
       'But I don’t stop there. I’m always exploring new tools and frameworks to stay ahead of industry trends and bring even more value to the projects I work on.',
     text3: 'Let’s connect and build something great together!',

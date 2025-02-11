@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Code } from '@heroui/react'
 import { siteConfig } from '@/config/site'
-import { Block } from '@/components/about'
+import { Block } from '@/components/about/Block'
 import Button from '@/components/Button'
 
 export const Intro = () => {

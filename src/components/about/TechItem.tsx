@@ -1,4 +1,4 @@
-import { Block } from '@/components/about'
+import { Block } from '@/components/about/Block'
 import { TechStackProps } from '@/types/interfaces'
 
 export const TechItem: React.FC<TechStackProps> = ({

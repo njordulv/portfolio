@@ -1,4 +1,4 @@
-import { Block } from '@/components/about'
+import { Block } from '@/components/about/Block'
 import { siteConfig } from '@/config/site'
 
 export const Text = () => (
