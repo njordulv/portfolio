@@ -1,6 +1,6 @@
 @import './fonts.css';
 @import 'tailwindcss';
-@custom-variant dark (&:where(.dark, .dark *));
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-cell: #333;
