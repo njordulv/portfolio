@@ -4,7 +4,7 @@ import { Photo } from '@/components/about/Photo'
 import { TechList } from '@/components/about/TechList'
 import { Text } from '@/components/about/Text'
 
-const About = () => {
+export const About = () => {
   return (
     <section className="hero" id="about">
       <LazyMotion features={domAnimation}>
@@ -25,5 +25,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About
