@@ -1,26 +1,10 @@
-import { useMemo } from 'react'
-import {
-  m,
-  LazyMotion,
-  domAnimation,
-  useScroll,
-  useTransform,
-} from 'framer-motion'
-import { Bubble } from '@/components/progress/Bubble'
+import { m, LazyMotion, domAnimation, useScroll } from 'framer-motion'
+import { Bubbles } from '@/components/progress/Bubbles'
 import { siteConfig } from '@/config/site'
 
 const Progress = () => {
   const { scrollYProgress } = useScroll()
   const bubbleY = [0, -150]
-
-  const bubbleTransforms = useMemo(
-    () =>
-      siteConfig.bubbles.map(({ x }) =>
-        /* eslint-disable-next-line react-hooks/rules-of-hooks */
-        useTransform(scrollYProgress, [0, 1], x)
-      ),
-    [scrollYProgress]
-  )
 
   return (
     <LazyMotion features={domAnimation}>
@@ -35,12 +19,12 @@ const Progress = () => {
             className="progress-bar-item bg-success"
             style={{ scaleY: scrollYProgress }}
           />
-
-          {siteConfig.bubbles.map(({ size, duration }, index) => (
-            <Bubble
+          {siteConfig.bubbles.map(({ x, size, duration }, index) => (
+            <Bubbles
               key={index}
-              xTransform={bubbleTransforms[index]}
-              sizeClass={size}
+              scrollProgress={scrollYProgress}
+              xPositions={x}
+              size={size}
               duration={duration}
               bubbleY={bubbleY}
             />

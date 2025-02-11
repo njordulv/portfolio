@@ -1,4 +1,5 @@
 import { IconType } from 'react-icons'
+import { MotionValue } from 'framer-motion'
 
 export interface ButtonProps {
   text: string
@@ -60,4 +61,19 @@ export interface TechStackProps {
   color: string
   link: string
   Icon: IconType
+}
+
+export interface BubblesProps {
+  scrollProgress: MotionValue<number>
+  xPositions: number[]
+  size: string
+  duration: number
+  bubbleY: number[]
+}
+
+export interface BubbleProps {
+  xTransform: MotionValue<number>
+  sizeClass: string
+  duration: number
+  bubbleY: number[]
 }

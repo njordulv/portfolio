@@ -1,11 +1,5 @@
-import { m, MotionValue } from 'framer-motion'
-
-interface BubbleProps {
-  xTransform: MotionValue<number>
-  sizeClass: string
-  duration: number
-  bubbleY: number[]
-}
+import { m } from 'framer-motion'
+import { BubbleProps } from '@/types/interfaces'
 
 export const Bubble: React.FC<BubbleProps> = ({
   xTransform,
