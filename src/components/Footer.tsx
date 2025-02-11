@@ -1,6 +1,6 @@
 import { LiaCopyrightSolid } from 'react-icons/lia'
 
-export const Footer = () => {
+const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
 
@@ -14,3 +14,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer
