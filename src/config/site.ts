@@ -259,6 +259,7 @@ export const siteConfig = {
     'Design Tools:': ['Figma', 'Sketch', 'Adobe Photoshop'],
     'Project Management:': ['Jira', 'Trello'],
   },
+
   experience: [
     {
       company: 'TemplateMonster',
@@ -350,6 +351,25 @@ export const siteConfig = {
       },
     },
   },
+  progressVariants: {
+    hidden: { opacity: 0, left: -13 },
+    show: {
+      opacity: 1,
+      left: 2,
+      transition: {
+        type: 'ease',
+        duration: 0.5,
+        delayChildren: 0.5,
+      },
+    },
+  },
+  bubbles: [
+    { x: [5, 6], size: 'w-[8px] h-[8px]', duration: 10 },
+    { x: [8, 7], size: 'w-[6px] h-[6px]', duration: 8 },
+    { x: [2, 2], size: 'w-[5px] h-[5px]', duration: 6 },
+    { x: [5, 9], size: 'w-[4px] h-[4px]', duration: 4 },
+    { x: [3, 0], size: 'w-[3px] h-[3px]', duration: 3 },
+  ],
   hobbies: [
     {
       id: '1',

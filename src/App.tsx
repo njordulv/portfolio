@@ -10,6 +10,7 @@ const Experience = lazy(() => import('@/components/experience'))
 const Projects = lazy(() => import('@/components/projects'))
 const Beyond = lazy(() => import('@/components/beyond'))
 const Contacts = lazy(() => import('@/components/contacts'))
+const Progress = lazy(() => import('@/components/progress'))
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
         <main className="container mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
           <About />
           <Stack />
+          <Progress />
           <Experience />
           <Projects />
           <Beyond />
