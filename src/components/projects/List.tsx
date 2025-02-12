@@ -43,7 +43,7 @@ export const List = () => {
       <m.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true }}
         variants={siteConfig.projectsListVariants}
         className="grid gap-6 grid-cols-1 md:grid-cols-3 md:px-6"
       >

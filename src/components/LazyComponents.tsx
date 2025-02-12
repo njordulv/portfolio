@@ -19,13 +19,13 @@ const LazyComponent = ({
   const { ref, isVisible } = useLazyLoad()
 
   return (
-    <div ref={ref} className="w-full min-h-[10rem]">
+    <div ref={ref} className="w-full min-h-7">
       {isVisible ? (
         <Suspense fallback={<Preloader />}>
           <Component />
         </Suspense>
       ) : (
-        <div className="w-full min-h-[10rem] bg-gray-100/50 animate-pulse" />
+        <div className="w-full min-h-7 bg-gray-100/50 animate-pulse" />
       )}
     </div>
   )
