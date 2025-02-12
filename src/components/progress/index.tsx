@@ -2,7 +2,7 @@ import { m, LazyMotion, domAnimation, useScroll } from 'framer-motion'
 import { Bubbles } from '@/components/progress/Bubbles'
 import { siteConfig } from '@/config/site'
 
-const Progress = () => {
+export const Progress = () => {
   const { scrollYProgress } = useScroll()
   const bubbleY = [0, -150]
 
@@ -34,5 +34,3 @@ const Progress = () => {
     </LazyMotion>
   )
 }
-
-export default Progress

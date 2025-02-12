@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { useMemo } from 'react'
 import { m, LazyMotion, domAnimation } from 'framer-motion'
-import { Spinner } from '@heroui/react'
+import { Preloader } from '@/components/Preloader'
 import { Item } from '@/components/projects/Item'
 import { ProjectProps } from '@/types/interfaces'
 import { siteConfig } from '@/config/site'
@@ -34,7 +34,7 @@ export const List = () => {
   }, [data])
 
   if (isError) return <p className="text-pink">{siteConfig.errorData}</p>
-  if (isLoading || !data) return <Spinner color="default" />
+  if (isLoading || !data) return <Preloader />
 
   const showOnly = sortedByDate.slice(0, 9)
 
