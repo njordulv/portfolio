@@ -14,18 +14,18 @@ const Footer = lazy(() => import('@/components/Footer'))
 const LazyComponent = ({
   component: Component,
 }: {
-  component: React.LazyExoticComponent<() => React.ReactNode>
+  component: React.LazyExoticComponent<React.ComponentType>
 }) => {
   const { ref, isVisible } = useLazyLoad()
 
   return (
-    <div ref={ref} className="w-full">
+    <div ref={ref} className="w-full min-h-[10rem]">
       {isVisible ? (
         <Suspense fallback={<Preloader />}>
           <Component />
         </Suspense>
       ) : (
-        <div className="h-40" />
+        <div className="w-full min-h-[10rem] bg-gray-100/50 animate-pulse" />
       )}
     </div>
   )

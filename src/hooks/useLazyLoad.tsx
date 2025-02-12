@@ -6,13 +6,13 @@ export const useLazyLoad = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      ([entry], obs) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-          observer.disconnect()
+          obs.unobserve(entry.target)
         }
       },
-      { threshold: 0.1 }
+      { rootMargin: '200px', threshold: 0.1 }
     )
 
     if (ref.current) {
