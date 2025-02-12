@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
   </head>
+  <script>
+    ;(function () {
+      const theme = localStorage.getItem('theme') || 'light'
+      document.documentElement.setAttribute('data-theme', theme)
+    })()
+  </script>
   <body>
     <div id="root" class="flex flex-col p-6"></div>
     <script type="module" src="/src/layout.tsx"></script>

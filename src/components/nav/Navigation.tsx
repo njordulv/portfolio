@@ -44,7 +44,7 @@ export const Navigation = () => {
             <m.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
+              transition={{ delay: 0.5 }}
               className="hidden lg:flex gap-4 justify-start"
             >
               {siteConfig.navItems.map((item) => (

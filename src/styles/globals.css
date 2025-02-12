@@ -1,6 +1,6 @@
 @import './fonts.css';
 @import 'tailwindcss';
-@variant dark (&:where(.dark, .dark *));
+@variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
   --color-cell: #333;
@@ -37,7 +37,7 @@
   --animation-spin: spin 1.5s infinite;
 }
 
-.light:root {
+[data-theme='light']:root {
   --color-cell: #dbdbd3;
   --color-zink: #a1a1aa;
   --color-background: beige;
