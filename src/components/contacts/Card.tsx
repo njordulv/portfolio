@@ -1,5 +1,5 @@
 import { ContactsCard } from '@/types/interfaces'
-import { Link } from '@heroui/link'
+import { Link } from '@heroui/react'
 
 export const Card = ({ title, subtitle, Icon, href }: ContactsCard) => {
   return (

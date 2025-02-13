@@ -1,5 +1,4 @@
-import { Link } from '@heroui/link'
-import { NavbarItem } from '@heroui/navbar'
+import { Link, NavbarItem } from '@heroui/react'
 import { NavProps } from '@/types/interfaces'
 
 export const NavItem = ({ href, label, children }: NavProps) => {
