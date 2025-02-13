@@ -74,7 +74,12 @@ export const siteConfig = {
   },
   siteUrl: 'https://njordulv-portfolio.vercel.app',
   repos: 'https://api.github.com/users/njordulv/repos?per_page=24',
-  errorData: `Ooops, looks like your API key isn't okay`,
+  errorData: `Oops! Looks like your API key isn't okay`,
+  notFound: {
+    title: '404 - Page Not Found',
+    description: `Oops! The page you're looking for doesn't exist`,
+    button: 'Go back to Home',
+  },
   navItems: [
     {
       label: 'About Me',
@@ -447,4 +452,5 @@ export const siteConfig = {
       icon: SiTelegram,
     },
   ],
+  404: [],
 }
