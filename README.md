@@ -51,6 +51,10 @@ npm run dev
 
 Open your web browser and navigate to [http://localhost:5173](http://localhost:5173) to access the app.
 
+## Screenshot
+
+![Portfolio Screenshot](./public/screenshot.jpg)
+
 ## License
 
 Licensed under the [MIT License](LICENSE).
