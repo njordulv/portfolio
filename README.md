@@ -1,7 +1,6 @@
 # React & HeroUI Resume
 
-This template serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more.
-Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
+This template serves as an interactive resume showcasing my skills, experience, personal information, contact details, and more. Built with modern web technologies, it provides a comprehensive and engaging way to present my professional profile.
 
 ## Interactive Resume Features
 
@@ -27,14 +26,11 @@ Built with modern web technologies, it provides a comprehensive and engaging way
 
 ### Install dependencies
 
-Use the Template with create-next-app.
 To create a new project based on this template using Vite, run the following command:
 
 ```bash
 npm create vite@latest my-vue-app
 ```
-
-### Install dependencies
 
 You can use one of the package managers `npm`, `yarn`, `pnpm`, or `bun`.  
 Since you're using `npm`, run the following command:

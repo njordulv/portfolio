@@ -1,4 +1,6 @@
 import { LiaCopyrightSolid } from 'react-icons/lia'
+import { siteConfig } from '@/config/site'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const date = new Date()
@@ -8,9 +10,18 @@ const Footer = () => {
     <footer className="flex flex-row items-center justify-center p-5 gap-1 bg-coal/80 rounded-xl border-2 border-black shadow-xl">
       <span className="text-red dark:text-primary flex items-center gap-1">
         <LiaCopyrightSolid />
-        {year} {`DC`}.
+        {year} {siteConfig.footer.title}.{' '}
       </span>
-      <span className="text-color">All Rights Reserved</span>
+      <span className="text-color">{siteConfig.footer.rights}</span>
+      <span className="text-zinc-400">
+        {siteConfig.footer.developed}
+        <Link
+          to={siteConfig.links.github}
+          className="dark:hover:text-primary hover:text-danger transition-all"
+        >
+          {siteConfig.author}
+        </Link>
+      </span>
     </footer>
   )
 }

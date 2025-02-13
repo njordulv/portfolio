@@ -80,6 +80,11 @@ export const siteConfig = {
     description: `Oops! The page you're looking for doesn't exist`,
     button: 'Go back to Home',
   },
+  footer: {
+    title: 'D.C. Portfolio',
+    rights: 'All rights reserved.',
+    developed: 'Developed by ',
+  },
   navItems: [
     {
       label: 'About Me',
