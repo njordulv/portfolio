@@ -1,8 +1,7 @@
-import { lazy, Suspense } from 'react'
-import { Preloader } from '@/components/Preloader'
+import { lazy } from 'react'
 import { About } from '@/components/about'
 import { Progress } from '@/components/progress'
-import { useLazyLoad } from '@/hooks/useLazyLoad'
+import { LazyComponent } from '@/components/lazy/LazyComponent'
 
 const Stack = lazy(() => import('@/components/stack'))
 const Experience = lazy(() => import('@/components/experience'))
@@ -10,26 +9,6 @@ const Projects = lazy(() => import('@/components/projects'))
 const Beyond = lazy(() => import('@/components/beyond'))
 const Contacts = lazy(() => import('@/components/contacts'))
 const Footer = lazy(() => import('@/components/Footer'))
-
-const LazyComponent = ({
-  component: Component,
-}: {
-  component: React.LazyExoticComponent<React.ComponentType>
-}) => {
-  const { ref, isVisible } = useLazyLoad()
-
-  return (
-    <div ref={ref} className="w-full min-h-7">
-      {isVisible ? (
-        <Suspense fallback={<Preloader />}>
-          <Component />
-        </Suspense>
-      ) : (
-        <div className="w-full min-h-7 bg-gray-100/50 animate-pulse" />
-      )}
-    </div>
-  )
-}
 
 export const LazyComponents = () => {
   return (

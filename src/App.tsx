@@ -1,11 +1,11 @@
-import { MetaData } from '@/metadata'
+import { Metadata } from '@/Metadata'
 import { Navigation } from '@/components/nav/Navigation'
-import { LazyComponents } from '@/components/LazyComponents'
+import { LazyComponents } from '@/components/lazy/LazyComponents'
 
 export const App = () => {
   return (
     <>
-      <MetaData />
+      <Metadata />
       <Navigation />
       <LazyComponents />
     </>
