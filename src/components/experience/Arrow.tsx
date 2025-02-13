@@ -27,7 +27,7 @@ export const Arrow = ({ children }: { children: React.ReactNode }) => {
           stiffness: 500,
           damping: 50,
         }}
-        className="text-8xl absolute dark:text-zinc-700 text-charcoal hidden sm:flex arr-icon"
+        className="text-8xl absolute dark:text-zinc-700 text-charcoal hidden md:flex arr-icon"
       >
         {children}
       </m.div>

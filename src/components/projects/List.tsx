@@ -45,7 +45,7 @@ export const List = () => {
         whileInView="onscreen"
         viewport={{ once: true }}
         variants={siteConfig.projectsListVariants}
-        className="grid gap-6 grid-cols-1 md:grid-cols-3 md:px-6"
+        className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-6"
       >
         {showOnly.map((project: ProjectProps) => (
           <m.div

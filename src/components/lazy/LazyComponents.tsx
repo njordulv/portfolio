@@ -13,7 +13,7 @@ const Footer = lazy(() => import('@/components/Footer'))
 export const LazyComponents = () => {
   return (
     <>
-      <main className="container mx-auto max-w-7xl min-h-[calc(100vh-184px)] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
+      <main className="container mx-auto max-w-lg md:max-w-7xl min-h-[calc(100vh-184px)] flex flex-col items-center justify-center gap-10 py-5 md:pt-10 sm:pb-24 pb-10">
         <About />
         <Progress />
         <LazyComponent component={Stack} />

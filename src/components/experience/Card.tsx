@@ -26,7 +26,7 @@ export function Card({ children, color }: ExperienceCard) {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.4 }}
-        className={`flex flex-col items-start justify-center gap-2 rounded-xl sm:min-h-48 border-2 border-black bg-${color} p-5 sm:p-6 text-black shadow-xl`}
+        className={`flex flex-col items-start justify-center gap-2 rounded-xl md:min-h-48 border-2 border-black bg-${color} p-5 md:p-6 text-black shadow-xl`}
         variants={variants}
       >
         {children}

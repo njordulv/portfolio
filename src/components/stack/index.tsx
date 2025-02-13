@@ -29,7 +29,7 @@ const Stack = () => {
           transition={{
             staggerChildren: 0.09,
           }}
-          className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 sm:px-6"
+          className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 md:px-6"
         >
           <Skills />
         </m.div>

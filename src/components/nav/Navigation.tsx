@@ -18,7 +18,7 @@ export const Navigation = () => {
       maxWidth="xl"
       position="sticky"
       classNames={{
-        base: '!backdrop-blur-[1px] bg-coal/80 rounded-xl border-2 border-black shadow-xl',
+        base: 'mx-auto max-w-lg md:max-w-7xl !backdrop-blur-[1px] bg-coal/50 rounded-xl border-2 border-black shadow-xl',
         content: 'basis-1/5 sm:basis-full gap-3',
         brand: 'gap-3 max-w-fit',
       }}

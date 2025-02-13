@@ -8,7 +8,7 @@ export const Intro = () => {
   const lastIndex = siteConfig.techCode.length - 1
 
   return (
-    <Block className="col-span-12 row-span-2 md:col-span-8 flex flex-col justify-between bg-none shadow-none text-default border-0 p-0 w-7/7 lg:w-6/7 text-xl md:text-2xl">
+    <Block className="col-span-12 row-span-2 md:col-span-7 lg:col-span-8 flex flex-col justify-between bg-none shadow-none text-default border-0 p-0 w-7/7 lg:w-6/7 text-xl md:text-2xl">
       <div className="flex flex-col gap-4">
         <h1>{siteConfig.about.title}</h1>
         <p className="text-zinc-400">{siteConfig.about.role}</p>
@@ -33,7 +33,7 @@ export const Intro = () => {
           , building seamless and dynamic user experiences.
         </p>
       </div>
-      <div className="flex gap-4 sm:flex-row md:mt-0 mt-6 flex-col">
+      <div className="flex gap-4 md:flex-row lg:mt-0 mt-6 flex-col">
         <Link to="contacts" smooth={true} duration={700} href="#contacts">
           <Button
             text={siteConfig.about.contactText}

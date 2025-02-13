@@ -7,11 +7,11 @@ import { PiArrowBendDownLeft, PiArrowBendDownRight } from 'react-icons/pi'
 const Experience = () => {
   return (
     <section className="experience" id="experience">
-      <div className="flex flex-col items-stretch mx-auto max-w-5xl sm:px-6">
+      <div className="flex flex-col items-stretch mx-auto max-w-5xl md:px-6">
         <h2 className="text-center text-default mb-8">Experience</h2>
         {siteConfig.experience.map((item: ExperienceItem, index: number) => (
           <div
-            className="exp-item sm:w-[51%] sm:mb-[-24px] w-full"
+            className="exp-item md:w-[51%] md:mb-[-24px] w-full"
             key={index}
             style={{ alignSelf: index % 2 === 0 ? 'flex-start' : 'flex-end' }}
           >
