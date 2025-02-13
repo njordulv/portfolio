@@ -1,6 +1,6 @@
 import { siteConfig as config } from '@/config/site'
 
-export const Metadata = () => {
+export const Metadata: React.FC = () => {
   return (
     <>
       <meta

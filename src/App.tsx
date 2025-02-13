@@ -1,4 +1,4 @@
-import { Metadata } from '@/Metadata'
+import { Metadata } from '@/metadata'
 import { Navigation } from '@/components/nav/Navigation'
 import { LazyComponents } from '@/components/lazy/LazyComponents'
 
