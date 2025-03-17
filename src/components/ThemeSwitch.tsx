@@ -3,7 +3,7 @@ import { IoInvertMode, IoInvertModeOutline } from 'react-icons/io5'
 
 export const ThemeSwitch = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window === 'undefined') return 'light' // SSR-фикс
+    if (typeof window === 'undefined') return 'light'
     return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
   })
 

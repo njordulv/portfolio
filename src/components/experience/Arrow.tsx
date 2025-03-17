@@ -19,7 +19,7 @@ export const Arrow = ({ children }: { children: React.ReactNode }) => {
       <m.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.7 }}
         variants={arrowVariants}
         transition={{
           type: 'spring',
@@ -27,7 +27,7 @@ export const Arrow = ({ children }: { children: React.ReactNode }) => {
           stiffness: 500,
           damping: 50,
         }}
-        className="text-8xl absolute dark:text-zinc-700 text-charcoal hidden md:flex arr-icon"
+        className="text-8xl absolute dark:text-zinc-700 text-charcoal arr-icon"
       >
         {children}
       </m.div>

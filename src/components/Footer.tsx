@@ -7,12 +7,14 @@ const Footer = () => {
   const year = date.getFullYear()
 
   return (
-    <footer className="flex flex-row items-center justify-center mx-auto max-w-lg md:max-w-7xl p-5 gap-1 bg-coal/50 rounded-xl border-2 border-black shadow-xl">
-      <span className="text-red dark:text-primary flex items-center gap-1">
-        <LiaCopyrightSolid />
-        {year} {siteConfig.footer.title}.{' '}
-      </span>
-      <span className="text-color">{siteConfig.footer.rights}</span>
+    <footer className="flex flex-col md:flex-row items-center justify-center text-[12px] md:text-[16px] mx-auto max-w-lg md:max-w-7xl p-5 gap-1 bg-coal/50 rounded-xl border-2 border-black shadow-xl">
+      <div className="flex flex-row gap-1">
+        <span className="text-red dark:text-primary flex items-center gap-1">
+          <LiaCopyrightSolid />
+          {year} {siteConfig.footer.title}.{' '}
+        </span>
+        <span className="text-color">{siteConfig.footer.rights}</span>
+      </div>
       <span className="text-zinc-400">
         {siteConfig.footer.developed}
         <Link
