@@ -4,6 +4,14 @@ import { siteConfig } from '@/config/site'
 import { Block } from '@/components/about/Block'
 import Button from '@/components/Button'
 
+const colorClasses: Record<string, string> = {
+  primary: 'bg-primary/20 text-primary',
+  secondary: 'bg-secondary/20 text-secondary',
+  success: 'bg-success/20 text-success',
+  danger: 'bg-danger/20 text-danger',
+  pink: 'bg-pink/20 text-pink',
+}
+
 export const Intro = () => {
   const lastIndex = siteConfig.techCode.length - 1
 
@@ -19,7 +27,9 @@ export const Intro = () => {
             <span key={name}>
               <Code
                 color={color}
-                className={`rounded-md text-[1.1rem] bottom-1 mb-0.5 text-${color}`}
+                className={`pl-2 pr-2 rounded-md text-[1.1rem] bottom-1 mb-0.5 ${
+                  colorClasses[color] ?? `text-${color}`
+                }`}
               >
                 {name}
               </Code>

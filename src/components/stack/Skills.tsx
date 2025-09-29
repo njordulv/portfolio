@@ -30,7 +30,7 @@ export const Skills = () => (
                     content={item.label}
                     classNames={{
                       content:
-                        'border-1 text-beige bg-black rounded-lg text-sm',
+                        'border-1 text-beige bg-black rounded-lg text-sm pr-2 pl-2',
                     }}
                   >
                     <span className="shadow-lg shadow-black bg-black w-10 h-10 text-beige border-1 border-beige rounded-full flex justify-center items-center hover:bg-red transition-all cursor-pointer">

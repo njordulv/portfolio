@@ -36,10 +36,12 @@ import {
   SiFirebase,
   SiSupabase,
   SiAuth0,
+  SiMongodb,
   SiPhp,
   SiSymfony,
   SiPostgresql,
   SiWordpress,
+  SiShopify,
   SiFigma,
   SiSketch,
   SiAdobephotoshop,
@@ -51,7 +53,8 @@ import {
 } from 'react-icons/si'
 
 export const siteConfig = {
-  name: 'Dmitriy Chastukhin Front-End Developer',
+  name: 'Dmitriy Chastukhin',
+  nameShort: 'DC',
   title: 'Dmitriy Chastukhin | Portfolio',
   description:
     "A front-end developer's portfolio specializing in React and Next.js",
@@ -138,15 +141,15 @@ export const siteConfig = {
     },
     {
       name: 'Next.js',
-      color: 'purple',
+      color: 'secondary',
     },
     {
       name: 'Tailwind CSS',
-      color: 'green',
+      color: 'success',
     },
     {
       name: 'Framer Motion',
-      color: 'pink',
+      color: 'danger',
     },
   ] as const,
   techStack: [
@@ -214,11 +217,13 @@ export const siteConfig = {
     { label: 'Firebase', icon: SiFirebase },
     { label: 'Supabase', icon: SiSupabase },
     { label: 'Next-Auth', icon: SiAuth0 },
+    { label: 'MongoDB', icon: SiMongodb },
     { label: 'PHP', icon: SiPhp },
     { label: 'Symfony', icon: SiSymfony },
     { label: 'MySQL', icon: TbSql },
     { label: 'PostgreSQL', icon: SiPostgresql },
     { label: 'WordPress', icon: SiWordpress },
+    { label: 'Shopify', icon: SiShopify },
     { label: 'Opencart', icon: LiaOpencart },
     { label: 'Figma', icon: SiFigma },
     { label: 'Sketch', icon: SiSketch },
@@ -251,6 +256,7 @@ export const siteConfig = {
       'Supabase',
       'Firebase',
       'Next-Auth',
+      'MongoDB',
     ],
     'Development and DevOps Tools:': [
       'Git',
@@ -262,7 +268,7 @@ export const siteConfig = {
       'Vitest',
       'Docker',
     ],
-    'CMS:': ['WordPress', 'Opencart'],
+    'CMS:': ['WordPress', 'Shopify', 'Opencart'],
     'Design Tools:': ['Figma', 'Sketch', 'Adobe Photoshop'],
     'Project Management:': ['Jira', 'Trello'],
   },

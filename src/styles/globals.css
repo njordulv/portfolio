@@ -203,10 +203,6 @@ a > button {
   }
 }
 
-.px-6 {
-  padding-inline: calc(var(--spacing) * 6);
-}
-
 .bg-red {
   background-color: var(--color-red);
 }

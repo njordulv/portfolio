@@ -29,7 +29,7 @@ export const Progress = () => {
       >
         <m.div className="w-full h-full overflow-hidden rounded-b-xl border-1 border-white/50 border-t-0">
           <m.div
-            className="progress-bar-item bg-green"
+            className="progress-bar-item bg-green transition-all"
             style={{ scaleY: scrollYProgress }}
           />
           {siteConfig.bubbles.map(({ x, size, duration }, index) => (

@@ -27,7 +27,7 @@ const Beyond = () => {
           whileInView="onscreen"
           variants={variants}
           viewport={{ once: true }}
-          className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 md:px-6"
+          className="mx-auto grid grid-flow-dense grid-cols-12 gap-6 md:pl-6 md:pr-6"
         >
           <div className="col-span-12 row-span-2 lg:col-start-3 lg:col-end-13 shadow-xl flex flex-col rounded-xl border-2 border-black bg-green text-black p-5 sm:p-7">
             <h2
