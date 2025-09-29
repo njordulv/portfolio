@@ -55,7 +55,7 @@ export const List = () => {
   if (isError) return <p className="text-pink">{siteConfig.errorData}</p>
   if (isLoading || !data) return <Preloader />
 
-  const showOnly = sortedByDate.slice(0, 9)
+  const showOnly = sortedByDate.slice(0, 12)
 
   return (
     <LazyMotion features={domAnimation}>
