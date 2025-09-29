@@ -33,7 +33,7 @@ const cardVariants: Variants = {
 
 const Contacts = () => {
   return (
-    <section className="contacts" id="contacts">
+    <section className="contacts">
       <h2
         className={`${fontMono.className} text-center text-pink drop-shadow-md mb-4`}
       >

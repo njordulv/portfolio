@@ -20,7 +20,7 @@ const variants: Variants = {
 
 const Beyond = () => {
   return (
-    <section className="beyond" id="beyond">
+    <section className="beyond">
       <LazyMotion features={domAnimation}>
         <m.div
           initial="offscreen"

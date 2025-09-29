@@ -19,7 +19,7 @@ const variants: Variants = {
 
 const Stack = () => {
   return (
-    <section className="stack" id="skills">
+    <section className="stack">
       <LazyMotion features={domAnimation}>
         <m.div
           initial="offscreen"

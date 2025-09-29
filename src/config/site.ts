@@ -95,7 +95,7 @@ export const siteConfig = {
     },
     {
       label: 'Skills',
-      href: 'skills',
+      href: 'stack',
     },
     {
       label: 'Experience',

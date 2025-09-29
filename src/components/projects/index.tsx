@@ -3,7 +3,7 @@ import { List } from '@/components/projects/List'
 
 const Projects = () => {
   return (
-    <section className="projects" id="projects">
+    <section className="projects">
       <h2
         className={`${fontMono.className} text-center text-primary drop-shadow-md mb-4`}
       >

@@ -3,6 +3,7 @@ import { Code } from '@heroui/react'
 import { siteConfig } from '@/config/site'
 import { Block } from '@/components/about/Block'
 import Button from '@/components/Button'
+import styles from '@/styles/button.module.css'
 
 const colorClasses: Record<string, string> = {
   primary: 'bg-primary/20 text-primary',
@@ -44,11 +45,14 @@ export const Intro = () => {
         </p>
       </div>
       <div className="flex gap-4 md:flex-row lg:mt-0 mt-6 flex-col">
-        <Link to="contacts" smooth={true} duration={700} href="#contacts">
-          <Button
-            text={siteConfig.about.contactText}
-            aria-label={siteConfig.about.contactAria}
-          />
+        <Link
+          to="contacts"
+          smooth={true}
+          duration={700}
+          className={styles.button}
+          aria-label={siteConfig.about.contactAria}
+        >
+          {siteConfig.about.contactText}
         </Link>
         <Button
           text={siteConfig.about.downloadText}

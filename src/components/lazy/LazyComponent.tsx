@@ -4,19 +4,21 @@ import { useLazyLoad } from '@/hooks/useLazyLoad'
 
 export const LazyComponent = ({
   component: Component,
+  id,
 }: {
   component: React.LazyExoticComponent<React.ComponentType>
+  id?: string
 }) => {
   const { ref, isVisible } = useLazyLoad()
 
   return (
-    <div ref={ref} className="w-full min-h-7">
+    <div ref={ref} id={id} className="w-full min-h-7">
       {isVisible ? (
         <Suspense fallback={<Preloader />}>
           <Component />
         </Suspense>
       ) : (
-        <div className="w-full min-h-7 bg-gray-100/50 animate-pulse" />
+        <div className="bg-gray-100/50 animate-pulse" />
       )}
     </div>
   )
