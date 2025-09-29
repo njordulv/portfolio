@@ -138,15 +138,15 @@ export const siteConfig = {
     },
     {
       name: 'Next.js',
-      color: 'secondary',
+      color: 'purple',
     },
     {
       name: 'Tailwind CSS',
-      color: 'success',
+      color: 'green',
     },
     {
       name: 'Framer Motion',
-      color: 'danger',
+      color: 'pink',
     },
   ] as const,
   techStack: [
@@ -163,7 +163,7 @@ export const siteConfig = {
       name: 'React',
       rotate: '3.3deg',
       link: 'https://njordulv-stopwatch.netlify.app/',
-      color: 'bg-secondary',
+      color: 'bg-purple',
       icon: SiReact,
     },
     {
@@ -171,7 +171,7 @@ export const siteConfig = {
       name: 'Tailwind CSS',
       rotate: '-3.5deg',
       link: 'https://cinemapp-movie.vercel.app/',
-      color: 'bg-success',
+      color: 'bg-green',
       icon: SiTailwindcss,
     },
     {
@@ -274,7 +274,7 @@ export const siteConfig = {
       department: 'Site2You',
       position: 'Webmaster',
       list: ['Web-mastering, supporting & maintaining websites'],
-      color: 'primary',
+      color: 'blue',
     },
     {
       company: 'TemplateMonster',
@@ -282,7 +282,7 @@ export const siteConfig = {
       department: 'Coders',
       position: 'HTML Coder',
       list: ['Creating bootstrap & responsive templates'],
-      color: 'secondary',
+      color: 'purple',
     },
     {
       company: 'TemplateMonster',
@@ -293,7 +293,7 @@ export const siteConfig = {
         'Template development for the following stores: Open Cart, osCommerce, Zen Cart',
         'Theme development for Wordpress',
       ],
-      color: 'danger',
+      color: 'red',
     },
     {
       company: 'Brainstack_',
@@ -305,7 +305,7 @@ export const siteConfig = {
         'Built custom themes from scratch and deployed them, integrating with the WordPress API for enhanced functionality.',
         'Improved site performance by optimizing load speeds, achieving 30% faster load time according to Google PageSpeed Insights.',
       ],
-      color: 'success',
+      color: 'green',
     },
     {
       company: 'Brainstack_',
@@ -318,7 +318,7 @@ export const siteConfig = {
         'Created responsive and visually engaging landing pages, promotional assets, and checkout pages, resulting in increased conversion rates and enhanced user satisfaction.',
         'Worked closely with QA, design, and SEO teams to ensure the implementation of best practices and maintain high-quality standards across projects.',
       ],
-      color: 'warning',
+      color: 'orange',
     },
     {
       company: 'Independent Learning',
@@ -338,35 +338,6 @@ export const siteConfig = {
     onscreen: {
       transition: {
         staggerChildren: 0.2,
-      },
-    },
-  },
-  projectsItemVariants: {
-    offscreen: {
-      opacity: 0,
-      rotate: -6,
-      y: 30,
-    },
-    onscreen: {
-      opacity: 1,
-      rotate: 0,
-      y: 0,
-      transition: {
-        type: 'spring',
-        bounce: 0.4,
-        duration: 0.8,
-      },
-    },
-  },
-  progressVariants: {
-    hidden: { opacity: 0, left: -13 },
-    show: {
-      opacity: 1,
-      left: 2,
-      transition: {
-        type: 'ease',
-        duration: 0.5,
-        delayChildren: 0.5,
       },
     },
   },

@@ -2,8 +2,9 @@ import { m, LazyMotion, domAnimation } from 'framer-motion'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { Card } from '@/components/contacts/Card'
+import { Variants } from 'framer-motion'
 
-const containerVariants = {
+const containerVariants: Variants = {
   offscreen: {},
   onscreen: {
     transition: {
@@ -12,7 +13,7 @@ const containerVariants = {
   },
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   offscreen: {
     scale: 0.5,
     opacity: 0,

@@ -1,10 +1,10 @@
-import { m, LazyMotion, domAnimation } from 'framer-motion'
+import { m, LazyMotion, domAnimation, Variants } from 'framer-motion'
 import { useState } from 'react'
 import { fontMono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
 import { ShuffleGrid } from '@/components/beyond/ShuffleGrid'
 
-const variants = {
+const variants: Variants = {
   initial: {
     opacity: 0,
     y: 18,

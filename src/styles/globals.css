@@ -23,7 +23,7 @@
   --color-charcoal: #231f20;
   --color-default: #f9f4da;
   --color-color: #f9f4da;
-  --color-warning: #fcba28;
+  --color-orange: #fcba28;
   --color-zinc-400: #a1a1aa;
   --color-background: #181818;
   --color-contrast: black;
@@ -48,7 +48,7 @@
   --color-charcoal: #555;
   --color-default: #0f0d0e;
   --color-color: #333;
-  --color-warning: #fcba28;
+  --color-orange: #fcba28;
   --color-zinc-400: #71717a;
 }
 
@@ -201,6 +201,18 @@ a > button {
     margin-top: 0;
     padding-top: 0;
   }
+}
+
+.px-6 {
+  padding-inline: calc(var(--spacing) * 6);
+}
+
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
 }
 
 @keyframes spin {

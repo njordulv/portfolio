@@ -2,7 +2,7 @@ import { Block } from '@/components/about/Block'
 import React from 'react'
 
 export const Photo = React.memo(() => (
-  <Block className="col-span-12 row-span-2 md:col-span-5 lg:col-span-4 bg-success border-2 shadow-xl p-6 overflow-hidden">
+  <Block className="col-span-12 row-span-2 md:col-span-5 lg:col-span-4 bg-green border-2 shadow-xl p-6 overflow-hidden">
     <figure className="relative flex justify-center items-end w-full h-full">
       <link
         rel="preload"

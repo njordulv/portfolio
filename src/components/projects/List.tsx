@@ -5,6 +5,25 @@ import { Preloader } from '@/components/Preloader'
 import { Item } from '@/components/projects/Item'
 import { ProjectProps } from '@/types/interfaces'
 import { siteConfig } from '@/config/site'
+import { Variants } from 'framer-motion'
+
+const variants: Variants = {
+  offscreen: {
+    opacity: 0,
+    rotate: -6,
+    y: 30,
+  },
+  onscreen: {
+    opacity: 1,
+    rotate: 0,
+    y: 0,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+}
 
 const fetchRepos = async () => {
   const res = await fetch(siteConfig.repos, {
@@ -44,13 +63,13 @@ export const List = () => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
-        variants={siteConfig.projectsListVariants}
+        variants={variants}
         className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-6"
       >
         {showOnly.map((project: ProjectProps) => (
           <m.div
             key={project.name}
-            variants={siteConfig.projectsItemVariants}
+            variants={variants}
             className="flex flex-col gap-4 justify-between p-5 bg-coal rounded-lg border-2 border-black shadow-xl"
           >
             <Item project={project} />
