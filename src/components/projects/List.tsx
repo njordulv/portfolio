@@ -7,14 +7,25 @@ import { ProjectProps } from '@/types/interfaces'
 import { siteConfig } from '@/config/site'
 import { Variants } from 'framer-motion'
 
-const variants: Variants = {
+const container: Variants = {
+  offscreen: {},
+  onscreen: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+}
+
+const item: Variants = {
   offscreen: {
     opacity: 0,
-    rotate: -6,
+    scale: 0.8,
+    rotate: -8,
     y: 30,
   },
   onscreen: {
     opacity: 1,
+    scale: 1,
     rotate: 0,
     y: 0,
     transition: {
@@ -24,7 +35,6 @@ const variants: Variants = {
     },
   },
 }
-
 const fetchRepos = async () => {
   const res = await fetch(siteConfig.repos, {
     headers: {
@@ -63,13 +73,13 @@ export const List = () => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
-        variants={variants}
+        variants={container}
         className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:pl-6 md:pr-6"
       >
         {showOnly.map((project: ProjectProps) => (
           <m.div
             key={project.name}
-            variants={variants}
+            variants={item}
             className="flex flex-col gap-4 justify-between p-5 bg-coal rounded-lg border-2 border-black shadow-xl"
           >
             <Item project={project} />
